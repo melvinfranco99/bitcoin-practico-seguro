@@ -1,0 +1,810 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Bitcoin práctico y seguro</title>
+<meta name="description" content="Guía visual y 5 vídeos: crear tu semilla, usar tu cartera, guardarla, comprar y vender, y gastar bitcoin con privacidad.">
+<meta property="og:title" content="Bitcoin práctico y seguro">
+<meta property="og:description" content="5 vídeos y una guía visual para usar bitcoin en la vida real sin perderlo y sin exponerte.">
+<meta property="og:image" content="img/01.jpg">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle cx='32' cy='32' r='30' fill='%23f7931a'/%3E%3Ctext x='32' y='45' font-size='38' text-anchor='middle' fill='white' font-family='Arial' font-weight='bold'%3E%E2%82%BF%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#0b111b; --bg2:#111a28; --card:#152033; --card2:#1a273d; --line:#26354f;
+  --ink:#eef2f8; --ink2:#a9b6ca; --ink3:#7586a0;
+  --btc:#f7931a; --btc2:#ffb54d; --green:#34d399; --lime:#a3e635; --yellow:#facc15; --amber:#fb923c; --red:#f87171; --blue:#60a5fa; --violet:#a78bfa; --cyan:#22d3ee;
+  --r:16px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font:17px/1.6 Inter,system-ui,sans-serif;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+a{color:var(--btc2)}
+h1,h2,h3{font-family:"Bebas Neue",Impact,sans-serif;font-weight:400;letter-spacing:.02em;line-height:1.05;margin:0}
+h2{font-size:clamp(40px,6vw,64px)}
+h3{font-size:clamp(28px,3.4vw,36px);margin:56px 0 18px}
+p{margin:0 0 14px}
+b,strong{color:#fff}
+.hl{color:var(--btc)}
+.wrap{max-width:1140px;margin:0 auto;padding:0 20px}
+.muted{color:var(--ink2)}
+.small{font-size:14px;color:var(--ink3)}
+
+/* nav */
+nav.top{position:sticky;top:0;z-index:50;background:rgba(11,17,27,.86);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+nav.top .wrap{display:flex;align-items:center;gap:8px;height:58px;overflow-x:auto;scrollbar-width:none}
+nav.top .wrap::-webkit-scrollbar{display:none}
+.brand{display:flex;align-items:center;gap:10px;font-weight:700;font-size:14px;letter-spacing:.08em;white-space:nowrap;margin-right:auto;color:var(--ink);text-decoration:none}
+.coin{width:28px;height:28px;border-radius:50%;background:var(--btc);display:grid;place-items:center;color:#fff;font-weight:800;font-size:17px;flex:none}
+nav.top a.pill{white-space:nowrap;text-decoration:none;color:var(--ink2);font-size:14px;font-weight:600;padding:6px 12px;border-radius:99px;border:1px solid transparent}
+nav.top a.pill:hover,nav.top a.pill.on{color:#fff;border-color:var(--line);background:var(--card)}
+nav.top a.pill span{color:var(--btc)}
+
+/* hero */
+.hero{position:relative;padding:90px 0 70px;overflow:hidden}
+.hero:before{content:"";position:absolute;inset:-40% -10% auto auto;width:780px;height:780px;background:radial-gradient(circle,rgba(247,147,26,.22),transparent 62%);pointer-events:none}
+.kicker{font-size:13px;font-weight:700;letter-spacing:.16em;color:var(--btc);text-transform:uppercase;margin-bottom:12px}
+.hero h1{font-size:clamp(56px,10vw,128px);max-width:900px}
+.hero p.lead{font-size:clamp(18px,2.2vw,22px);color:var(--ink2);max-width:680px;margin:18px 0 30px}
+.stats{display:flex;flex-wrap:wrap;gap:12px}
+.stat{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:10px 16px;font-size:14px;color:var(--ink2)}
+.stat b{font-size:20px;color:var(--btc);margin-right:6px}
+
+/* episode cards */
+.eps{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:14px;margin-top:46px}
+.ep{display:block;text-decoration:none;color:var(--ink);background:var(--card);border:1px solid var(--line);border-radius:14px;overflow:hidden;transition:.2s}
+.ep:hover{transform:translateY(-3px);border-color:var(--btc)}
+.ep img{display:block;width:100%;aspect-ratio:16/9;object-fit:cover}
+.ep div{padding:12px 14px 14px}
+.ep small{color:var(--btc);font-weight:700;font-size:12px;letter-spacing:.1em}
+.ep strong{display:block;font-size:15px;line-height:1.3;margin-top:3px}
+
+/* sections */
+section.v{padding:90px 0 40px;border-top:1px solid var(--line);scroll-margin-top:58px}
+section.v:nth-of-type(even){background:linear-gradient(180deg,var(--bg2),var(--bg) 60%)}
+.vhead{display:flex;gap:22px;align-items:flex-end;flex-wrap:wrap;margin-bottom:28px}
+.vnum{font-family:"Bebas Neue";font-size:110px;line-height:.8;color:transparent;-webkit-text-stroke:2px var(--btc)}
+.vhead p{color:var(--ink2);max-width:640px;margin:8px 0 0}
+.player{border-radius:var(--r);overflow:hidden;border:1px solid var(--line);background:#000;box-shadow:0 30px 80px -30px rgba(0,0,0,.8)}
+.player video{display:block;width:100%;aspect-ratio:16/9;background:#000}
+.vmeta{display:flex;flex-wrap:wrap;gap:16px;align-items:center;margin:12px 2px 0;font-size:14px;color:var(--ink3)}
+.vmeta a{color:var(--ink2);text-decoration:none;border-bottom:1px dotted var(--ink3)}
+
+/* generic blocks */
+.grid{display:grid;gap:16px}
+.g2{grid-template-columns:repeat(auto-fit,minmax(280px,1fr))}
+.g3{grid-template-columns:repeat(auto-fit,minmax(240px,1fr))}
+.g4{grid-template-columns:repeat(auto-fit,minmax(220px,1fr))}
+.card{background:var(--card);border:1px solid var(--line);border-radius:var(--r);padding:20px 22px;position:relative}
+.card h4{margin:0 0 6px;font-size:18px}
+.card p{color:var(--ink2);margin:0;font-size:15.5px}
+.ico{width:46px;height:46px;border-radius:12px;display:grid;place-items:center;font-size:24px;margin-bottom:12px;background:color-mix(in srgb,var(--c,var(--btc)) 18%,transparent);border:1px solid color-mix(in srgb,var(--c,var(--btc)) 45%,transparent)}
+.card.top-c{border-top:4px solid var(--c,var(--btc))}
+.big-quote{font-family:"Bebas Neue";font-size:clamp(34px,5vw,54px);line-height:1.05;text-align:center;margin:56px auto 10px;max-width:900px}
+.big-quote span{color:var(--btc)}
+
+ul.check,ul.xl,ul.steps{list-style:none;padding:0;margin:0}
+ul.check li,ul.xl li{position:relative;padding:7px 0 7px 32px;color:var(--ink2);border-bottom:1px dashed rgba(255,255,255,.06)}
+ul.check li:last-child,ul.xl li:last-child{border:0}
+ul.check li:before{content:"✓";position:absolute;left:0;top:7px;width:22px;height:22px;border-radius:50%;background:rgba(52,211,153,.16);color:var(--green);font-weight:800;font-size:13px;display:grid;place-items:center}
+ul.xl li:before{content:"✕";position:absolute;left:0;top:7px;width:22px;height:22px;border-radius:50%;background:rgba(248,113,113,.16);color:var(--red);font-weight:800;font-size:12px;display:grid;place-items:center}
+ul.check li b,ul.xl li b{color:#fff}
+
+ol.steps{list-style:none;padding:0;margin:0;counter-reset:s;display:grid;gap:12px}
+ol.steps li{counter-increment:s;position:relative;padding:16px 18px 16px 68px;background:var(--card);border:1px solid var(--line);border-radius:14px;color:var(--ink2)}
+ol.steps li:before{content:counter(s);position:absolute;left:16px;top:50%;transform:translateY(-50%);width:36px;height:36px;border-radius:50%;background:var(--btc);color:#111;font-weight:800;display:grid;place-items:center}
+ol.steps li b{color:#fff}
+
+.alert{border-radius:var(--r);padding:22px 24px 22px 76px;position:relative;border:1px solid;margin:22px 0}
+.alert:before{position:absolute;left:22px;top:20px;font-size:32px}
+.alert.red{background:rgba(248,113,113,.08);border-color:rgba(248,113,113,.45)}
+.alert.red:before{content:"⛔"}
+.alert.yellow{background:rgba(250,204,21,.07);border-color:rgba(250,204,21,.45)}
+.alert.yellow:before{content:"⚠️"}
+.alert.green{background:rgba(52,211,153,.07);border-color:rgba(52,211,153,.4)}
+.alert.green:before{content:"💡"}
+.alert h4{margin:0 0 8px;font-size:19px}
+.alert ul{margin:0;padding-left:18px;color:var(--ink2)}
+.alert li{margin:4px 0}
+
+/* ladder */
+.ladder{display:grid;gap:8px}
+.rung{display:grid;grid-template-columns:44px 1fr 54px;gap:12px;align-items:center}
+.rung .n{font-family:"Bebas Neue";font-size:30px;color:var(--ink3);text-align:center}
+.rung .bar{height:44px;border-radius:10px;background:var(--card);position:relative;overflow:hidden;border:1px solid var(--line)}
+.rung .fill{position:absolute;inset:0 auto 0 0;width:calc(var(--s)*10%);background:linear-gradient(90deg,color-mix(in srgb,var(--c) 45%,transparent),var(--c));border-radius:9px;transform-origin:left;transform:scaleX(0);transition:transform 1s cubic-bezier(.2,.8,.2,1)}
+.ladder.in .fill{transform:scaleX(1)}
+.rung .lbl{position:absolute;left:14px;top:50%;transform:translateY(-50%);font-weight:600;font-size:15px;white-space:nowrap;text-shadow:0 1px 3px rgba(0,0,0,.7);overflow:hidden;text-overflow:ellipsis;right:10px}
+.rung .sc{font-weight:800;color:var(--c);font-size:18px}
+
+/* levels */
+details.lvl{background:var(--card);border:1px solid var(--line);border-left:5px solid var(--c);border-radius:14px;margin:10px 0;overflow:hidden}
+details.lvl summary{cursor:pointer;list-style:none;padding:16px 20px;display:flex;align-items:center;gap:14px;flex-wrap:wrap}
+details.lvl summary::-webkit-details-marker{display:none}
+details.lvl summary .num{font-family:"Bebas Neue";font-size:34px;color:var(--c);width:34px}
+details.lvl summary .t{font-weight:700;font-size:17px;flex:1;min-width:200px}
+.tag{font-size:12px;font-weight:700;letter-spacing:.05em;padding:4px 10px;border-radius:99px;background:color-mix(in srgb,var(--c) 18%,transparent);color:var(--c);border:1px solid color-mix(in srgb,var(--c) 40%,transparent);white-space:nowrap}
+details.lvl summary:after{content:"+";font-size:24px;color:var(--ink3);margin-left:4px}
+details.lvl[open] summary:after{content:"–"}
+.lvl .body{padding:0 20px 20px}
+.lvl .chips{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:14px}
+.chip{font-size:13.5px;padding:5px 11px;border-radius:8px;background:var(--card2);border:1px solid var(--line);color:var(--ink)}
+.pr{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:14px}
+.pr>div{background:var(--bg2);border-radius:12px;padding:12px 16px}
+.pr h5{margin:4px 0 4px;font-size:13px;letter-spacing:.1em;text-transform:uppercase}
+.pr .p h5{color:var(--green)} .pr .r h5{color:var(--red)}
+.lvl .note{margin-top:12px;color:var(--ink2);font-size:15px}
+
+/* tables */
+.tbl{overflow-x:auto;border-radius:var(--r);border:1px solid var(--line);background:var(--card)}
+table{border-collapse:collapse;width:100%;min-width:640px;font-size:15px}
+th,td{padding:12px 14px;text-align:center;border-bottom:1px solid var(--line)}
+th{font-size:12.5px;text-transform:uppercase;letter-spacing:.08em;color:var(--ink3);background:var(--bg2);font-weight:700}
+td:first-child,th:first-child{text-align:left;font-weight:600}
+tr:last-child td{border-bottom:0}
+tbody tr:hover{background:rgba(255,255,255,.03)}
+.y{color:var(--green);font-weight:800;font-size:18px}.n{color:var(--red);font-weight:800;font-size:18px}.m{color:var(--yellow);font-weight:800;font-size:18px}
+.b{display:inline-block;padding:3px 10px;border-radius:99px;font-size:13px;font-weight:700}
+.b.g{background:rgba(52,211,153,.15);color:var(--green)}.b.r{background:rgba(248,113,113,.15);color:var(--red)}.b.a{background:rgba(250,204,21,.13);color:var(--yellow)}
+td.left{text-align:left;color:var(--ink2)}
+
+/* svg diagrams */
+.diagram{background:var(--card);border:1px solid var(--line);border-radius:var(--r);padding:18px;overflow:hidden}
+.diagram svg{display:block;width:100%;height:auto}
+.diagram figcaption{color:var(--ink3);font-size:14px;text-align:center;margin-top:8px}
+svg text{font-family:Inter,system-ui,sans-serif}
+.flowline{stroke-dasharray:8 8;animation:dash 1.2s linear infinite}
+@keyframes dash{to{stroke-dashoffset:-16}}
+@media (prefers-reduced-motion:reduce){.flowline{animation:none}.rung .fill{transition:none}}
+
+/* dice */
+.dice-row{display:flex;gap:10px;flex-wrap:wrap;justify-content:center;margin:6px 0 4px}
+.die{width:54px;height:54px;border-radius:12px;background:#f4f1ea;display:grid;grid-template:repeat(3,1fr)/repeat(3,1fr);padding:8px;box-shadow:inset 0 -4px 0 #d6cfbf,0 6px 14px rgba(0,0,0,.4)}
+.die i{width:10px;height:10px;border-radius:50%;background:#c0262d;place-self:center;visibility:hidden}
+.die.d1 i:nth-child(5),.die.d2 i:nth-child(1),.die.d2 i:nth-child(9),.die.d3 i:nth-child(1),.die.d3 i:nth-child(5),.die.d3 i:nth-child(9),
+.die.d4 i:nth-child(1),.die.d4 i:nth-child(3),.die.d4 i:nth-child(7),.die.d4 i:nth-child(9),.die.d5 i:nth-child(1),.die.d5 i:nth-child(3),.die.d5 i:nth-child(5),.die.d5 i:nth-child(7),.die.d5 i:nth-child(9),
+.die.d6 i:nth-child(1),.die.d6 i:nth-child(3),.die.d6 i:nth-child(4),.die.d6 i:nth-child(6),.die.d6 i:nth-child(7),.die.d6 i:nth-child(9){visibility:visible}
+.diceware{display:flex;align-items:center;gap:16px;flex-wrap:wrap;justify-content:center;margin:16px 0}
+.arrow{font-size:28px;color:var(--btc)}
+.word{font-family:ui-monospace,monospace;background:var(--bg2);border:1px dashed var(--btc);border-radius:10px;padding:10px 16px;font-size:18px}
+.pass{display:flex;flex-wrap:wrap;gap:8px;justify-content:center}
+.pass span{font-family:ui-monospace,monospace;background:rgba(247,147,26,.12);border:1px solid rgba(247,147,26,.4);border-radius:8px;padding:6px 12px}
+.meter{height:12px;border-radius:99px;background:var(--bg2);overflow:hidden;margin:6px 0 2px}
+.meter i{display:block;height:100%;background:linear-gradient(90deg,var(--red),var(--yellow),var(--green));width:var(--w)}
+
+/* address poisoning */
+.addr{font-family:ui-monospace,monospace;font-size:clamp(13px,2.2vw,18px);background:var(--bg2);border-radius:10px;padding:12px 14px;margin:8px 0;word-break:break-all;border:1px solid var(--line)}
+.addr .lab{display:block;font-family:Inter;font-size:12px;letter-spacing:.1em;text-transform:uppercase;font-weight:700;margin-bottom:4px}
+.addr.ok .lab{color:var(--green)}.addr.bad .lab{color:var(--red)}
+.addr mark{background:rgba(248,113,113,.3);color:#fff;border-radius:3px}
+.addr .dim{color:var(--ink3)}
+
+/* storage meter cards */
+.rating{display:flex;gap:4px;margin:10px 0 0}
+.rating i{width:22px;height:6px;border-radius:3px;background:var(--line)}
+.rating i.on{background:var(--c)}
+
+/* timeline */
+.month{display:grid;grid-template-columns:repeat(7,1fr);gap:6px;max-width:520px;margin:0 auto}
+.month div{aspect-ratio:1;border-radius:8px;background:var(--bg2);display:grid;place-items:center;font-size:13px;color:var(--ink3)}
+.month div.d1{background:var(--btc);color:#111;font-weight:800}
+.month div.sp{background:rgba(96,165,250,.16);color:var(--blue)}
+.legend{display:flex;gap:18px;justify-content:center;flex-wrap:wrap;margin-top:12px;font-size:14px;color:var(--ink2)}
+.legend i{display:inline-block;width:14px;height:14px;border-radius:4px;margin-right:6px;vertical-align:-2px}
+
+/* coins */
+.coins{display:flex;flex-wrap:wrap;gap:12px;justify-content:center;margin:10px 0}
+.utxo{width:92px;height:92px;border-radius:50%;display:grid;place-items:center;text-align:center;font-size:12px;font-weight:700;line-height:1.2;border:3px solid var(--c);background:color-mix(in srgb,var(--c) 14%,transparent);color:var(--c)}
+.utxo b{display:block;font-size:16px;color:#fff}
+
+/* pyramid */
+.pyr{display:grid;gap:8px;justify-items:center}
+.pyr div{border-radius:12px;padding:12px 18px;text-align:center;color:#111;font-weight:600;font-size:15px;line-height:1.35}
+.pyr div small{display:block;font-weight:500;opacity:.8}
+
+footer{border-top:1px solid var(--line);padding:50px 0 70px;color:var(--ink3);font-size:14px;margin-top:60px}
+footer .rules{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:12px;margin-bottom:30px}
+footer .rules div{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:14px 16px;color:var(--ink2)}
+footer .rules b{display:block;color:var(--btc);font-family:"Bebas Neue";font-size:24px;font-weight:400}
+
+.reveal{opacity:0;transform:translateY(18px);transition:opacity .7s,transform .7s}
+.reveal.in{opacity:1;transform:none}
+@media (max-width:640px){
+  body{font-size:16px}
+  .wrap{padding:0 16px}
+  .vnum{font-size:80px}
+  section.v{padding:64px 0 30px}
+  .alert{padding:62px 18px 18px}
+  .alert:before{left:18px;top:14px}
+  .rung .lbl{font-size:13px}
+}
+</style>
+</head>
+<body>
+
+<nav class="top"><div class="wrap">
+  <a class="brand" href="#inicio"><span class="coin">₿</span>BITCOIN PRÁCTICO Y SEGURO</a>
+  <a class="pill" href="#v1"><span>1</span> Semilla</a>
+  <a class="pill" href="#v2"><span>2</span> Usar</a>
+  <a class="pill" href="#v3"><span>3</span> Guardar</a>
+  <a class="pill" href="#v4"><span>4</span> Comprar</a>
+  <a class="pill" href="#v5"><span>5</span> Gastar</a>
+</div></nav>
+
+<header class="hero" id="inicio">
+  <div class="wrap">
+    <div class="kicker">Serie de 5 vídeos + guía visual</div>
+    <h1>Bitcoin <span class="hl">práctico</span> y seguro</h1>
+    <p class="lead">Nada de teoría: cómo crear tu semilla, usar tu cartera, guardarla, comprar, vender y gastar bitcoin en la vida real <b>sin perderlo y sin exponerte</b>.</p>
+    <div class="stats">
+      <div class="stat"><b>5</b>vídeos</div>
+      <div class="stat"><b>34</b>minutos</div>
+      <div class="stat"><b>9</b>niveles de seguridad</div>
+      <div class="stat"><b>0</b>teoría innecesaria</div>
+    </div>
+    <div class="eps">
+      <a class="ep" href="#v1"><img src="img/01.jpg" alt="Portada del vídeo 1" loading="lazy"><div><small>VÍDEO 1 · 9 MIN</small><strong>Tu semilla: de la más segura a la más arriesgada</strong></div></a>
+      <a class="ep" href="#v2"><img src="img/02.jpg" alt="Portada del vídeo 2" loading="lazy"><div><small>VÍDEO 2 · 6 MIN</small><strong>Usar tu cartera: recibir, ver y firmar</strong></div></a>
+      <a class="ep" href="#v3"><img src="img/03.jpg" alt="Portada del vídeo 3" loading="lazy"><div><small>VÍDEO 3 · 5 MIN</small><strong>Dónde y cómo guardar semillas y hardware wallets</strong></div></a>
+      <a class="ep" href="#v4"><img src="img/04.jpg" alt="Portada del vídeo 4" loading="lazy"><div><small>VÍDEO 4 · 7 MIN</small><strong>Comprar y vender bitcoin de forma segura</strong></div></a>
+      <a class="ep" href="#v5"><img src="img/05.jpg" alt="Portada del vídeo 5" loading="lazy"><div><small>VÍDEO 5 · 7 MIN</small><strong>Gastar con privacidad y vivir de tu patrimonio</strong></div></a>
+    </div>
+  </div>
+</header>
+
+<!-- ============================================================ V1 -->
+<section class="v" id="v1"><div class="wrap">
+  <div class="vhead"><div class="vnum">01</div><div><div class="kicker">Semillas</div><h2>Tu semilla: de la más segura a la más arriesgada</h2><p>Qué combinación usar, qué te protege cada una y qué no.</p></div></div>
+  <div class="player"><video controls preload="none" playsinline poster="img/01.jpg" src="videos/01_tu_semilla_de_la_mas_segura_a_la_mas_arriesgada.mp4"></video></div>
+  <div class="vmeta"><span>⏱ 9 min · subtítulos incluidos</span><a href="videos/01_tu_semilla_de_la_mas_segura_a_la_mas_arriesgada.mp4" download>Descargar MP4</a><a href="videos/01_tu_semilla_de_la_mas_segura_a_la_mas_arriesgada.srt" download>Subtítulos .srt</a></div>
+
+  <p class="big-quote reveal">Quien tiene tus palabras, <span>tiene tus bitcoins</span></p>
+  <p class="muted" style="text-align:center;max-width:680px;margin:0 auto">12 o 24 palabras dan acceso total, desde cualquier lugar del mundo y sin pedir permiso. Los aparatos se reemplazan; <b>la semilla no</b>.</p>
+
+  <h3>Las 4 piezas que se combinan</h3>
+  <div class="grid g4">
+    <div class="card top-c reveal" style="--c:var(--btc)"><div class="ico">🎲</div><h4>Entropía</h4><p>Quién elige las palabras: una máquina, o tú con dados físicos, sin confiar en nadie.</p></div>
+    <div class="card top-c reveal" style="--c:var(--blue)"><div class="ico">🔐</div><h4>Dispositivo</h4><p>Dónde vive la llave: hardware wallet, móvil o un exchange.</p></div>
+    <div class="card top-c reveal" style="--c:var(--violet)"><div class="ico">🗝️</div><h4>Passphrase</h4><p>Una palabra o frase extra que, sumada a la semilla, abre una cartera distinta y oculta.</p></div>
+    <div class="card top-c reveal" style="--c:var(--green)"><div class="ico">🧩</div><h4>Multifirma</h4><p>Varias llaves independientes: hacen falta, por ejemplo, 2 de 3 para mover el dinero.</p></div>
+  </div>
+
+  <h3>El ranking completo</h3>
+  <p class="muted">De lo más seguro (arriba) a lo más arriesgado (abajo). Más seguro también significa más complejo: el mejor nivel para ti es el más alto que sepas manejar sin equivocarte.</p>
+  <div class="ladder" id="ladder">
+    <div class="rung" style="--s:10;--c:#22c55e"><div class="n">1</div><div class="bar"><div class="fill"></div><div class="lbl">Multifirma 2 de 3 + dados + passphrase</div></div><div class="sc">10</div></div>
+    <div class="rung" style="--s:9;--c:#34d399"><div class="n">2</div><div class="bar"><div class="fill"></div><div class="lbl">Multifirma 2 de 3 con tres marcas</div></div><div class="sc">9</div></div>
+    <div class="rung" style="--s:8;--c:#84cc16"><div class="n">3</div><div class="bar"><div class="fill"></div><div class="lbl">Hardware air-gap + dados + passphrase</div></div><div class="sc">8</div></div>
+    <div class="rung" style="--s:7;--c:#a3e635"><div class="n">4</div><div class="bar"><div class="fill"></div><div class="lbl">Hardware wallet + passphrase</div></div><div class="sc">7</div></div>
+    <div class="rung" style="--s:6;--c:#facc15"><div class="n">5</div><div class="bar"><div class="fill"></div><div class="lbl">Hardware wallet + semilla en metal</div></div><div class="sc">6</div></div>
+    <div class="rung" style="--s:5;--c:#fbbf24"><div class="n">6</div><div class="bar"><div class="fill"></div><div class="lbl">Hardware wallet + semilla en papel</div></div><div class="sc">5</div></div>
+    <div class="rung" style="--s:3;--c:#fb923c"><div class="n">7</div><div class="bar"><div class="fill"></div><div class="lbl">App del móvil + semilla en papel</div></div><div class="sc">3</div></div>
+    <div class="rung" style="--s:2;--c:#f87171"><div class="n">8</div><div class="bar"><div class="fill"></div><div class="lbl">Exchange: no tienes semilla</div></div><div class="sc">2</div></div>
+    <div class="rung" style="--s:1;--c:#ef4444"><div class="n">9</div><div class="bar"><div class="fill"></div><div class="lbl">Semilla en foto, nube o inventada</div></div><div class="sc">1</div></div>
+  </div>
+
+  <h3>Nivel a nivel: qué protege y qué no</h3>
+  <p class="small">Pulsa en cada nivel para desplegarlo.</p>
+
+  <details class="lvl" style="--c:#22c55e" open><summary><span class="num">1</span><span class="t">Multifirma 2 de 3 + dados + passphrase</span><span class="tag">Patrimonio grande</span></summary><div class="body">
+    <div class="chips"><span class="chip">🎲 3 semillas hechas con dados</span><span class="chip">🔐 3 marcas distintas (p. ej. Coldcard, Trezor, Keystone)</span><span class="chip">🧩 Multifirma 2 de 3 (Sparrow / Nunchuk)</span><span class="chip">🗝️ Passphrase de 6 palabras con dados</span><span class="chip">🛡️ Copias en metal</span></div>
+    <div class="pr"><div class="p"><h5>Te protege de</h5><ul class="check"><li>Robo de una semilla o de un dispositivo</li><li>Fallo o puerta trasera de un fabricante</li><li>Generador de azar defectuoso</li><li>Perder una de las tres llaves</li><li>Incendio o robo en un solo lugar</li></ul></div>
+    <div class="r"><h5>No te protege de</h5><ul class="xl"><li>Complejidad: es fácil equivocarse</li><li>Perder el descriptor de la cartera</li><li>Olvidar dónde está cada pieza</li><li>Herederos que no sepan usarlo</li></ul></div></div>
+  </div></details>
+
+  <details class="lvl" style="--c:#34d399"><summary><span class="num">2</span><span class="t">Multifirma 2 de 3 con tres marcas</span><span class="tag">Patrimonio grande</span></summary><div class="body">
+    <div class="chips"><span class="chip">🔐 3 hardware wallets de marcas distintas</span><span class="chip">🧩 Multifirma 2 de 3</span><span class="chip">📄 Descriptor guardado con cada llave</span><span class="chip">🛡️ Copias en metal</span></div>
+    <div class="pr"><div class="p"><h5>Te protege de</h5><ul class="check"><li>Robo de una llave o un dispositivo</li><li>Fallo de una marca concreta</li><li>Perder una de las tres llaves</li><li>Desastre en un solo lugar</li></ul></div>
+    <div class="r"><h5>No te protege de</h5><ul class="xl"><li>Si consiguen dos llaves, pueden gastar</li><li>Confías en el azar de cada fabricante</li><li>Sin el descriptor, recuperar es muy difícil</li><li>Más pasos en cada pago</li></ul></div></div>
+    <p class="note">💡 El <b>descriptor</b> es un archivo o QR que describe la cartera completa. No permite gastar, solo ver: guarda una copia junto a cada semilla.</p>
+  </div></details>
+
+  <details class="lvl" style="--c:#84cc16"><summary><span class="num">3</span><span class="t">Hardware air-gap + dados + passphrase</span><span class="tag">El punto ideal</span></summary><div class="body">
+    <div class="chips"><span class="chip">🎲 Semilla con dados</span><span class="chip">📷 Air-gap: firma por QR o microSD</span><span class="chip">🗝️ Passphrase con dados</span><span class="chip">🎭 Cartera señuelo</span><span class="chip">🛡️ Copias en metal</span></div>
+    <div class="pr"><div class="p"><h5>Te protege de</h5><ul class="check"><li>Que encuentren solo la semilla</li><li>Azar defectuoso del fabricante</li><li>Malware del ordenador: firmas en el dispositivo</li><li>Coacción: enseñas la cartera señuelo</li></ul></div>
+    <div class="r"><h5>No te protege de</h5><ul class="xl"><li>Fallo grave de esa única marca</li><li>Que encuentren semilla <b>y</b> passphrase</li><li>Olvidar la passphrase</li></ul></div></div>
+    <p class="note">Coldcard, SeedSigner, Keystone o Passport funcionan así. Para la mayoría de personas con ahorros importantes, este es el punto ideal.</p>
+  </div></details>
+
+  <details class="lvl" style="--c:#a3e635"><summary><span class="num">4</span><span class="t">Hardware wallet + passphrase</span><span class="tag">Ahorros medianos</span></summary><div class="body">
+    <div class="chips"><span class="chip">🔐 Semilla generada por el dispositivo</span><span class="chip">🗝️ Passphrase</span><span class="chip">🛡️ Copia en metal</span></div>
+    <div class="pr"><div class="p"><h5>Te protege de</h5><ul class="check"><li>Que encuentren solo la semilla</li><li>Ladrón casual en casa</li><li>Malware del ordenador</li></ul></div>
+    <div class="r"><h5>No te protege de</h5><ul class="xl"><li>Confías en el azar del fabricante</li><li>Fallo de esa única marca</li><li>Olvidar la passphrase</li></ul></div></div>
+  </div></details>
+
+  <details class="lvl" style="--c:#facc15"><summary><span class="num">5</span><span class="t">Hardware wallet + semilla en metal</span><span class="tag">El mínimo recomendable</span></summary><div class="body">
+    <div class="chips"><span class="chip">🔐 Hardware wallet</span><span class="chip">🛡️ Semilla en placa de acero</span></div>
+    <div class="pr"><div class="p"><h5>Te protege de</h5><ul class="check"><li>Malware del ordenador y del móvil</li><li>Fuego, agua y humedad</li><li>Pérdida o rotura del dispositivo</li></ul></div>
+    <div class="r"><h5>No te protege de</h5><ul class="xl"><li>Quien encuentre la placa <b>se lo lleva todo</b></li><li>Coacción física: no tienes señuelo</li><li>Confías en una sola marca</li></ul></div></div>
+  </div></details>
+
+  <details class="lvl" style="--c:#fbbf24"><summary><span class="num">6</span><span class="t">Hardware wallet + semilla en papel</span><span class="tag">Mejorable</span></summary><div class="body">
+    <div class="chips"><span class="chip">🔐 Hardware wallet</span><span class="chip">📝 Semilla en papel</span></div>
+    <div class="pr"><div class="p"><h5>Te protege de</h5><ul class="check"><li>Malware del ordenador y del móvil</li><li>Pérdida o rotura del dispositivo</li></ul></div>
+    <div class="r"><h5>No te protege de</h5><ul class="xl"><li>Fuego, agua, humedad, tinta que se borra</li><li>Quien encuentre el papel se lo lleva todo</li><li>Papel «olvidado» en un cajón o tirado</li></ul></div></div>
+  </div></details>
+
+  <details class="lvl" style="--c:#fb923c"><summary><span class="num">7</span><span class="t">App del móvil + semilla en papel</span><span class="tag">Solo para gastar</span></summary><div class="body">
+    <div class="chips"><span class="chip">📱 Cartera en el móvil (hot wallet)</span><span class="chip">📝 Semilla en papel</span></div>
+    <div class="pr"><div class="p"><h5>Te protege de</h5><ul class="check"><li>Tú tienes las llaves, no un exchange</li><li>Muy cómodo para pagos del día a día</li></ul></div>
+    <div class="r"><h5>No te protege de</h5><ul class="xl"><li>Malware y apps falsas</li><li>Robo del móvil desbloqueado</li><li>La llave vive en un aparato conectado a internet</li></ul></div></div>
+  </div></details>
+
+  <details class="lvl" style="--c:#f87171"><summary><span class="num">8</span><span class="t">Exchange: no tienes semilla</span><span class="tag">Para comprar, no para guardar</span></summary><div class="body">
+    <div class="chips"><span class="chip">🏦 El exchange guarda las llaves</span><span class="chip">🪪 Tu cuenta con DNI</span></div>
+    <div class="pr"><div class="p"><h5>Te protege de</h5><ul class="check"><li>Olvidar contraseñas: recuperas la cuenta</li><li>Comodidad total</li></ul></div>
+    <div class="r"><h5>No te protege de</h5><ul class="xl"><li>Quiebra o hackeo del exchange (FTX, Mt. Gox)</li><li>Te pueden congelar la cuenta</li><li>Si se filtran tus datos, eres un objetivo</li></ul></div></div>
+  </div></details>
+
+  <details class="lvl" style="--c:#ef4444"><summary><span class="num">9</span><span class="t">Semilla digital o inventada</span><span class="tag">Nunca</span></summary><div class="body">
+    <ul class="xl"><li>Foto, captura de pantalla o nube</li><li>Notas del móvil, email, WhatsApp o gestor de contraseñas</li><li>Generada en una web o inventada por ti: los humanos somos malos eligiendo al azar</li><li>Escrita en un formulario de «soporte técnico». <b>Ningún soporte real te la pedirá nunca.</b></li></ul>
+  </div></details>
+
+  <h3>Cómo crear la semilla con dados</h3>
+  <div class="grid g2">
+    <div class="diagram reveal">
+      <div class="dice-row"><div class="die d4"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div><div class="die d2"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div><div class="die d6"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div><div class="die d1"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div><div class="die d5"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div></div>
+      <p style="text-align:center;margin:14px 0 4px"><b style="font-size:32px;color:var(--btc)">99</b> tiradas = <b style="font-size:32px;color:var(--btc)">24</b> palabras</p>
+      <p class="small" style="text-align:center">Mejor un dado de casino: está bien equilibrado.</p>
+    </div>
+    <ol class="steps">
+      <li>Usa un dispositivo que acepte dados: <b>Coldcard, SeedSigner, Keystone o Passport</b>.</li>
+      <li>Tira el dado <b>unas 99 veces</b> y teclea cada resultado. El dispositivo lo convierte en palabras.</li>
+      <li>Sin cámaras ni móviles cerca. <b>Apunta a mano</b>, en el orden exacto.</li>
+      <li>Verifica, pásala a <b>metal</b> y destruye los borradores.</li>
+    </ol>
+  </div>
+
+  <h3>La passphrase con dados (Diceware)</h3>
+  <div class="diagram reveal">
+    <div class="diceware">
+      <div class="dice-row"><div class="die d3"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div><div class="die d1"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div><div class="die d6"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div><div class="die d2"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div><div class="die d4"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div></div>
+      <span class="arrow">→</span><span class="word">31624</span><span class="arrow">→</span><span class="word">lista Diceware: 1 palabra</span>
+    </div>
+    <p style="text-align:center" class="muted">5 dados = 1 palabra de una lista de 7.776. Repite 6 veces:</p>
+    <div class="pass"><span>tigre</span><span>jarra</span><span>orbita</span><span>pino</span><span>suela</span><span>nube</span></div>
+    <p class="small" style="text-align:center;margin-top:8px">Ejemplo ilustrativo: no lo uses.</p>
+    <div style="max-width:560px;margin:18px auto 0">
+      <div class="small">Fuerza de la passphrase</div>
+      <div class="meter" style="--w:22%"><i></i></div><div class="small">1 palabra elegida por ti: se adivina rápido</div>
+      <div class="meter" style="--w:100%"><i></i></div><div class="small"><b style="color:var(--green)">6 palabras con dados ≈ 77 bits</b>: imposible por fuerza bruta</div>
+    </div>
+  </div>
+  <div class="grid g3" style="margin-top:16px">
+    <div class="card"><h4>✍️ Exacta</h4><p>Mejor en minúsculas y sin tildes: una letra distinta abre otra cartera.</p></div>
+    <div class="card"><h4>📍 Separada</h4><p>Nunca en el mismo sitio que la semilla.</p></div>
+    <div class="card"><h4>🔁 Probada</h4><p>Practica la recuperación antes de meter dinero.</p></div>
+  </div>
+  <div class="alert yellow"><h4>La passphrase no se puede recuperar</h4><ul><li>Si la olvidas, el dinero se pierde <b>para siempre</b>.</li><li>Una letra distinta abre <b>otra cartera vacía</b>, sin dar ningún error. Mucha gente cree que le han robado cuando solo escribió mal una letra.</li><li>Haz copia de la passphrase como si fuera la semilla.</li></ul></div>
+
+  <h3>¿Qué te protege cada nivel?</h3>
+  <div class="tbl"><table>
+    <thead><tr><th>Nivel</th><th>Robo de la semilla</th><th>Fallo del fabricante</th><th>Malware</th><th>Fuego / agua</th><th>Fácil de usar</th></tr></thead>
+    <tbody>
+      <tr><td>1 · Multifirma + dados + passphrase</td><td class="y">✓</td><td class="y">✓</td><td class="y">✓</td><td class="y">✓</td><td class="n">✗</td></tr>
+      <tr><td>2 · Multifirma, tres marcas</td><td class="y">✓</td><td class="y">✓</td><td class="y">✓</td><td class="y">✓</td><td class="m">~</td></tr>
+      <tr><td>3 · Air-gap + dados + passphrase</td><td class="y">✓</td><td class="m">~</td><td class="y">✓</td><td class="y">✓</td><td class="m">~</td></tr>
+      <tr><td>4 · Hardware + passphrase</td><td class="y">✓</td><td class="n">✗</td><td class="y">✓</td><td class="y">✓</td><td class="m">~</td></tr>
+      <tr><td>5 · Hardware + metal</td><td class="n">✗</td><td class="n">✗</td><td class="y">✓</td><td class="y">✓</td><td class="y">✓</td></tr>
+      <tr><td>6 · Hardware + papel</td><td class="n">✗</td><td class="n">✗</td><td class="y">✓</td><td class="n">✗</td><td class="y">✓</td></tr>
+      <tr><td>7 · Móvil + papel</td><td class="n">✗</td><td class="n">✗</td><td class="n">✗</td><td class="n">✗</td><td class="y">✓</td></tr>
+    </tbody>
+  </table></div>
+
+  <h3>¿Cuál elijo yo?</h3>
+  <div class="pyr reveal">
+    <div style="background:#22c55e;width:min(100%,360px)">Patrimonio grande o familiar<small>Multifirma 2 de 3 (niveles 1–2)</small></div>
+    <div style="background:#a3e635;width:min(100%,520px)">Ahorros importantes<small>Air-gap + dados + passphrase (nivel 3)</small></div>
+    <div style="background:#facc15;width:min(100%,680px)">Tus primeros ahorros<small>Hardware wallet + metal (nivel 5)</small></div>
+    <div style="background:#fb923c;width:min(100%,840px)">Lo que gastas en un mes<small>App del móvil (nivel 7)</small></div>
+  </div>
+  <div class="alert green"><h4>Siempre: practica la recuperación</h4><ul><li>Si no has probado a recuperar tu cartera, no sabes si tienes una copia de seguridad.</li><li>La regla de oro: tu semilla <b>nunca</b> toca un aparato conectado a internet.</li></ul></div>
+</div></section>
+
+<!-- ============================================================ V2 -->
+<section class="v" id="v2"><div class="wrap">
+  <div class="vhead"><div class="vnum">02</div><div><div class="kicker">Uso diario</div><h2>Usar tu cartera: recibir, ver y firmar</h2><p>Vigilar tu saldo, recibir y firmar pagos sin exponer tus llaves.</p></div></div>
+  <div class="player"><video controls preload="none" playsinline poster="img/02.jpg" src="videos/02_usar_tu_cartera_recibir_ver_y_firmar.mp4"></video></div>
+  <div class="vmeta"><span>⏱ 6 min · subtítulos incluidos</span><a href="videos/02_usar_tu_cartera_recibir_ver_y_firmar.mp4" download>Descargar MP4</a><a href="videos/02_usar_tu_cartera_recibir_ver_y_firmar.srt" download>Subtítulos .srt</a></div>
+
+  <h3>Tu cartera es un equipo de tres</h3>
+  <figure class="diagram reveal" style="margin:0">
+    <svg viewBox="0 0 1000 290" role="img" aria-label="Hardware wallet, ordenador y red Bitcoin">
+      <defs><marker id="ah" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10z" fill="#f7931a"/></marker>
+      <marker id="ahg" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10z" fill="#34d399"/></marker>
+      <marker id="ahb" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10z" fill="#60a5fa"/></marker>
+      <marker id="ahr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10z" fill="#f87171"/></marker></defs>
+      <g text-anchor="middle">
+        <circle cx="150" cy="110" r="72" fill="#1a273d" stroke="#f7931a" stroke-width="3"/><text x="150" y="128" font-size="52">🔐</text>
+        <text x="150" y="215" fill="#fff" font-size="20" font-weight="700">Hardware wallet</text>
+        <text x="150" y="240" fill="#a9b6ca" font-size="15">Guarda la llave y firma</text><text x="150" y="260" fill="#a9b6ca" font-size="15">No se conecta a internet</text>
+        <circle cx="500" cy="110" r="72" fill="#1a273d" stroke="#60a5fa" stroke-width="3"/><text x="500" y="128" font-size="52">💻</text>
+        <text x="500" y="215" fill="#fff" font-size="20" font-weight="700">Ordenador o móvil</text>
+        <text x="500" y="240" fill="#a9b6ca" font-size="15">Sparrow, Nunchuk…</text><text x="500" y="260" fill="#a9b6ca" font-size="15">prepara pagos y muestra el saldo</text>
+        <circle cx="850" cy="110" r="72" fill="#1a273d" stroke="#34d399" stroke-width="3"/><text x="850" y="128" font-size="52">🌐</text>
+        <text x="850" y="215" fill="#fff" font-size="20" font-weight="700">Red Bitcoin</text>
+        <text x="850" y="240" fill="#a9b6ca" font-size="15">Mejor a través de</text><text x="850" y="260" fill="#a9b6ca" font-size="15">tu propio nodo</text>
+      </g>
+      <path class="flowline" d="M232 96 H414" stroke="#f7931a" stroke-width="3" fill="none" marker-end="url(#ah)"/>
+      <path class="flowline" d="M414 126 H232" stroke="#f7931a" stroke-width="3" fill="none" marker-end="url(#ah)"/>
+      <text x="323" y="82" text-anchor="middle" fill="#ffb54d" font-size="14">firma (QR / microSD)</text>
+      <path class="flowline" d="M582 110 H764" stroke="#34d399" stroke-width="3" fill="none" marker-end="url(#ahg)"/>
+      <text x="673" y="96" text-anchor="middle" fill="#34d399" font-size="14">transmite</text>
+    </svg>
+  </figure>
+
+  <h3>Tres formas de acceder, tres niveles de riesgo</h3>
+  <div class="grid g3">
+    <div class="card top-c reveal" style="--c:var(--blue)"><div class="ico">👁️</div><h4>Ver</h4><p>Móvil u ordenador con la <b>xpub</b> (clave pública), nunca la semilla. Si te lo roban, pierdes privacidad, no dinero. Conéctalo a tu propio nodo (Umbrel, Start9, Bitcoin Core).</p></div>
+    <div class="card top-c reveal" style="--c:var(--green)"><div class="ico">📥</div><h4>Recibir</h4><p><b>Dirección nueva</b> en cada pago, comprobada en la pantalla de la hardware wallet. Etiqueta el origen (KYC, P2P, regalo…). Importes grandes: primero un envío de prueba.</p></div>
+    <div class="card top-c reveal" style="--c:var(--btc)"><div class="ico">✍️</div><h4>Gastar</h4><p><b>Solo firma la hardware wallet.</b> Revisa destino, importe, comisión y cambio en su pantalla.</p></div>
+  </div>
+
+  <h3>Envenenamiento de direcciones</h3>
+  <div class="grid g2">
+    <div class="card reveal">
+      <p class="muted">Un estafador te envía céntimos desde una dirección <b>casi igual</b> a la tuya. Si luego copias del historial, copias la suya.</p>
+      <div class="addr ok"><span class="lab">✓ Tu dirección (ejemplo)</span>bc1q<span>7x9k</span><span class="dim">m3wq2l8tz5r0vn4hy6jd2e7cs</span><span>a4f2</span></div>
+      <div class="addr bad"><span class="lab">✕ La del estafador</span>bc1q<span>7x9k</span><mark>p8ew4n1ry3s7ut0gk5fb9xq</mark><span>a4f2</span></div>
+      <p class="small">Empieza y termina igual. El medio, no.</p>
+    </div>
+    <div class="alert red" style="margin:0"><h4>Cómo evitarlo</h4><ul><li>Copia siempre desde <b>«Recibir»</b>, nunca del historial.</li><li>Compara la dirección <b>entera</b>, no solo el principio y el final.</li><li>Compruébala en la pantalla de la hardware wallet.</li></ul></div>
+  </div>
+
+  <h3>Firmar un pago sin cables (air-gap)</h3>
+  <figure class="diagram reveal" style="margin:0">
+    <svg viewBox="0 0 1000 250" role="img" aria-label="Flujo de firma air-gap con PSBT">
+      <g text-anchor="middle">
+        <rect x="20" y="40" width="200" height="120" rx="16" fill="#1a273d" stroke="#60a5fa" stroke-width="2"/>
+        <text x="120" y="92" font-size="40">💻</text><text x="120" y="128" fill="#fff" font-size="17" font-weight="700">1. Sparrow</text><text x="120" y="148" fill="#a9b6ca" font-size="13">prepara el pago</text>
+        <rect x="270" y="40" width="200" height="120" rx="16" fill="#1a273d" stroke="#f7931a" stroke-width="2"/>
+        <text x="370" y="92" font-size="40">🔐</text><text x="370" y="128" fill="#fff" font-size="17" font-weight="700">2. Revisas y firmas</text><text x="370" y="148" fill="#a9b6ca" font-size="13">en la pantalla del dispositivo</text>
+        <rect x="520" y="40" width="200" height="120" rx="16" fill="#1a273d" stroke="#60a5fa" stroke-width="2"/>
+        <text x="620" y="92" font-size="40">💻</text><text x="620" y="128" fill="#fff" font-size="17" font-weight="700">3. Sparrow</text><text x="620" y="148" fill="#a9b6ca" font-size="13">recibe la firma y la transmite</text>
+        <rect x="770" y="40" width="200" height="120" rx="16" fill="#1a273d" stroke="#34d399" stroke-width="2"/>
+        <text x="870" y="92" font-size="40">🌐</text><text x="870" y="128" fill="#fff" font-size="17" font-weight="700">4. Red Bitcoin</text><text x="870" y="148" fill="#a9b6ca" font-size="13">pago enviado</text>
+        <text x="245" y="205" fill="#ffb54d" font-size="14">PSBT sin firmar</text><text x="245" y="224" fill="#7586a0" font-size="12">QR / microSD</text>
+        <text x="495" y="205" fill="#ffb54d" font-size="14">PSBT firmada</text><text x="495" y="224" fill="#7586a0" font-size="12">QR / microSD</text>
+      </g>
+      <path class="flowline" d="M222 100 H266" stroke="#f7931a" stroke-width="3" marker-end="url(#ah)"/>
+      <path class="flowline" d="M472 100 H516" stroke="#f7931a" stroke-width="3" marker-end="url(#ah)"/>
+      <path class="flowline" d="M722 100 H766" stroke="#34d399" stroke-width="3" marker-end="url(#ahg)"/>
+      <path d="M245 165 V188 M495 165 V188" stroke="#26354f" stroke-width="2"/>
+    </svg>
+    <figcaption>La llave nunca sale del dispositivo: solo viaja la transacción, sin cables.</figcaption>
+  </figure>
+
+  <div class="grid g2" style="margin-top:16px">
+    <div class="card reveal"><h4>🔍 Qué revisar en la pantalla antes de firmar</h4><ul class="check"><li><b>Dirección</b> de destino: compruébala entera</li><li><b>Importe</b> y <b>comisión</b>: que la comisión sea razonable</li><li>El <b>cambio</b> vuelve a una dirección tuya</li><li>Si algo no cuadra: <b>rechaza</b> y empieza de nuevo</li></ul></div>
+    <div class="card reveal"><h4>🧼 Higiene básica</h4><ul class="check"><li>Compra la hardware wallet <b>directamente al fabricante</b></li><li>Apps y firmware <b>solo de la web oficial</b></li><li><b>Nadie</b> de soporte te pedirá nunca la semilla</li><li>Ordenador limpio y actualizado; mejor si es solo para esto</li></ul></div>
+  </div>
+
+  <h3>Firmar en multifirma 2 de 3</h3>
+  <figure class="diagram reveal" style="margin:0">
+    <svg viewBox="0 0 1000 330" role="img" aria-label="Multifirma 2 de 3">
+      <g text-anchor="middle">
+        <rect x="40" y="105" width="260" height="120" rx="16" fill="#1a273d" stroke="#60a5fa" stroke-width="2"/>
+        <text x="170" y="155" font-size="40">💻</text><text x="170" y="190" fill="#fff" font-size="18" font-weight="700">Sparrow / Nunchuk</text><text x="170" y="210" fill="#a9b6ca" font-size="13">crea el pago y lo transmite</text>
+      </g>
+      <g>
+        <rect x="600" y="20" width="360" height="80" rx="14" fill="#1a273d" stroke="#34d399" stroke-width="2"/><text x="625" y="70" font-size="30">🔐</text><text x="672" y="56" fill="#fff" font-size="17" font-weight="700">Llave A · Coldcard</text><text x="672" y="80" fill="#34d399" font-size="14">✓ firma 1</text>
+        <rect x="600" y="125" width="360" height="80" rx="14" fill="#1a273d" stroke="#34d399" stroke-width="2"/><text x="625" y="175" font-size="30">🔐</text><text x="672" y="161" fill="#fff" font-size="17" font-weight="700">Llave B · Trezor</text><text x="672" y="185" fill="#34d399" font-size="14">✓ firma 2</text>
+        <rect x="600" y="230" width="360" height="80" rx="14" fill="#1a273d" stroke="#7586a0" stroke-width="2" stroke-dasharray="6 6"/><text x="625" y="280" font-size="30" opacity=".5">🔐</text><text x="672" y="266" fill="#a9b6ca" font-size="17" font-weight="700">Llave C · Keystone</text><text x="672" y="290" fill="#7586a0" font-size="14">no hace falta: sigue lejos y a salvo</text>
+      </g>
+      <path class="flowline" d="M302 150 C450 150 450 60 596 60" stroke="#34d399" stroke-width="3" fill="none" marker-end="url(#ahg)"/>
+      <path class="flowline" d="M302 170 H596" stroke="#34d399" stroke-width="3" fill="none" marker-end="url(#ahg)"/>
+      <path d="M302 190 C450 190 450 270 596 270" stroke="#26354f" stroke-width="3" fill="none" stroke-dasharray="4 8"/>
+      <text x="450" y="320" text-anchor="middle" fill="#ffb54d" font-size="15">2 firmas de 3 = pago válido</text>
+    </svg>
+  </figure>
+
+  <h3>Simulacro de recuperación</h3>
+  <ol class="steps">
+    <li>Crea la cartera y apunta la semilla (y la passphrase).</li>
+    <li>Envía una <b>cantidad pequeña</b>.</li>
+    <li><b>Resetea</b> el dispositivo, o usa otro.</li>
+    <li>Recupera y comprueba: <b>mismo saldo, misma primera dirección</b>.</li>
+    <li>Solo entonces, envía el resto.</li>
+  </ol>
+  <p class="big-quote reveal">Ver es cómodo. Recibir, se verifica. <span>Firmar, solo en el dispositivo.</span></p>
+</div></section>
+
+<!-- ============================================================ V3 -->
+<section class="v" id="v3"><div class="wrap">
+  <div class="vhead"><div class="vnum">03</div><div><div class="kicker">Almacenamiento</div><h2>Dónde y cómo guardar semillas y hardware wallets</h2><p>El aparato se reemplaza. La semilla es lo que importa.</p></div></div>
+  <div class="player"><video controls preload="none" playsinline poster="img/03.jpg" src="videos/03_donde_y_como_guardar_semillas_y_hardware_wallets.mp4"></video></div>
+  <div class="vmeta"><span>⏱ 5 min · subtítulos incluidos</span><a href="videos/03_donde_y_como_guardar_semillas_y_hardware_wallets.mp4" download>Descargar MP4</a><a href="videos/03_donde_y_como_guardar_semillas_y_hardware_wallets.srt" download>Subtítulos .srt</a></div>
+
+  <div class="grid g2" style="margin-top:30px">
+    <div class="card" style="border-color:rgba(52,211,153,.4)"><h4>🔐 Hardware wallet perdida</h4><p>Compras otra y recuperas con la semilla. <b style="color:var(--green)">Sin problema.</b></p></div>
+    <div class="card" style="border-color:rgba(248,113,113,.4)"><h4>📝 Semilla perdida y dispositivo roto</h4><p><b style="color:var(--red)">Dinero perdido.</b> No hay a quién reclamar.</p></div>
+  </div>
+
+  <h3>¿En qué material guardar la semilla?</h3>
+  <div class="grid g4">
+    <div class="card top-c reveal" style="--c:var(--yellow)"><div class="ico">📝</div><h4>Papel</h4><p>Barato y rápido. Se quema, se moja y la tinta se borra con los años. Solo para empezar.</p><div class="rating"><i class="on"></i><i class="on"></i><i></i><i></i><i></i></div></div>
+    <div class="card top-c reveal" style="--c:var(--green)"><div class="ico">🛡️</div><h4>Placa de acero inoxidable</h4><p>Letras grabadas con punzón o intercambiables. Aguanta incendios e inundaciones.</p><div class="rating"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i></div></div>
+    <div class="card top-c reveal" style="--c:var(--lime)"><div class="ico">🔩</div><h4>Arandelas de acero (casero)</h4><p>Letras estampadas en arandelas de acero inoxidable, ensartadas en un tornillo. Cuesta pocos euros.</p><div class="rating"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i></i></div></div>
+    <div class="card top-c reveal" style="--c:var(--red)"><div class="ico">☁️</div><h4>Digital</h4><p>Foto, nube, notas, email o gestor de contraseñas. Un solo fallo y tu semilla queda expuesta.</p><div class="rating"><i></i><i></i><i></i><i></i><i></i></div></div>
+  </div>
+
+  <div class="grid g2" style="margin-top:16px;align-items:center">
+    <figure class="diagram reveal" style="margin:0">
+      <svg viewBox="0 0 500 260" role="img" aria-label="Placa de metal con 4 letras por palabra">
+        <rect x="20" y="20" width="460" height="220" rx="18" fill="#9aa5b4"/><rect x="26" y="26" width="448" height="208" rx="14" fill="#b8c2cf"/>
+        <circle cx="50" cy="50" r="7" fill="#7d8796"/><circle cx="450" cy="50" r="7" fill="#7d8796"/><circle cx="50" cy="210" r="7" fill="#7d8796"/><circle cx="450" cy="210" r="7" fill="#7d8796"/>
+        <g font-family="ui-monospace,monospace" font-size="22" font-weight="700" fill="#2b3340">
+          <text x="80" y="80">01 CANA</text><text x="270" y="80">02 TRIB</text>
+          <text x="80" y="120">03 ORBI</text><text x="270" y="120">04 HAZA</text>
+          <text x="80" y="160">05 VELV</text><text x="270" y="160">06 MANG</text>
+          <text x="80" y="200">07 PILO</text><text x="270" y="200">08 ····</text>
+        </g>
+      </svg>
+      <figcaption>Ejemplo: número de orden + 4 primeras letras. Sin la palabra «bitcoin».</figcaption>
+    </figure>
+    <div class="card reveal"><h4>🛠️ Placa de metal: buenas prácticas</h4><ul class="check"><li>Acero <b>inoxidable</b>: el aluminio se funde en un incendio</li><li>Basta con las <b>4 primeras letras</b> de cada palabra</li><li>Graba también el <b>número de orden</b></li><li>No escribas <b>«bitcoin»</b> ni nada que diga qué es</li><li>Comprueba que se lee bien <b>antes</b> de guardarla</li></ul></div>
+  </div>
+
+  <h3>Separa las piezas</h3>
+  <div class="grid g2">
+    <figure class="diagram reveal" style="margin:0">
+      <svg viewBox="0 0 500 330" role="img" aria-label="Una firma con passphrase: tres lugares">
+        <text x="250" y="30" text-anchor="middle" fill="#ffb54d" font-size="17" font-weight="700">Una firma + passphrase</text>
+        <g text-anchor="middle">
+          <path d="M250 60 l70 55 v80 h-140 v-80z" fill="#1a273d" stroke="#60a5fa" stroke-width="2"/><text x="250" y="168" font-size="34">🔐</text>
+          <text x="250" y="222" fill="#fff" font-size="16" font-weight="700">Casa</text><text x="250" y="242" fill="#a9b6ca" font-size="13">Hardware wallet con PIN</text>
+          <rect x="30" y="230" width="150" height="80" rx="14" fill="#1a273d" stroke="#f7931a" stroke-width="2"/><text x="105" y="262" font-size="24">🛡️</text><text x="105" y="285" fill="#fff" font-size="15" font-weight="700">Lugar A</text><text x="105" y="302" fill="#a9b6ca" font-size="12">Semilla en metal</text>
+          <rect x="320" y="230" width="150" height="80" rx="14" fill="#1a273d" stroke="#a78bfa" stroke-width="2"/><text x="395" y="262" font-size="24">🗝️</text><text x="395" y="285" fill="#fff" font-size="15" font-weight="700">Lugar B</text><text x="395" y="302" fill="#a9b6ca" font-size="12">Passphrase en metal</text>
+        </g>
+        <path d="M180 270 H320" stroke="#f87171" stroke-width="2" stroke-dasharray="6 6"/><text x="250" y="290" text-anchor="middle" fill="#f87171" font-size="12">nunca juntas</text>
+      </svg>
+    </figure>
+    <figure class="diagram reveal" style="margin:0">
+      <svg viewBox="0 0 500 330" role="img" aria-label="Multifirma 2 de 3 en tres lugares">
+        <text x="250" y="30" text-anchor="middle" fill="#ffb54d" font-size="17" font-weight="700">Multifirma 2 de 3: tres lugares</text>
+        <path d="M120 120 L380 120 L250 280 Z" fill="none" stroke="#26354f" stroke-width="2" stroke-dasharray="6 6"/>
+        <g text-anchor="middle">
+          <circle cx="120" cy="120" r="52" fill="#1a273d" stroke="#34d399" stroke-width="2"/><text x="120" y="118" font-size="26">📍</text><text x="120" y="142" fill="#fff" font-size="14" font-weight="700">Lugar 1</text>
+          <circle cx="380" cy="120" r="52" fill="#1a273d" stroke="#34d399" stroke-width="2"/><text x="380" y="118" font-size="26">📍</text><text x="380" y="142" fill="#fff" font-size="14" font-weight="700">Lugar 2</text>
+          <circle cx="250" cy="260" r="52" fill="#1a273d" stroke="#34d399" stroke-width="2"/><text x="250" y="258" font-size="26">📍</text><text x="250" y="282" fill="#fff" font-size="14" font-weight="700">Lugar 3</text>
+          <text x="120" y="195" fill="#a9b6ca" font-size="12">Llave A + descriptor</text><text x="380" y="195" fill="#a9b6ca" font-size="12">Llave B + descriptor</text><text x="250" y="328" fill="#a9b6ca" font-size="12">Llave C + descriptor</text>
+        </g>
+      </svg>
+    </figure>
+  </div>
+
+  <h3>¿Qué lugares puedo usar?</h3>
+  <div class="grid g4">
+    <div class="card reveal"><div class="ico" style="--c:var(--btc)">🏠</div><h4>Tu casa</h4><p>Caja fuerte anclada o un escondite discreto. Ojo: es el primer sitio donde buscaría un ladrón.</p></div>
+    <div class="card reveal"><div class="ico" style="--c:var(--green)">🤝</div><h4>Familiar o amigo de confianza</h4><p>Un sobre sellado, sin demasiadas explicaciones. Con una sola pieza no puede hacer nada.</p></div>
+    <div class="card reveal"><div class="ico" style="--c:var(--blue)">🏦</div><h4>Caja de seguridad del banco</h4><p>Resistente, pero con horarios, el banco sabe que existe y su acceso puede bloquearse.</p></div>
+    <div class="card reveal"><div class="ico" style="--c:var(--violet)">🏢</div><h4>Segunda vivienda u oficina</h4><p>Separación geográfica real. Cuida quién más tiene acceso.</p></div>
+  </div>
+
+  <div class="grid g2" style="margin-top:16px">
+    <div class="card reveal"><h4>🔏 Protege lo que guardas</h4><ul class="check"><li><b>Bolsas con precinto numerado</b>: sabrás si alguien lo ha abierto</li><li><b>PIN</b> largo, y que el dispositivo se borre tras varios intentos</li><li>Revisa tus copias <b>cada 6 a 12 meses</b></li><li>Cuanta <b>menos gente</b> lo sepa, mejor</li></ul></div>
+    <div class="alert red" style="margin:0"><h4>El ataque de la llave inglesa 🔧</h4><ul><li>El mayor riesgo ya no es un hacker: es <b>alguien que sabe que tienes bitcoin</b>.</li><li>No lo cuentes en redes, en el trabajo ni en el bar.</li><li><b>Passphrase</b>: puedes entregar una cartera señuelo.</li><li><b>Multifirma</b> con llaves lejos: no puedes dárselo todo aunque quieras.</li></ul></div>
+  </div>
+
+  <h3>Plan de herencia</h3>
+  <ol class="steps">
+    <li>Una <b>carta de instrucciones</b> sin secretos: qué tienes, dónde está cada pieza y cómo se recupera.</li>
+    <li>Una <b>persona de confianza</b> que entienda lo básico, o a quién acudir.</li>
+    <li>En multifirma: dónde está <b>cada llave y el descriptor</b>.</li>
+    <li><b>Nunca</b> la semilla en el testamento: lo leen varias personas.</li>
+    <li>Revísalo <b>cada año</b>.</li>
+  </ol>
+  <p class="big-quote reveal">Metal, piezas <span>separadas</span> y <span>silencio</span></p>
+</div></section>
+
+<!-- ============================================================ V4 -->
+<section class="v" id="v4"><div class="wrap">
+  <div class="vhead"><div class="vnum">04</div><div><div class="kicker">Comprar y vender</div><h2>Comprar y vender bitcoin de forma segura</h2><p>Exchanges, P2P con garantía, en persona y cajeros: ventajas, costes y estafas.</p></div></div>
+  <div class="player"><video controls preload="none" playsinline poster="img/04.jpg" src="videos/04_comprar_y_vender_bitcoin_de_forma_segura.mp4"></video></div>
+  <div class="vmeta"><span>⏱ 7 min · subtítulos incluidos</span><a href="videos/04_comprar_y_vender_bitcoin_de_forma_segura.mp4" download>Descargar MP4</a><a href="videos/04_comprar_y_vender_bitcoin_de_forma_segura.srt" download>Subtítulos .srt</a></div>
+
+  <h3>El mapa de opciones</h3>
+  <div class="tbl"><table>
+    <thead><tr><th>Método</th><th>Privacidad</th><th>Facilidad</th><th>Coste</th><th>Riesgo principal</th></tr></thead>
+    <tbody>
+      <tr><td>🏦 Exchange con KYC</td><td><span class="b r">Baja</span></td><td><span class="b g">Muy fácil</span></td><td><span class="b g">Bajo</span></td><td class="left">Tus datos y la custodia</td></tr>
+      <tr><td>🖥️ Bisq</td><td><span class="b g">Alta</span></td><td><span class="b a">Media</span></td><td><span class="b a">Medio</span></td><td class="left">Lento; precio algo más alto</td></tr>
+      <tr><td>🤝 Hodl Hodl</td><td><span class="b g">Alta</span></td><td><span class="b a">Media</span></td><td><span class="b a">Medio</span></td><td class="left">La contraparte (con garantía)</td></tr>
+      <tr><td>🤖 RoboSats</td><td><span class="b g">Alta</span></td><td><span class="b a">Media</span></td><td><span class="b g">Bajo</span></td><td class="left">Solo importes pequeños</td></tr>
+      <tr><td>💵 Peer (peer.xyz)</td><td><span class="b a">Media</span></td><td><span class="b a">Media</span></td><td><span class="b g">Bajo</span></td><td class="left">Recibes USDC, no bitcoin</td></tr>
+      <tr><td>☕ En persona</td><td><span class="b g">Muy alta</span></td><td><span class="b a">Variable</span></td><td><span class="b a">Variable</span></td><td class="left">Tu seguridad física</td></tr>
+      <tr><td>🏧 Cajero bitcoin</td><td><span class="b r">Baja (DNI)</span></td><td><span class="b g">Fácil</span></td><td><span class="b r">Alto</span></td><td class="left">Comisiones y estafas</td></tr>
+    </tbody>
+  </table></div>
+
+  <h3>Exchange con KYC: si lo usas, úsalo bien</h3>
+  <div class="grid g3">
+    <div class="card reveal"><div class="ico">🚪</div><h4>Solo es la puerta</h4><p>Compra y <b>retira a tu cartera</b>. Etiqueta esos bitcoins como «KYC».</p></div>
+    <div class="card reveal"><div class="ico">🔑</div><h4>2FA de verdad</h4><p>App o llave física, <b>nunca SMS</b>, y una contraseña única.</p></div>
+    <div class="card reveal"><div class="ico">🧾</div><h4>Hacienda lo sabe</h4><p>Desde 2026 los exchanges informan de tus operaciones (<b>DAC8</b>). Asume que tus datos pueden filtrarse algún día.</p></div>
+  </div>
+
+  <h3>Cómo funciona un intercambio P2P con garantía</h3>
+  <figure class="diagram reveal" style="margin:0">
+    <svg viewBox="0 0 1000 360" role="img" aria-label="Intercambio P2P con garantía">
+      <g text-anchor="middle">
+        <circle cx="130" cy="140" r="64" fill="#1a273d" stroke="#f7931a" stroke-width="3"/><text x="130" y="156" font-size="44">🧑</text><text x="130" y="230" fill="#fff" font-size="18" font-weight="700">Vendedor</text>
+        <rect x="390" y="80" width="220" height="120" rx="18" fill="#1a273d" stroke="#a78bfa" stroke-width="3"/><text x="500" y="135" font-size="40">🔒</text><text x="500" y="170" fill="#fff" font-size="18" font-weight="700">Garantía (escrow)</text><text x="500" y="190" fill="#a9b6ca" font-size="13">multifirma o depósitos</text>
+        <circle cx="870" cy="140" r="64" fill="#1a273d" stroke="#34d399" stroke-width="3"/><text x="870" y="156" font-size="44">🧑</text><text x="870" y="230" fill="#fff" font-size="18" font-weight="700">Comprador</text>
+        <circle cx="500" cy="290" r="40" fill="#1a273d" stroke="#7586a0" stroke-width="2" stroke-dasharray="5 5"/><text x="500" y="301" font-size="28">⚖️</text><text x="600" y="285" fill="#a9b6ca" font-size="14" text-anchor="start">Árbitro</text><text x="600" y="303" fill="#7586a0" font-size="12" text-anchor="start">solo si hay disputa</text>
+      </g>
+      <path class="flowline" d="M196 120 H386" stroke="#f7931a" stroke-width="3" marker-end="url(#ah)"/><text x="290" y="108" text-anchor="middle" fill="#ffb54d" font-size="14">① bloquea los BTC</text>
+      <path class="flowline" d="M804 40 C700 0 300 0 196 90" stroke="#60a5fa" stroke-width="3" fill="none" marker-end="url(#ahb)"/><text x="500" y="22" text-anchor="middle" fill="#60a5fa" font-size="14">② paga en euros (banco)</text>
+      <path class="flowline" d="M614 140 H800" stroke="#34d399" stroke-width="3" marker-end="url(#ahg)"/><text x="707" y="128" text-anchor="middle" fill="#34d399" font-size="14">③ libera los BTC</text>
+    </svg>
+    <figcaption>Paga <b>solo</b> cuando los bitcoins estén bloqueados en la garantía.</figcaption>
+  </figure>
+
+  <h3>Plataformas P2P</h3>
+  <div class="grid g2">
+    <div class="card top-c reveal" style="--c:var(--green)"><div class="ico">🖥️</div><h4>Bisq: el intercambio descentralizado</h4><ul class="check"><li>Programa de escritorio: <b>sin servidor central</b>, todo por Tor</li><li><b>Bisq Easy</b> (Bisq 2): para empezar, compras pequeñas sin depósito</li><li><b>Bisq 1</b>: más cantidad; las partes dejan un depósito que pierde quien haga trampa</li><li>Pagas algo por encima del precio: el coste de la privacidad</li></ul></div>
+    <div class="card top-c reveal" style="--c:var(--btc)"><div class="ico">🤝</div><h4>Hodl Hodl: P2P en la web con multifirma</h4><ul class="check"><li>Funciona <b>en el navegador</b>, sin enviar tu documentación</li><li>Los BTC quedan en una <b>multifirma 2 de 3</b>: comprador, vendedor y Hodl Hodl</li><li>La plataforma <b>nunca puede mover los fondos sola</b></li><li>Contrapartes con reputación; habla solo por el chat de la plataforma</li></ul></div>
+    <div class="card top-c reveal" style="--c:var(--violet)"><div class="ico">🤖</div><h4>RoboSats</h4><p>Sin cuenta y por Tor. Las dos partes dejan una pequeña fianza en Lightning que pierde quien haga trampa. Ideal para importes pequeños.</p></div>
+    <div class="card top-c reveal" style="--c:var(--blue)"><div class="ico">💵</div><h4>Peer (peer.xyz)</h4><p>Pagas con Revolut, Wise u otras apps y recibes <b>USDC</b> (dólar digital) en la red Base. Después hay que cambiarlo a bitcoin. Tu app de pagos sí sabe quién eres.</p></div>
+  </div>
+
+  <div class="grid g2" style="margin-top:16px">
+    <div class="card reveal"><h4>🏅 Reglas de oro para comprar P2P</h4><ul class="check"><li>Empieza con <b>importes pequeños</b></li><li>Paga <b>solo</b> cuando los BTC estén en la garantía</li><li>En el concepto: <b>nada de «bitcoin»</b> ni el nombre de la plataforma</li><li>Paga desde una cuenta <b>a tu nombre</b> y guarda los justificantes</li><li><b>Nunca</b> salgas del chat oficial</li></ul></div>
+    <div class="alert red" style="margin:0"><h4>Cómo no ser estafado al vender</h4><ul><li>Evita pagos <b>reversibles</b>: PayPal, tarjetas…</li><li>Comprueba el dinero <b>en tu banco</b>, nunca con capturas.</li><li>El titular del pago debe ser <b>el comprador</b>; si no, rechaza (triangulación).</li><li>Tu banco puede bloquearte la cuenta si recibes dinero de una estafa.</li></ul></div>
+  </div>
+
+  <div class="grid g2" style="margin-top:16px">
+    <div class="card reveal"><h4>☕ Comprar o vender en persona</h4><ul class="check"><li>Comunidades y <b>meetups</b> bitcoiners de tu ciudad</li><li>Lugar <b>público</b>, de día y con gente</li><li>Ve <b>acompañado</b>, nunca a un domicilio</li><li>Usa <b>Lightning</b> o espera confirmación antes de entregar el efectivo</li><li>Lleva una cartera <b>solo con lo necesario</b></li></ul></div>
+    <div class="alert yellow" style="margin:0"><h4>Cajeros: antes anónimos, hoy caros y vigilados</h4><ul><li>En España ya <b>piden identificarte</b>.</li><li>Comisiones <b>muy altas</b> frente a otras opciones.</li><li>Si alguien al teléfono te pide ingresar dinero en un cajero bitcoin: <b>es una estafa</b>.</li></ul></div>
+  </div>
+
+  <h3>Y cuando quieras vender</h3>
+  <div class="grid g4">
+    <div class="card reveal"><div class="ico">🏦</div><h4>Exchange</h4><p>Vendes y retiras a tu cuenta. Fácil, y todo queda registrado.</p></div>
+    <div class="card reveal"><div class="ico">🤝</div><h4>P2P</h4><p>Bisq, Hodl Hodl o RoboSats, esta vez como vendedor.</p></div>
+    <div class="card reveal"><div class="ico">☕</div><h4>En persona</h4><p>Con las mismas precauciones.</p></div>
+    <div class="card reveal"><div class="ico">🛒</div><h4>No vendas</h4><p>Gasta directamente (vídeo 5). Y guarda un <b>registro</b>: las ganancias tributan.</p></div>
+  </div>
+  <p class="big-quote reveal">Compra poco a poco y <span>retira siempre a tu cartera</span></p>
+</div></section>
+
+<!-- ============================================================ V5 -->
+<section class="v" id="v5"><div class="wrap">
+  <div class="vhead"><div class="vnum">05</div><div><div class="kicker">Gastar</div><h2>Gastar con privacidad y vivir de tu patrimonio</h2><p>Una bóveda oculta, una recarga mensual y una cartera pequeña para el día a día.</p></div></div>
+  <div class="player"><video controls preload="none" playsinline poster="img/05.jpg" src="videos/05_gastar_con_privacidad_y_vivir_de_tu_patrimonio.mp4"></video></div>
+  <div class="vmeta"><span>⏱ 7 min · subtítulos incluidos</span><a href="videos/05_gastar_con_privacidad_y_vivir_de_tu_patrimonio.mp4" download>Descargar MP4</a><a href="videos/05_gastar_con_privacidad_y_vivir_de_tu_patrimonio.srt" download>Subtítulos .srt</a></div>
+
+  <p class="big-quote reveal">Privacidad <span>no</span> es esconderse de la ley</p>
+  <p class="muted" style="text-align:center;max-width:720px;margin:0 auto">Es que quien te cobra, una web hackeada o un ladrón <b>no sepan cuánto tienes</b>. Tus obligaciones fiscales siguen ahí: declara lo que toque.</p>
+
+  <h3>¿Por qué hace falta?</h3>
+  <div class="grid g4">
+    <div class="card reveal"><div class="ico" style="--c:var(--blue)">🔎</div><p>Bitcoin es <b>público</b>: cada pago queda visible para siempre.</p></div>
+    <div class="card reveal"><div class="ico" style="--c:var(--yellow)">👀</div><p>Si pagas desde tus ahorros, quien cobra puede ver <b>todo tu saldo</b>.</p></div>
+    <div class="card reveal"><div class="ico" style="--c:var(--amber)">🏷️</div><p>Las filtraciones de exchanges ponen <b>nombre</b> a direcciones.</p></div>
+    <div class="card reveal"><div class="ico" style="--c:var(--red)">🎯</div><p>Saber que tienes mucho te convierte en <b>objetivo</b>.</p></div>
+  </div>
+
+  <h3>El sistema: bóveda, cartera de gasto y vida diaria</h3>
+  <figure class="diagram reveal" style="margin:0">
+    <svg viewBox="0 0 1000 420" role="img" aria-label="Bóveda, swap, cartera de gasto y cuatro vías de gasto">
+      <g text-anchor="middle">
+        <rect x="20" y="140" width="210" height="140" rx="18" fill="#1a273d" stroke="#34d399" stroke-width="3"/><text x="125" y="198" font-size="44">🏛️</text><text x="125" y="236" fill="#fff" font-size="20" font-weight="700">Bóveda</text><text x="125" y="256" fill="#a9b6ca" font-size="12">Multifirma o hardware wallet</text><text x="125" y="272" fill="#a9b6ca" font-size="12">Nunca paga a nadie</text>
+        <circle cx="345" cy="210" r="46" fill="#1a273d" stroke="#a78bfa" stroke-width="3"/><text x="345" y="222" font-size="32">🔄</text><text x="345" y="282" fill="#a78bfa" font-size="14" font-weight="700">Swap</text><text x="345" y="300" fill="#7586a0" font-size="12">rompe el rastro</text>
+        <rect x="455" y="140" width="210" height="140" rx="18" fill="#1a273d" stroke="#60a5fa" stroke-width="3"/><text x="560" y="198" font-size="44">📱</text><text x="560" y="236" fill="#fff" font-size="20" font-weight="700">Cartera de gasto</text><text x="560" y="256" fill="#a9b6ca" font-size="12">Lightning en el móvil</text><text x="560" y="272" fill="#a9b6ca" font-size="12">Solo un mes de gasto</text>
+      </g>
+      <g>
+        <rect x="760" y="20" width="225" height="74" rx="14" fill="#1a273d" stroke="#f7931a" stroke-width="2"/><text x="778" y="66" font-size="26">🎁</text><text x="818" y="52" fill="#fff" font-size="15" font-weight="700">A · Bitrefill</text><text x="818" y="74" fill="#a9b6ca" font-size="12">tarjetas regalo</text>
+        <rect x="760" y="116" width="225" height="74" rx="14" fill="#1a273d" stroke="#f7931a" stroke-width="2"/><text x="778" y="162" font-size="26">💳</text><text x="818" y="148" fill="#fff" font-size="15" font-weight="700">B · Tarjeta débito</text><text x="818" y="170" fill="#a9b6ca" font-size="12">Bit2Me Card</text>
+        <rect x="760" y="212" width="225" height="74" rx="14" fill="#1a273d" stroke="#f7931a" stroke-width="2"/><text x="778" y="258" font-size="26">⚡</text><text x="818" y="244" fill="#fff" font-size="15" font-weight="700">C · Pago directo</text><text x="818" y="266" fill="#a9b6ca" font-size="12">Lightning (BTC Map)</text>
+        <rect x="760" y="308" width="225" height="74" rx="14" fill="#1a273d" stroke="#f7931a" stroke-width="2"/><text x="778" y="354" font-size="26">💶</text><text x="818" y="340" fill="#fff" font-size="15" font-weight="700">D · Venta P2P</text><text x="818" y="362" fill="#a9b6ca" font-size="12">euros en tu cuenta</text>
+      </g>
+      <path class="flowline" d="M232 210 H296" stroke="#34d399" stroke-width="3" marker-end="url(#ahg)"/>
+      <path class="flowline" d="M393 210 H451" stroke="#a78bfa" stroke-width="3" marker-end="url(#ah)"/>
+      <g stroke="#f7931a" stroke-width="2.5" fill="none" class="flowline">
+        <path d="M667 190 C710 190 710 57 756 57" marker-end="url(#ah)"/><path d="M667 200 C715 200 715 153 756 153" marker-end="url(#ah)"/>
+        <path d="M667 220 C715 220 715 249 756 249" marker-end="url(#ah)"/><path d="M667 230 C710 230 710 345 756 345" marker-end="url(#ah)"/>
+      </g>
+      <text x="264" y="196" text-anchor="middle" fill="#34d399" font-size="12">1 vez/mes</text>
+      <text x="125" y="330" text-anchor="middle" fill="#7586a0" font-size="13">oculta y quieta</text>
+    </svg>
+  </figure>
+
+  <h3>El ritual mensual</h3>
+  <div class="grid g2" style="align-items:center">
+    <div class="diagram reveal">
+      <div class="month" id="month"></div>
+      <div class="legend"><span><i style="background:var(--btc)"></i>Día 1: recarga desde la bóveda</span><span><i style="background:rgba(96,165,250,.4)"></i>Gastas desde la cartera de gasto</span></div>
+    </div>
+    <ol class="steps">
+      <li><b>Día 1</b>: decides el presupuesto del mes.</li>
+      <li>Firmas <b>una sola</b> transacción desde la bóveda.</li>
+      <li>Pasa por un <b>swap</b> a Lightning: rompe el rastro.</li>
+      <li>Durante el mes gastas <b>solo</b> desde la cartera de gasto.</li>
+      <li>Lo que sobra se queda: el mes siguiente envías menos.</li>
+    </ol>
+  </div>
+
+  <h3>El swap a Lightning: romper el rastro</h3>
+  <figure class="diagram reveal" style="margin:0">
+    <svg viewBox="0 0 1000 200" role="img" aria-label="Swap de bóveda a cartera Lightning">
+      <g text-anchor="middle">
+        <rect x="20" y="30" width="250" height="110" rx="16" fill="#1a273d" stroke="#34d399" stroke-width="2"/><text x="145" y="78" font-size="36">🏛️</text><text x="145" y="110" fill="#fff" font-size="17" font-weight="700">Bóveda</text><text x="145" y="128" fill="#a9b6ca" font-size="12">pago normal en la cadena</text>
+        <rect x="375" y="30" width="250" height="110" rx="16" fill="#1a273d" stroke="#a78bfa" stroke-width="2"/><text x="500" y="78" font-size="36">🔄</text><text x="500" y="110" fill="#fff" font-size="17" font-weight="700">Servicio de swap</text><text x="500" y="128" fill="#a9b6ca" font-size="12">Boltz u otros, sin custodia</text>
+        <rect x="730" y="30" width="250" height="110" rx="16" fill="#1a273d" stroke="#60a5fa" stroke-width="2"/><text x="855" y="78" font-size="36">⚡</text><text x="855" y="110" fill="#fff" font-size="17" font-weight="700">Cartera Lightning</text><text x="855" y="128" fill="#a9b6ca" font-size="12">Phoenix, Breez, Aqua…</text>
+      </g>
+      <path class="flowline" d="M272 85 H371" stroke="#34d399" stroke-width="3" marker-end="url(#ahg)"/>
+      <path class="flowline" d="M627 85 H726" stroke="#60a5fa" stroke-width="3" marker-end="url(#ahb)"/>
+      <text x="500" y="182" text-anchor="middle" fill="#ffb54d" font-size="15">Los pagos en Lightning no quedan ligados a tu bóveda en la cadena</text>
+    </svg>
+  </figure>
+
+  <h3>Coin control: no mezcles monedas</h3>
+  <div class="grid g2" style="align-items:center">
+    <div class="diagram reveal">
+      <div class="coins">
+        <div class="utxo" style="--c:var(--red)"><span><b>0,05</b>KYC</span></div>
+        <div class="utxo" style="--c:var(--green)"><span><b>0,12</b>sin KYC</span></div>
+        <div class="utxo" style="--c:var(--violet)"><span><b>0,01</b>regalo</span></div>
+        <div class="utxo" style="--c:var(--blue)"><span><b>0,08</b>P2P</span></div>
+      </div>
+      <p class="small" style="text-align:center">Cada entrada es una moneda (UTXO) con su historia. Etiquétalas.</p>
+    </div>
+    <div class="card reveal"><ul class="check"><li>Cada entrada de bitcoin es una <b>moneda</b> con su historia (UTXO)</li><li>Etiquétalas: <b>KYC, sin KYC, regalo, P2P</b></li><li>Al pagar, elige qué monedas usar: <b>Coin Control</b> en Sparrow</li></ul><ul class="xl"><li><b>Nunca</b> juntes monedas KYC y sin KYC en un mismo pago</li></ul></div>
+  </div>
+
+  <h3>Cuatro vías para gastar</h3>
+  <div class="grid g2">
+    <div class="card top-c reveal" style="--c:var(--btc)"><div class="ico">🎁</div><h4>A · Tarjetas regalo con Bitrefill</h4><ul class="check"><li><b>Sin cuenta</b> para compras habituales</li><li>Supermercados, Amazon, gasolineras, viajes, recargas</li><li>Pagas con <b>Lightning</b> desde la cartera de gasto</li><li>Recibes el código al instante (usa un <b>email alias</b>)</li><li>La tienda <b>no ve tu bitcoin</b></li></ul></div>
+    <div class="card top-c reveal" style="--c:var(--blue)"><div class="ico">💳</div><h4>B · Tarjeta de débito (Bit2Me Card)</h4><ul class="check"><li>Cuenta <b>verificada</b>: Bit2Me sabe quién eres</li><li>Cada mes envías <b>solo el presupuesto</b></li><li>Pagas en cualquier comercio (Mastercard): se convierte a euros al pagar</li><li>Bit2Me ve tus gastos y la recarga, <b>no tu bóveda</b></li></ul><p style="margin-top:8px">🧾 Fiscalidad: cada pago con cripto cuenta como <b>una venta</b>.</p></div>
+    <div class="card top-c reveal" style="--c:var(--yellow)"><div class="ico">⚡</div><h4>C · Pago directo con Lightning</h4><p>En comercios que aceptan bitcoin (búscalos en <b>BTC Map</b>). Rápido, barato, y no ven tu saldo.</p></div>
+    <div class="card top-c reveal" style="--c:var(--green)"><div class="ico">💶</div><h4>D · Venta P2P mensual</h4><p>Vendes el presupuesto en Bisq, Hodl Hodl o RoboSats y recibes euros para el alquiler y los recibos.</p></div>
+  </div>
+
+  <h3>Comparativa de vías de gasto</h3>
+  <div class="tbl"><table>
+    <thead><tr><th>Vía</th><th>Privacidad</th><th>Comodidad</th><th>Coste</th><th>¿Quién te ve?</th></tr></thead>
+    <tbody>
+      <tr><td>🎁 A · Bitrefill</td><td><span class="b g">Alta</span></td><td><span class="b g">Alta</span></td><td><span class="b g">Bajo</span></td><td class="left">Bitrefill: un email y lo que compras</td></tr>
+      <tr><td>💳 B · Tarjeta Bit2Me</td><td><span class="b r">Baja</span></td><td><span class="b g">Muy alta</span></td><td><span class="b a">Medio</span></td><td class="left">Bit2Me: tu identidad y tus gastos</td></tr>
+      <tr><td>⚡ C · Lightning directo</td><td><span class="b g">Muy alta</span></td><td><span class="b a">Media</span></td><td><span class="b g">Muy bajo</span></td><td class="left">Solo el comercio, ese pago</td></tr>
+      <tr><td>💶 D · Venta P2P</td><td><span class="b a">Media</span></td><td><span class="b a">Media</span></td><td><span class="b a">Medio</span></td><td class="left">Tu contraparte y tu banco</td></tr>
+    </tbody>
+  </table></div>
+
+  <div class="grid g2" style="margin-top:22px">
+    <div class="card reveal"><h4>🕶️ Más privacidad (nivel avanzado)</h4><ul class="check"><li>Monedas de gasto compradas <b>sin KYC</b> (vídeo 4)</li><li><b>Tu propio nodo</b> y conexión por <b>Tor</b></li><li><b>Coinjoin</b> (Wasabi, JoinMarket…): algunos exchanges rechazan esas monedas</li><li>Separa identidades: <b>email alias</b>, sin tu nombre real en compras online</li></ul></div>
+    <div class="alert red" style="margin:0"><h4>Lo que rompe tu privacidad</h4><ul><li>Pagar <b>directamente desde la bóveda</b></li><li>Reutilizar direcciones</li><li>Juntar monedas <b>KYC y sin KYC</b></li><li>Enseñar tu saldo, o presumir de él</li><li>Enviar todo de golpe a un exchange con tu nombre</li></ul></div>
+  </div>
+  <p class="big-quote reveal">Oculto para curiosos y ladrones. <span>En regla con Hacienda.</span></p>
+</div></section>
+
+<footer><div class="wrap">
+  <div class="rules">
+    <div><b>1 · Semilla</b>Nunca toca un aparato conectado a internet.</div>
+    <div><b>2 · Firma</b>Solo en el dispositivo, revisando su pantalla.</div>
+    <div><b>3 · Guarda</b>Metal, piezas separadas y silencio.</div>
+    <div><b>4 · Compra</b>Poco a poco y retira siempre a tu cartera.</div>
+    <div><b>5 · Gasta</b>Desde una cartera pequeña, nunca desde la bóveda.</div>
+  </div>
+  <p>Contenido educativo. No es asesoramiento financiero, fiscal ni legal. Datos de plataformas revisados en noviembre de 2026: las condiciones cambian, verifícalas siempre en las webs oficiales. Ningún ejemplo de semilla, passphrase o dirección de esta página debe usarse.</p>
+</div></footer>
+
+<script>
+// calendar
+(function(){var m=document.getElementById('month');if(!m)return;var h='';['L','M','X','J','V','S','D'].forEach(function(d){h+='<div style="background:none;font-weight:700">'+d+'</div>'});
+for(var i=1;i<=30;i++){h+='<div class="'+(i===1?'d1':([3,6,9,12,14,17,20,23,25,28].indexOf(i)>=0?'sp':''))+'">'+(i===1?'1 ₿':i)+'</div>'}m.innerHTML=h})();
+// reveal + ladder
+(function(){var els=document.querySelectorAll('.reveal,#ladder');if(!('IntersectionObserver' in window)){els.forEach(function(e){e.classList.add('in')});return}
+var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}})},{threshold:.15});els.forEach(function(e){io.observe(e)})})();
+// active nav
+(function(){var links=[].slice.call(document.querySelectorAll('nav.top a.pill'));var secs=links.map(function(a){return document.querySelector(a.getAttribute('href'))});
+addEventListener('scroll',function(){var y=scrollY+120,on=-1;secs.forEach(function(s,i){if(s.offsetTop<=y)on=i});links.forEach(function(a,i){a.classList.toggle('on',i===on)})},{passive:true})})();
+// pause other videos
+document.querySelectorAll('video').forEach(function(v){v.addEventListener('play',function(){document.querySelectorAll('video').forEach(function(o){if(o!==v)o.pause()})})});
+</script>
+</body>
+</html>

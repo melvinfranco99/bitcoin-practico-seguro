@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Bitcoin práctico y seguro</title>
-<meta name="description" content="Guía visual y 6 vídeos: crear tu semilla (con dados, a mano o con Tails sin conexión), usar tu cartera, guardarla, comprar y vender, y gastar bitcoin con privacidad.">
+<meta name="description" content="Guía visual y 7 vídeos: crear tu semilla (con dados, a mano o con Tails sin conexión), usar tu cartera, guardarla, comprar y vender, y gastar bitcoin con privacidad.">
 <meta property="og:title" content="Bitcoin práctico y seguro">
 <meta property="og:description" content="5 vídeos y una guía visual para usar bitcoin en la vida real sin perderlo y sin exponerte.">
 <meta property="og:image" content="img/01.jpg">
@@ -62,6 +62,46 @@ nav.top a.pill span{color:var(--btc)}
 .ep div{padding:12px 14px 14px}
 .ep small{color:var(--btc);font-weight:700;font-size:12px;letter-spacing:.1em}
 .ep strong{display:block;font-size:15px;line-height:1.3;margin-top:3px}
+
+/* herencia: simulador */
+.inh{background:var(--card);border:1px solid var(--line);border-radius:var(--r);padding:22px;margin-top:10px}
+.inh-grid{display:grid;grid-template-columns:minmax(300px,420px) 1fr;gap:22px}
+@media(max-width:860px){.inh-grid{grid-template-columns:1fr}}
+.inh h4{margin:0 0 12px;font-size:15px;letter-spacing:.12em;text-transform:uppercase;color:var(--btc)}
+.kid{display:grid;grid-template-columns:14px 1fr 92px 140px 30px;gap:8px;align-items:center;margin-bottom:8px}
+.kid i{width:14px;height:14px;border-radius:50%;background:var(--c)}
+.inh input,.inh select{width:100%;background:var(--bg);border:1px solid var(--line);color:var(--ink);border-radius:9px;padding:8px 9px;font:inherit;font-size:14.5px}
+.inh input:focus,.inh select:focus{outline:2px solid var(--btc);border-color:transparent}
+.inh .x{background:none;border:0;color:var(--ink3);font-size:20px;cursor:pointer;padding:0}
+.inh .x:hover{color:var(--red)}
+.inh .btn{background:var(--card2);border:1px solid var(--line);color:var(--ink);border-radius:10px;padding:8px 14px;font:inherit;font-size:14.5px;font-weight:600;cursor:pointer}
+.inh .btn:hover{border-color:var(--btc)}
+.inh .btn.pri{background:var(--btc);color:#111;border-color:var(--btc)}
+.inh .row{display:flex;gap:10px;align-items:center;flex-wrap:wrap;margin:10px 0}
+.inh label.sm{font-size:13px;color:var(--ink3);display:block;margin:12px 0 4px}
+.inh .now{font-family:"Bebas Neue";font-size:44px;color:var(--btc);line-height:1}
+.inh input[type=range]{padding:0;accent-color:var(--btc)}
+.inh .bar{display:flex;height:16px;border-radius:99px;overflow:hidden;background:var(--bg);margin:6px 0 4px}
+.inh .bar div{height:100%;transition:.3s}
+.tl{width:100%;height:120px;display:block}
+.vaults{display:grid;gap:10px;margin-top:8px}
+.vault{border:1px solid var(--line);border-left:5px solid var(--c);border-radius:12px;padding:12px 14px;background:var(--bg2);transition:.3s}
+.vault.open{border-color:color-mix(in srgb,var(--c) 70%,transparent);box-shadow:0 0 0 1px color-mix(in srgb,var(--c) 40%,transparent) inset}
+.vault .top{display:flex;gap:10px;align-items:center;flex-wrap:wrap}
+.vault .nm{font-weight:700;flex:1;min-width:140px}
+.tag{font-size:12.5px;font-weight:700;padding:3px 10px;border-radius:99px;white-space:nowrap}
+.tag.lock{background:rgba(248,113,113,.14);color:var(--red)}
+.tag.ok{background:rgba(52,211,153,.14);color:var(--green)}
+.tag.pa{background:rgba(247,147,26,.14);color:var(--btc)}
+.tag.off{background:rgba(255,255,255,.05);color:var(--ink3)}
+.vault .meta{font-size:14px;color:var(--ink2);margin-top:6px}
+.vault code{display:block;margin-top:8px;font-size:12.5px;white-space:pre-wrap;word-break:break-all;background:var(--bg);padding:8px 10px}
+.inh .msg{margin-top:14px;padding:12px 14px;border-radius:12px;background:rgba(96,165,250,.08);border:1px solid rgba(96,165,250,.35);color:var(--ink2);font-size:15px}
+.chk{list-style:none;padding:0;margin:0;display:grid;gap:8px}
+.chk label{display:flex;gap:12px;align-items:flex-start;background:var(--card);border:1px solid var(--line);border-radius:12px;padding:12px 14px;cursor:pointer;color:var(--ink2)}
+.chk input{width:20px;height:20px;accent-color:var(--green);margin-top:2px;flex:none}
+.chk input:checked+span{color:var(--ink);text-decoration:line-through;text-decoration-color:rgba(52,211,153,.6)}
+.prog{font-size:14px;color:var(--ink3);margin:8px 0 0}
 
 /* sections */
 section.v{padding:90px 0 40px;border-top:1px solid var(--line);scroll-margin-top:58px}
@@ -242,16 +282,17 @@ footer .rules b{display:block;color:var(--btc);font-family:"Bebas Neue";font-siz
   <a class="pill" href="#v3"><span>3</span> Guardar</a>
   <a class="pill" href="#v4"><span>4</span> Comprar</a>
   <a class="pill" href="#v5"><span>5</span> Gastar</a>
+  <a class="pill" href="#v6"><span>6</span> Herencia</a>
 </div></nav>
 
 <header class="hero" id="inicio">
   <div class="wrap">
-    <div class="kicker">Serie de 6 vídeos + guía visual</div>
+    <div class="kicker">Serie de 7 vídeos + guía visual</div>
     <h1>Bitcoin <span class="hl">práctico</span> y seguro</h1>
-    <p class="lead">Teoría justa y mucha práctica: cómo crear tu semilla, usar tu cartera, guardarla, comprar, vender y gastar bitcoin en la vida real <b>sin perderlo y sin exponerte</b>.</p>
+    <p class="lead">Teoría justa y mucha práctica: cómo crear tu semilla, usar tu cartera, guardarla, comprar, vender, gastar y dejar en herencia bitcoin en la vida real <b>sin perderlo y sin exponerte</b>.</p>
     <div class="stats">
-      <div class="stat"><b>6</b>vídeos</div>
-      <div class="stat"><b>57</b>minutos</div>
+      <div class="stat"><b>7</b>vídeos</div>
+      <div class="stat"><b>65</b>minutos</div>
       <div class="stat"><b>9</b>niveles de seguridad</div>
       <div class="stat"><b>0</b>teoría innecesaria</div>
     </div>
@@ -262,6 +303,7 @@ footer .rules b{display:block;color:var(--btc);font-family:"Bebas Neue";font-siz
       <a class="ep" href="#v3"><img src="img/03.jpg" alt="Portada del vídeo 3" loading="lazy"><div><small>VÍDEO 3 · 6,5 MIN</small><strong>Dónde y cómo guardar semillas y hardware wallets</strong></div></a>
       <a class="ep" href="#v4"><img src="img/04.jpg" alt="Portada del vídeo 4" loading="lazy"><div><small>VÍDEO 4 · 12 MIN</small><strong>Comprar y vender bitcoin de forma segura</strong></div></a>
       <a class="ep" href="#v5"><img src="img/05.jpg" alt="Portada del vídeo 5" loading="lazy"><div><small>VÍDEO 5 · 7,5 MIN</small><strong>Gastar con privacidad y vivir de tu patrimonio</strong></div></a>
+      <a class="ep" href="#v6"><img src="img/06.jpg" alt="Portada del vídeo 6" loading="lazy"><div><small>VÍDEO 6 · 8,5 MIN</small><strong>Herencia en bitcoin: de un padre a tres hijos</strong></div></a>
     </div>
   </div>
 </header>
@@ -856,6 +898,67 @@ footer .rules b{display:block;color:var(--btc);font-family:"Bebas Neue";font-siz
   <p class="big-quote reveal">Oculto para curiosos y ladrones. <span>En regla con Hacienda.</span></p>
 </div></section>
 
+<!-- ============================================================ V6 -->
+<section class="v" id="v6"><div class="wrap">
+  <div class="vhead"><div class="vnum">06</div><div><div class="kicker">Herencia</div><h2>Herencia en bitcoin: de un padre a tres hijos</h2><p>Una «hucha» por hijo con bloqueo de tiempo: cada uno recibe su cantidad en su fecha, y tú mantienes el control mientras vivas.</p></div></div>
+  <div class="player"><video controls preload="none" playsinline poster="img/06.jpg" src="videos/06_herencia_en_bitcoin_de_un_padre_a_tres_hijos.mp4"></video></div>
+  <div class="vmeta"><span>⏱ 8,5 min · subtítulos incluidos</span><a href="videos/06_herencia_en_bitcoin_de_un_padre_a_tres_hijos.mp4" download>Descargar MP4</a><a href="videos/06_herencia_en_bitcoin_de_un_padre_a_tres_hijos.srt" download>Subtítulos .srt</a></div>
+  <div class="practice"><h4>En la práctica, paso a paso</h4><ol><li>Cada hijo crea <b>su semilla</b> y te da solo su <b>clave pública</b></li><li>Crear una <b>hucha miniscript</b> por hijo: padre siempre, hijo desde su fecha</li><li>Registrar cada hucha en tu <b>hardware wallet</b></li><li>Imprimir cada <b>descriptor</b> × 2: para el hijo y para la carta</li><li>Un pago con <b>tres destinos</b>: 0,5 · 0,3 · 0,2 BTC</li><li>Ver qué pasa con el <b>tiempo</b> y si el padre fallece</li><li>Ana <b>reclama</b> su hucha: rechazada antes de la fecha, válida después</li><li>Escribir la <b>carta</b> sin secretos</li></ol></div>
+
+  <h3>Una hucha por hijo, con dos caminos</h3>
+  <div class="grid g3">
+    <div class="card top-c reveal" style="--c:var(--btc)"><div class="ico">👤</div><h4>Camino 1: el padre</h4><p>Con su llave puede mover la hucha <b>siempre</b>: cambiar cantidades, fechas o herederos mientras viva.</p></div>
+    <div class="card top-c reveal" style="--c:var(--green)"><div class="ico">⏳</div><h4>Camino 2: el hijo</h4><p>Con <b>su propia llave</b>, pero solo <b>a partir de su fecha</b>. Antes, toda la red rechaza la transacción.</p></div>
+    <div class="card top-c reveal" style="--c:var(--blue)"><div class="ico">🗺️</div><h4>El descriptor</h4><p>El mapa de la hucha: las dos llaves y la fecha. <b>Sin él, la semilla del hijo no basta.</b> Dos copias: hijo y carta.</p></div>
+  </div>
+
+  <h3>Simulador: tu plan de herencia</h3>
+  <p class="muted" style="max-width:760px">Cambia los hijos, las cantidades y las fechas, mueve la fecha y decide cuándo «fallece» el padre. Verás qué hucha puede mover cada uno en cada momento, y la condición miniscript que tendría cada hucha.</p>
+  <div class="inh" id="inh">
+    <div class="inh-grid">
+      <div>
+        <h4>Hijos y huchas</h4>
+        <div id="kids"></div>
+        <div class="row"><button class="btn" id="addKid">+ Añadir hijo</button><button class="btn" id="resetKids">Volver al ejemplo</button></div>
+        <label class="sm">Reparto</label>
+        <div class="bar" id="bar"></div>
+        <div class="small" id="total"></div>
+        <label class="sm" for="death">El padre fallece en…</label>
+        <select id="death"></select>
+      </div>
+      <div>
+        <h4>Fecha simulada</h4>
+        <div class="row" style="justify-content:space-between"><div class="now" id="nowLbl"></div><button class="btn pri" id="play">▶ Ver pasar los años</button></div>
+        <input type="range" id="now" min="0" max="239" value="0" aria-label="Fecha simulada">
+        <svg class="tl" id="tl" viewBox="0 0 800 120" preserveAspectRatio="none" aria-hidden="true"></svg>
+        <div class="vaults" id="vaults"></div>
+        <div class="msg" id="msg"></div>
+      </div>
+    </div>
+  </div>
+
+  <h3>Tu lista para montarlo</h3>
+  <ul class="chk" id="chk">
+    <li><label><input type="checkbox"><span>Cada hijo tiene <b>su propia hardware wallet</b> y su semilla en acero (los menores, guardada por su tutor)</span></label></li>
+    <li><label><input type="checkbox"><span>He comprobado que mi hardware wallet y mi cartera de escritorio admiten <b>miniscript con bloqueo por fecha</b></span></label></li>
+    <li><label><input type="checkbox"><span>He hecho un <b>ensayo</b> con poco dinero y una fecha de unos días, y mi hijo supo recuperarlo</span></label></li>
+    <li><label><input type="checkbox"><span>Cada hucha está <b>registrada</b> en mi hardware wallet y he revisado las dos condiciones</span></label></li>
+    <li><label><input type="checkbox"><span>He impreso <b>dos copias de cada descriptor</b>: una para el hijo y otra con la carta</span></label></li>
+    <li><label><input type="checkbox"><span>He escrito la <b>carta</b>, sin ninguna semilla, con una persona de confianza que sabe del tema</span></label></li>
+    <li><label><input type="checkbox"><span>Mi <b>testamento</b> menciona que existen, sin secretos, y lo he consultado con un notario o asesor</span></label></li>
+    <li><label><input type="checkbox"><span>Tengo un recordatorio para <b>revisarlo cada año</b></span></label></li>
+  </ul>
+  <p class="prog" id="chkProg"></p>
+
+  <h3>Preguntas frecuentes</h3>
+  <details class="lvl" style="--c:var(--btc)"><summary><span class="t">¿Y si el padre sigue vivo cuando llega una fecha?</span></summary><div class="body"><p>No pierde nada: sigue pudiendo mover esa hucha. Si todavía no quiere darle el dinero, lo pasa a una <b>hucha nueva con una fecha posterior</b>. Si el hijo la mueve mientras el padre vive, fiscalmente puede ser una <b>donación</b>.</p></div></details>
+  <details class="lvl" style="--c:var(--red)"><summary><span class="t">¿Y si un hijo pierde su semilla antes de su fecha?</span></summary><div class="body"><p>Si el padre vive, se arregla: el hijo crea una llave nueva y el padre mueve el dinero a una hucha nueva. Si el padre ya no está, esa parte <b>se pierde</b>. Por eso cada hijo guarda su semilla en acero, y el plan se revisa cada año.</p></div></details>
+  <details class="lvl" style="--c:var(--blue)"><summary><span class="t">¿Por fecha o por inactividad?</span></summary><div class="body"><p>Este vídeo usa un <b>bloqueo por fecha</b> (absoluto): cada hijo, su día. Otra opción es el <b>bloqueo por inactividad</b> (relativo), como el de Liana: los herederos solo pueden gastar si las monedas llevan, por ejemplo, un año sin moverse, y el dueño lo «renueva» moviéndolas de vez en cuando. Sirve para «si me pasa algo», no para «a los 18 años».</p></div></details>
+  <details class="lvl" style="--c:var(--green)"><summary><span class="t">¿Qué es el número largo de la condición?</span></summary><div class="body"><p>Es la fecha en <b>segundos desde el 1 de enero de 1970</b> (tiempo Unix), que es como la entiende bitcoin. Por ejemplo, <code>1893456000</code> es el 1 de enero de 2030 a las 00:00 UTC. La red usa la mediana de los últimos bloques, así que puede liberarse con una o dos horas de retraso.</p></div></details>
+  <details class="lvl" style="--c:var(--yellow)"><summary><span class="t">¿Y Hacienda?</span></summary><div class="body"><p>En España, lo heredado tributa por el <b>Impuesto de Sucesiones</b>, que cambia mucho según la comunidad autónoma; lo recibido en vida, por <b>Donaciones</b>. Los bitcoins se declaran en el inventario de la herencia como cualquier otro bien, sin poner ninguna semilla en ningún documento. Consulta tu caso con un notario o asesor.</p></div></details>
+  <p class="big-quote reveal">Tu bitcoin, <span>a quien tú quieras, cuando tú quieras.</span></p>
+</div></section>
+
 <footer><div class="wrap">
   <div class="rules">
     <div><b>1 · Semilla</b>Nunca toca un aparato conectado a internet.</div>
@@ -877,6 +980,74 @@ var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isInter
 // active nav
 (function(){var links=[].slice.call(document.querySelectorAll('nav.top a.pill'));var secs=links.map(function(a){return document.querySelector(a.getAttribute('href'))});
 addEventListener('scroll',function(){var y=scrollY+120,on=-1;secs.forEach(function(s,i){if(s.offsetTop<=y)on=i});links.forEach(function(a,i){a.classList.toggle('on',i===on)})},{passive:true})})();
+// herencia: simulador
+(function(){var root=document.getElementById('inh');if(!root)return;
+var COLS=['#60a5fa','#a78bfa','#34d399','#fb923c','#22d3ee'];
+var EX=[{n:'Ana',b:0.5,d:'2030-01-01'},{n:'Luis',b:0.3,d:'2033-06-15'},{n:'Marta',b:0.2,d:'2036-09-01'}];
+var KEY='bps-herencia-v1';var kids;try{kids=JSON.parse(localStorage.getItem(KEY))}catch(e){}
+if(!Array.isArray(kids)||!kids.length)kids=EX.map(function(k){return Object.assign({},k)});
+var START=new Date(Date.UTC(2026,0,1)),MONTHS=240;
+var $=function(id){return document.getElementById(id)};
+var slider=$('now'),death=$('death');
+function addM(m){var d=new Date(START);d.setUTCMonth(d.getUTCMonth()+m);return d}
+function fmt(d){return d.toLocaleDateString('es-ES',{day:'numeric',month:'long',year:'numeric',timeZone:'UTC'})}
+function ts(s){return Math.floor(Date.parse(s+'T00:00:00Z')/1000)}
+function esc(s){return String(s).replace(/[&<>"]/g,function(c){return{'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]})}
+function diff(a,b){var m=(b.getUTCFullYear()-a.getUTCFullYear())*12+b.getUTCMonth()-a.getUTCMonth();if(b.getUTCDate()<a.getUTCDate())m--;
+ var y=Math.floor(m/12),r=m%12,o=[];if(y)o.push(y+(y==1?' año':' años'));if(r)o.push(r+(r==1?' mes':' meses'));return o.join(' y ')||'menos de un mes'}
+for(var y=2026;y<=2045;y++){var o=document.createElement('option');o.value=y;o.textContent=y;death.appendChild(o)}
+var on=document.createElement('option');on.value='';on.textContent='Sigue vivo';death.insertBefore(on,death.firstChild);death.value='2028';
+function save(){try{localStorage.setItem(KEY,JSON.stringify(kids))}catch(e){}}
+function drawKids(){var h='';kids.forEach(function(k,i){h+='<div class="kid" style="--c:'+COLS[i]+'"><i></i><input data-i="'+i+'" data-f="n" value="'+esc(k.n)+'" aria-label="Nombre" maxlength="20">'+
+ '<input data-i="'+i+'" data-f="b" type="number" step="0.01" min="0" value="'+k.b+'" aria-label="BTC">'+
+ '<input data-i="'+i+'" data-f="d" type="date" min="2026-01-02" max="2045-12-31" value="'+k.d+'" aria-label="Fecha">'+
+ '<button class="x" data-del="'+i+'" title="Quitar" aria-label="Quitar">×</button></div>'});$('kids').innerHTML=h;
+ $('addKid').disabled=kids.length>=5}
+$('kids').addEventListener('input',function(e){var t=e.target,i=+t.dataset.i,f=t.dataset.f;if(!f)return;
+ kids[i][f]=f==='b'?Math.max(0,parseFloat(t.value)||0):t.value;save();render()});
+$('kids').addEventListener('click',function(e){var i=e.target.dataset.del;if(i===undefined||kids.length<=1)return;kids.splice(+i,1);save();drawKids();render()});
+$('addKid').onclick=function(){if(kids.length>=5)return;kids.push({n:'Hijo '+(kids.length+1),b:0.1,d:'2040-01-01'});save();drawKids();render()};
+$('resetKids').onclick=function(){kids=EX.map(function(k){return Object.assign({},k)});save();drawKids();render()};
+function render(){var now=addM(+slider.value),dy=death.value?new Date(Date.UTC(+death.value,0,1)):null,alive=!dy||now<dy;
+ $('nowLbl').textContent=fmt(now);
+ var tot=kids.reduce(function(a,k){return a+(+k.b||0)},0);
+ $('bar').innerHTML=kids.map(function(k,i){return '<div title="'+esc(k.n)+'" style="background:'+COLS[i]+';width:'+(tot?k.b/tot*100:0)+'%"></div>'}).join('');
+ $('total').innerHTML='Total: <b>'+tot.toLocaleString('es-ES',{maximumFractionDigits:8})+' BTC</b> en '+kids.length+(kids.length==1?' hucha':' huchas');
+ // línea de tiempo
+ var W=800,x=function(d){return 20+(d-START)/(addM(MONTHS)-START)*(W-40)},s='';
+ s+='<line x1="20" y1="60" x2="780" y2="60" stroke="#26354f" stroke-width="4" stroke-linecap="round"/>';
+ s+='<line x1="20" y1="60" x2="'+x(now)+'" y2="60" stroke="#f7931a" stroke-width="4" stroke-linecap="round"/>';
+ for(var yy=2026;yy<=2046;yy+=4){var xx=x(new Date(Date.UTC(yy,0,1)));s+='<text x="'+xx+'" y="112" fill="#7586a0" font-size="13" text-anchor="middle">'+yy+'</text>'}
+ if(dy){var xd=x(dy);s+='<line x1="'+xd+'" y1="34" x2="'+xd+'" y2="86" stroke="#f87171" stroke-width="2" stroke-dasharray="4 3"/><text x="'+xd+'" y="26" fill="#f87171" font-size="13" text-anchor="middle">✝ padre</text>'}
+ kids.forEach(function(k,i){var d=new Date(k.d+'T00:00:00Z');if(isNaN(d))return;var xk=x(d),o=now>=d;
+  s+='<circle cx="'+xk+'" cy="60" r="9" fill="'+(o?COLS[i]:'#0b111b')+'" stroke="'+COLS[i]+'" stroke-width="3"/><text x="'+xk+'" y="'+(i%2?92:40)+'" fill="'+COLS[i]+'" font-size="13" font-weight="700" text-anchor="middle">'+esc(k.n)+'</text>'});
+ s+='<circle cx="'+x(now)+'" cy="60" r="6" fill="#fff"/>';$('tl').innerHTML=s;
+ // huchas
+ var h='',open=0,lockedAfterDeath=0;
+ kids.forEach(function(k,i){var d=new Date(k.d+'T00:00:00Z'),ok=!isNaN(d)&&now>=d;if(ok)open++;else if(!alive)lockedAfterDeath++;
+  var nm=esc(k.n)||'Hijo';
+  h+='<div class="vault'+(ok?' open':'')+'" style="--c:'+COLS[i]+'"><div class="top"><span class="nm">Hucha de '+nm+' · '+(+k.b||0).toLocaleString('es-ES',{maximumFractionDigits:8})+' BTC</span>'+
+   '<span class="tag '+(ok?'ok':'lock')+'">'+(ok?'🔓 '+nm+' puede moverla':'🔒 Bloqueada para '+nm)+'</span>'+
+   '<span class="tag '+(alive?'pa':'off')+'">'+(alive?'👤 Padre: puede moverla':'Padre: —')+'</span></div>'+
+   '<div class="meta">'+(isNaN(d)?'Pon una fecha válida':(ok?'Desbloqueada desde el '+fmt(d):'Se desbloquea el '+fmt(d)+' · faltan '+diff(now,d)))+'</div>'+
+   '<code>or_d(pk(Padre), and_v(v:pk('+nm.replace(/\s+/g,'_')+'), after('+(isNaN(d)?'?':ts(k.d))+')))</code></div>'});
+ $('vaults').innerHTML=h;
+ var m;
+ if(alive&&!open)m='El padre controla todas las huchas. Ningún hijo puede moverlas todavía, ni aunque tenga su llave.';
+ else if(alive)m='El padre sigue vivo: puede mover cualquier hucha, también las ya desbloqueadas. Si un hijo mueve la suya ahora, fiscalmente puede ser una <b>donación</b>.';
+ else if(lockedAfterDeath)m='El padre ha fallecido. Las huchas desbloqueadas ya pueden moverlas sus hijos; las demás <b>siguen a salvo</b> hasta su fecha. Nadie puede adelantarlas.';
+ else m='Todas las huchas están desbloqueadas: cada hijo ha recibido su parte, en su fecha, sin intermediarios.';
+ $('msg').innerHTML=m}
+slider.addEventListener('input',render);death.addEventListener('change',render);
+var timer=null;$('play').onclick=function(){var b=this;if(timer){clearInterval(timer);timer=null;b.textContent='▶ Ver pasar los años';return}
+ if(+slider.value>=MONTHS-1)slider.value=0;b.textContent='❚❚ Pausa';
+ timer=setInterval(function(){slider.value=+slider.value+1;render();if(+slider.value>=MONTHS-1){clearInterval(timer);timer=null;b.textContent='▶ Ver pasar los años'}},70)};
+drawKids();render();
+// lista
+var CK='bps-herencia-chk',st;try{st=JSON.parse(localStorage.getItem(CK))||[]}catch(e){st=[]}
+var boxes=[].slice.call(document.querySelectorAll('#chk input'));
+function prog(){var n=boxes.filter(function(b){return b.checked}).length;$('chkProg').textContent=n+' de '+boxes.length+' hechos'+(n===boxes.length?' · ¡plan completo! Revísalo cada año.':'')}
+boxes.forEach(function(b,i){b.checked=!!st[i];b.addEventListener('change',function(){st=boxes.map(function(x){return x.checked});try{localStorage.setItem(CK,JSON.stringify(st))}catch(e){}prog()})});prog()})();
 // pause other videos
 document.querySelectorAll('video').forEach(function(v){v.addEventListener('play',function(){document.querySelectorAll('video').forEach(function(o){if(o!==v)o.pause()})})});
 </script>

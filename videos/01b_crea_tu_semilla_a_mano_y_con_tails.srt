@@ -1,0 +1,687 @@
+1
+00:00:00,900 --> 00:00:03,228
+Bienvenido a Bitcoin práctico y seguro.
+
+2
+00:00:03,228 --> 00:00:07,227
+Este es el vídeo uno B, la continuación del vídeo sobre la semilla.
+
+3
+00:00:07,547 --> 00:00:11,645
+Aquí vas a crear tu semilla tú mismo, sin depender de ningún aparato:
+
+4
+00:00:11,645 --> 00:00:14,199
+primero a mano, con un dado, lápiz y papel.
+
+5
+00:00:14,199 --> 00:00:19,425
+Y después con dados y una página web descargada, en un ordenador sin conexión con Tails.
+
+6
+00:00:20,850 --> 00:00:23,258
+Empezamos por la forma más radical:
+
+7
+00:00:23,258 --> 00:00:26,285
+crear la semilla a mano, sin ningún aparato.
+
+8
+00:00:26,285 --> 00:00:29,244
+Ni hardware wallet, ni ordenador, ni móvil.
+
+9
+00:00:29,244 --> 00:00:32,065
+Solo un dado o una moneda, lápiz y papel.
+
+10
+00:00:32,385 --> 00:00:34,857
+El truco está en la lista de palabras.
+
+11
+00:00:34,857 --> 00:00:37,849
+La lista oficial, llamada BIP treinta y nueve,
+
+12
+00:00:37,849 --> 00:00:41,166
+tiene exactamente dos mil cuarenta y ocho palabras.
+
+13
+00:00:41,166 --> 00:00:44,289
+Y dos mil cuarenta y ocho es dos elevado a once.
+
+14
+00:00:44,289 --> 00:00:44,874
+Es decir:
+
+15
+00:00:44,874 --> 00:00:48,322
+cada palabra equivale a once bits, once ceros o unos.
+
+16
+00:00:48,642 --> 00:00:50,946
+Cada bit lo sacas tú, al azar.
+
+17
+00:00:50,946 --> 00:00:52,098
+Con una moneda:
+
+18
+00:00:52,098 --> 00:00:54,171
+cara es uno y cruz es cero.
+
+19
+00:00:54,171 --> 00:00:55,093
+Con un dado:
+
+20
+00:00:55,093 --> 00:00:56,552
+si sale impar, uno;
+
+21
+00:00:56,552 --> 00:00:57,934
+si sale par, cero.
+
+22
+00:00:57,934 --> 00:01:02,388
+Así cada tirada vale exactamente un bit, sin ningún sesgo.
+
+23
+00:01:02,708 --> 00:01:07,447
+Para veinticuatro palabras necesitas doscientos cincuenta y seis bits, es decir,
+
+24
+00:01:07,447 --> 00:01:09,580
+doscientas cincuenta y seis tiradas.
+
+25
+00:01:09,580 --> 00:01:13,431
+Para doce palabras, ciento veintiocho, que también es muy seguro.
+
+26
+00:01:13,751 --> 00:01:18,672
+Y necesitas la lista oficial en inglés, numerada del uno al dos mil cuarenta y ocho,
+
+27
+00:01:18,672 --> 00:01:20,137
+impresa o copiada a mano.
+
+28
+00:01:20,137 --> 00:01:20,898
+Como siempre:
+
+29
+00:01:20,898 --> 00:01:22,832
+sin cámaras y sin el móvil cerca.
+
+30
+00:01:24,250 --> 00:01:25,215
+Empezamos.
+
+31
+00:01:25,215 --> 00:01:27,628
+Tiras el dado once veces.
+
+32
+00:01:27,628 --> 00:01:29,462
+En el ejemplo sale:
+
+33
+00:01:29,462 --> 00:01:36,218
+uno, tres, cinco, cinco, seis, uno, dos, cinco, cinco, cinco y cuatro.
+
+34
+00:01:36,538 --> 00:01:39,251
+Impar es uno y par es cero.
+
+35
+00:01:39,251 --> 00:01:40,657
+Así que queda:
+
+36
+00:01:40,657 --> 00:01:46,384
+uno, uno, uno, uno, cero, uno, cero, uno, uno, uno, cero.
+
+37
+00:01:46,704 --> 00:01:50,138
+Apunta los bits en grupos de once, un grupo por línea.
+
+38
+00:01:50,138 --> 00:01:51,919
+Cada línea será una palabra.
+
+39
+00:01:52,239 --> 00:01:56,014
+Sigues hasta completar las doscientas cincuenta y seis tiradas.
+
+40
+00:01:56,014 --> 00:02:01,048
+Te quedan veintitrés líneas completas de once bits, y una última con solo tres bits.
+
+41
+00:02:01,048 --> 00:02:02,487
+Enseguida verás por qué.
+
+42
+00:02:03,917 --> 00:02:07,471
+Ahora conviertes cada grupo de once bits en un número.
+
+43
+00:02:07,471 --> 00:02:10,236
+Encima de cada posición escribes su valor:
+
+44
+00:02:10,236 --> 00:02:15,173
+empezando por la derecha, uno, dos, cuatro, ocho, y así, doblando cada vez,
+
+45
+00:02:15,173 --> 00:02:16,687
+hasta mil veinticuatro.
+
+46
+00:02:17,007 --> 00:02:18,289
+Debajo, tus bits.
+
+47
+00:02:18,289 --> 00:02:22,062
+Donde hay un uno, cuenta el valor de esa posición.
+
+48
+00:02:22,062 --> 00:02:24,627
+Donde hay un cero, no cuenta nada.
+
+49
+00:02:24,947 --> 00:02:25,357
+Sumas:
+
+50
+00:02:25,357 --> 00:02:30,211
+mil veinticuatro, más quinientos doce, más doscientos cincuenta y seis,
+
+51
+00:02:30,211 --> 00:02:35,134
+más ciento veintiocho, más treinta y dos, más ocho, más cuatro, más dos.
+
+52
+00:02:35,134 --> 00:02:35,544
+Total:
+
+53
+00:02:35,544 --> 00:02:37,663
+mil novecientos sesenta y seis.
+
+54
+00:02:37,983 --> 00:02:39,589
+Y un detalle muy importante:
+
+55
+00:02:39,589 --> 00:02:40,335
+le sumas uno.
+
+56
+00:02:40,335 --> 00:02:43,203
+Los bits van del cero al dos mil cuarenta y siete,
+
+57
+00:02:43,203 --> 00:02:46,588
+pero la lista se numera del uno al dos mil cuarenta y ocho.
+
+58
+00:02:46,588 --> 00:02:50,259
+Así que tu palabra es la número mil novecientos sesenta y siete.
+
+59
+00:02:51,683 --> 00:02:55,258
+Vas a la lista oficial y buscas la línea mil novecientos sesenta y siete.
+
+60
+00:02:55,578 --> 00:02:56,334
+Ahí está:
+
+61
+00:02:56,334 --> 00:02:56,923
+volume.
+
+62
+00:02:56,923 --> 00:02:58,772
+Es tu primera palabra.
+
+63
+00:02:58,772 --> 00:03:01,462
+Apúntala con su número de orden.
+
+64
+00:03:01,782 --> 00:03:04,355
+Repites con el segundo grupo:
+
+65
+00:03:04,355 --> 00:03:09,502
+uno, uno, cero, cero, uno, cero, cero, uno, uno, uno, uno.
+
+66
+00:03:09,502 --> 00:03:11,986
+Suma mil seiscientos quince;
+
+67
+00:03:11,986 --> 00:03:15,092
+más uno, mil seiscientos dieciséis.
+
+68
+00:03:15,092 --> 00:03:16,778
+La palabra es size.
+
+69
+00:03:17,098 --> 00:03:19,016
+Y así con los veintitrés grupos.
+
+70
+00:03:19,016 --> 00:03:23,572
+Ve despacio y repasa cada suma dos veces, porque un error cambia la palabra.
+
+71
+00:03:23,572 --> 00:03:27,169
+Te llevará una o dos horas, pero cada bit lo has elegido tú,
+
+72
+00:03:27,169 --> 00:03:29,387
+y no has confiado en ninguna máquina.
+
+73
+00:03:30,817 --> 00:03:34,219
+Queda la última palabra, y es la única parte que no es cómoda a mano.
+
+74
+00:03:34,539 --> 00:03:36,885
+De tus doscientos cincuenta y seis bits,
+
+75
+00:03:36,885 --> 00:03:41,049
+doscientos cincuenta y tres ya forman las veintitrés primeras palabras.
+
+76
+00:03:41,049 --> 00:03:41,929
+Te sobran tres.
+
+77
+00:03:41,929 --> 00:03:46,914
+La palabra veinticuatro son esos tres bits más otros ocho, que no salen de los dados.
+
+78
+00:03:47,234 --> 00:03:49,384
+Esos ocho bits son una suma de control:
+
+79
+00:03:49,384 --> 00:03:52,637
+el comienzo del resultado de pasar tus doscientos cincuenta
+
+80
+00:03:52,637 --> 00:03:55,891
+y seis bits por la función SHA doscientos cincuenta y seis.
+
+81
+00:03:55,891 --> 00:04:00,577
+Sirve para detectar errores al copiar la semilla, y todas las carteras la comprueban.
+
+82
+00:04:00,577 --> 00:04:02,562
+Sin ella, tu semilla será rechazada.
+
+83
+00:04:02,882 --> 00:04:06,544
+Se puede calcular a lápiz, pero son muchas horas de operaciones,
+
+84
+00:04:06,544 --> 00:04:08,147
+y un solo fallo la estropea.
+
+85
+00:04:08,147 --> 00:04:11,294
+Lo práctico es calcularla en un ordenador sin conexión,
+
+86
+00:04:11,294 --> 00:04:13,354
+que es justo lo que vas a ver ahora.
+
+87
+00:04:13,354 --> 00:04:17,932
+En este ejemplo, los tres bits más la suma de control dan la línea cuatrocientos
+
+88
+00:04:17,932 --> 00:04:18,790
+noventa y ocho:
+
+89
+00:04:18,790 --> 00:04:19,248
+dilemma.
+
+90
+00:04:20,650 --> 00:04:21,437
+Segunda forma:
+
+91
+00:04:21,437 --> 00:04:24,922
+generar la semilla con dados usando una página web descargada,
+
+92
+00:04:24,922 --> 00:04:27,170
+en un ordenador sin conexión, con Tails.
+
+93
+00:04:27,490 --> 00:04:31,922
+Tails es un sistema operativo que arranca desde un pen drive y no guarda nada:
+
+94
+00:04:31,922 --> 00:04:33,683
+al apagar, la memoria se borra.
+
+95
+00:04:33,683 --> 00:04:37,433
+Necesitas un ordenador, mejor uno viejo que no uses para nada más,
+
+96
+00:04:37,433 --> 00:04:41,523
+y un pen drive con Tails, descargado de su web oficial, tails punto net,
+
+97
+00:04:41,523 --> 00:04:43,398
+y verificado como ellos explican.
+
+98
+00:04:43,718 --> 00:04:47,373
+En otro pen drive, la herramienta BIP treinta y nueve de Ian Coleman:
+
+99
+00:04:47,373 --> 00:04:51,504
+es una página web completa en un solo archivo HTML, que funciona sin internet.
+
+100
+00:04:51,824 --> 00:04:53,624
+Y un dado, papel y bolígrafo.
+
+101
+00:04:55,050 --> 00:04:58,579
+Primero, en tu ordenador de siempre, descargas la página.
+
+102
+00:04:58,579 --> 00:05:00,313
+Solo desde el sitio oficial:
+
+103
+00:05:00,313 --> 00:05:04,276
+el repositorio de Ian Coleman en GitHub, en la sección releases.
+
+104
+00:05:04,276 --> 00:05:06,877
+Nunca de una copia que encuentres por ahí.
+
+105
+00:05:07,197 --> 00:05:11,045
+Descargas el archivo bip treinta y nueve guion standalone punto html.
+
+106
+00:05:11,045 --> 00:05:15,731
+En las notas de la versión está publicada su huella SHA doscientos cincuenta y seis.
+
+107
+00:05:16,051 --> 00:05:19,714
+Abres una terminal, calculas la huella del archivo descargado
+
+108
+00:05:19,714 --> 00:05:22,837
+y la comparas con la publicada, carácter a carácter.
+
+109
+00:05:22,837 --> 00:05:25,119
+Si no coinciden, bórralo y no lo uses.
+
+110
+00:05:25,439 --> 00:05:28,728
+Si coinciden, copias el archivo al segundo pen drive.
+
+111
+00:05:28,728 --> 00:05:31,148
+Ya no necesitas internet para nada más.
+
+112
+00:05:32,550 --> 00:05:34,893
+Ahora, en el ordenador que vas a usar:
+
+113
+00:05:34,893 --> 00:05:36,557
+desenchufa el cable de red.
+
+114
+00:05:36,557 --> 00:05:41,242
+Si puedes, desactiva el wifi en la BIOS, o usa un portátil sin tarjeta wifi.
+
+115
+00:05:41,562 --> 00:05:44,555
+Enchufas el pen drive de Tails y arrancas desde él.
+
+116
+00:05:44,555 --> 00:05:46,550
+Aparece la pantalla de bienvenida.
+
+117
+00:05:46,870 --> 00:05:51,412
+Antes de entrar, en configuración adicional, activas el modo sin conexión.
+
+118
+00:05:51,412 --> 00:05:53,376
+Así Tails desactiva toda la red:
+
+119
+00:05:53,376 --> 00:05:55,340
+ni wifi, ni cable, ni bluetooth.
+
+120
+00:05:55,660 --> 00:05:56,904
+Pulsas iniciar Tails.
+
+121
+00:05:56,904 --> 00:06:02,059
+Desde este momento el ordenador está aislado, y todo lo que hagas se borrará al apagar.
+
+122
+00:06:03,483 --> 00:06:05,137
+Enchufas el segundo pen drive.
+
+123
+00:06:05,137 --> 00:06:08,886
+En el gestor de archivos, copias la página a la carpeta Tor Browser,
+
+124
+00:06:08,886 --> 00:06:10,540
+dentro de tu carpeta personal:
+
+125
+00:06:10,540 --> 00:06:14,288
+en Tails es la única desde la que el navegador puede abrir archivos.
+
+126
+00:06:14,608 --> 00:06:15,828
+Abres Tor Browser.
+
+127
+00:06:15,828 --> 00:06:19,690
+Como no hay red, Tails te avisa de que Tor no está listo.
+
+128
+00:06:19,690 --> 00:06:22,535
+Eliges iniciar Tor Browser de todos modos.
+
+129
+00:06:22,855 --> 00:06:24,044
+Y abres el archivo:
+
+130
+00:06:24,044 --> 00:06:27,173
+arrastrándolo a la ventana, o escribiendo su ruta.
+
+131
+00:06:27,173 --> 00:06:29,614
+La página funciona entera sin internet.
+
+132
+00:06:31,017 --> 00:06:34,589
+Ya en la página, marcas la casilla show entropy details.
+
+133
+00:06:34,589 --> 00:06:36,375
+Aparece la caja de entropía:
+
+134
+00:06:36,375 --> 00:06:37,523
+ahí van tus dados.
+
+135
+00:06:37,843 --> 00:06:41,665
+En el tipo de entropía eliges dice, dados del uno al seis.
+
+136
+00:06:41,665 --> 00:06:42,192
+Y tiras:
+
+137
+00:06:42,192 --> 00:06:45,223
+cada resultado lo tecleas en la caja, seguido.
+
+138
+00:06:45,223 --> 00:06:48,189
+La página va contando las tiradas y los bits.
+
+139
+00:06:48,509 --> 00:06:49,670
+Ojo con este detalle:
+
+140
+00:06:49,670 --> 00:06:54,258
+esta herramienta cuenta, siendo prudente, solo uno coma seis siete bits por tirada.
+
+141
+00:06:54,258 --> 00:06:58,128
+Para veinticuatro palabras necesitas doscientos cincuenta y seis bits,
+
+142
+00:06:58,128 --> 00:07:00,284
+así que tira unas ciento sesenta veces,
+
+143
+00:07:00,284 --> 00:07:03,712
+hasta que total bits marque doscientos cincuenta y seis o más.
+
+144
+00:07:04,032 --> 00:07:07,075
+En mnemonic length eliges veinticuatro palabras.
+
+145
+00:07:07,075 --> 00:07:10,118
+Si te faltan tiradas, la página avisa en rojo de
+
+146
+00:07:10,118 --> 00:07:13,161
+que la semilla parecerá más segura de lo que es.
+
+147
+00:07:13,161 --> 00:07:15,189
+Si ves ese aviso, sigue tirando.
+
+148
+00:07:15,509 --> 00:07:18,931
+Abajo aparece tu semilla, en BIP treinta y nueve mnemonic.
+
+149
+00:07:18,931 --> 00:07:23,237
+Cópiala a mano en el papel, con su número de orden, y repásala dos veces.
+
+150
+00:07:24,650 --> 00:07:28,782
+Y si has hecho la semilla a mano, esta misma página te calcula la última palabra.
+
+151
+00:07:29,102 --> 00:07:33,590
+Eliges el tipo binary y tecleas tus doscientos cincuenta y seis bits, en orden.
+
+152
+00:07:33,590 --> 00:07:37,738
+En mnemonic length dejas use raw entropy, para que use tus bits tal cual.
+
+153
+00:07:38,058 --> 00:07:42,494
+La página te enseña la suma de control, en binary checksum, y la semilla completa.
+
+154
+00:07:42,814 --> 00:07:47,937
+Comprueba que las veintitrés primeras palabras son exactamente las que sacaste a mano.
+
+155
+00:07:47,937 --> 00:07:51,034
+Si alguna no coincide, tienes un error en ese grupo.
+
+156
+00:07:51,034 --> 00:07:54,548
+Y la última, dilemma en este ejemplo, es la que te faltaba.
+
+157
+00:07:55,950 --> 00:07:58,190
+Y para terminar, las reglas de esta parte.
+
+158
+00:07:58,510 --> 00:08:03,283
+No guardes nada en el ordenador ni en el pen drive, no imprimas y no hagas capturas.
+
+159
+00:08:03,283 --> 00:08:05,272
+La semilla solo existe en tu papel.
+
+160
+00:08:05,592 --> 00:08:06,410
+Apagas Tails.
+
+161
+00:08:06,410 --> 00:08:10,940
+Al apagar se borra la memoria, y en el ordenador no queda ningún rastro.
+
+162
+00:08:11,260 --> 00:08:15,386
+Nunca uses esta página abierta en internet, ni en tu sistema de siempre.
+
+163
+00:08:15,386 --> 00:08:19,111
+La página es la misma, pero un ordenador conectado no es de fiar.
+
+164
+00:08:19,431 --> 00:08:22,923
+Después, pasa la semilla a acero como viste en el vídeo uno.
+
+165
+00:08:22,923 --> 00:08:27,113
+Y para usarla, impórtala en tu hardware wallet con la opción de importar
+
+166
+00:08:27,113 --> 00:08:29,440
+o recuperar semilla, y apunta su huella.
+
+167
+00:08:29,440 --> 00:08:33,048
+Funciona igual que si la hubiera creado el propio dispositivo.
+
+168
+00:08:34,450 --> 00:08:37,057
+Ya sabes crear tu semilla sin confiar en nadie:
+
+169
+00:08:37,057 --> 00:08:40,608
+el azar lo pones tú, y ningún aparato conectado ve tus palabras.
+
+170
+00:08:40,928 --> 00:08:45,223
+En el próximo vídeo usaremos la cartera en el día a día, paso a paso:
+
+171
+00:08:45,223 --> 00:08:49,207
+vigilar el saldo, recibir y firmar pagos sin exponer tus llaves.
+
+172
+00:08:49,207 --> 00:08:50,141
+Nos vemos allí.

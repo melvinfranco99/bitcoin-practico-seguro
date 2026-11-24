@@ -11,1081 +11,1097 @@ En esta serie vamos al grano:
 nada de teoría, solo cómo usar bitcoin en la vida real sin perderlo y sin exponerte.
 
 4
-00:00:10,093 --> 00:00:14,092
+00:00:10,093 --> 00:00:14,202
 En este primer vídeo vas a ver todas las formas de proteger tu semilla,
 
 5
-00:00:14,092 --> 00:00:16,176
+00:00:14,202 --> 00:00:16,343
 de la más segura a la más arriesgada.
 
 6
-00:00:16,176 --> 00:00:20,850
+00:00:16,343 --> 00:00:21,145
 Y después la crearemos paso a paso, con dados, en papel, en acero y con passphrase,
 
 7
-00:00:20,850 --> 00:00:22,315
+00:00:21,145 --> 00:00:22,650
 como lo harías tú en casa.
 
 8
-00:00:23,717 --> 00:00:25,282
-Primero, una idea clave.
+00:00:22,650 --> 00:00:26,584
+Y en el vídeo uno B verás cómo crearla tú mismo, a mano o con Tails,
 
 9
-00:00:25,602 --> 00:00:27,989
-La semilla son doce o veinticuatro palabras.
+00:00:26,584 --> 00:00:28,378
+sin depender de ningún aparato.
 
 10
-00:00:27,989 --> 00:00:30,429
-Quien tenga esas palabras tiene tus bitcoins,
+00:00:29,783 --> 00:00:31,349
+Primero, una idea clave.
 
 11
-00:00:30,429 --> 00:00:33,683
-desde cualquier lugar del mundo y sin pedir permiso a nadie.
+00:00:31,669 --> 00:00:34,055
+La semilla son doce o veinticuatro palabras.
 
 12
-00:00:34,003 --> 00:00:38,597
-Las hardware wallets, las apps y los ordenadores se pueden reemplazar.
+00:00:34,055 --> 00:00:36,496
+Quien tenga esas palabras tiene tus bitcoins,
 
 13
-00:00:38,597 --> 00:00:39,516
-La semilla no.
+00:00:36,496 --> 00:00:39,750
+desde cualquier lugar del mundo y sin pedir permiso a nadie.
 
 14
-00:00:39,516 --> 00:00:42,469
-Por eso todo este vídeo gira en torno a ella.
+00:00:40,070 --> 00:00:44,664
+Las hardware wallets, las apps y los ordenadores se pueden reemplazar.
 
 15
-00:00:43,883 --> 00:00:47,378
-Todos los niveles que vas a ver son combinaciones de solo cuatro piezas.
+00:00:44,664 --> 00:00:45,583
+La semilla no.
 
 16
-00:00:47,698 --> 00:00:52,132
-La primera es la entropía, es decir, el azar con el que se eligen las palabras.
+00:00:45,583 --> 00:00:48,536
+Por eso todo este vídeo gira en torno a ella.
 
 17
-00:00:52,132 --> 00:00:56,005
-Puedes dejar que lo haga una máquina, o hacerlo tú con dados físicos,
+00:00:49,950 --> 00:00:53,444
+Todos los niveles que vas a ver son combinaciones de solo cuatro piezas.
 
 18
-00:00:56,005 --> 00:00:57,745
-sin tener que confiar en nadie.
+00:00:53,764 --> 00:00:58,199
+La primera es la entropía, es decir, el azar con el que se eligen las palabras.
 
 19
-00:00:58,065 --> 00:01:00,539
-La segunda es el dispositivo donde vive la llave:
+00:00:58,199 --> 00:01:02,072
+Puedes dejar que lo haga una máquina, o hacerlo tú con dados físicos,
 
 20
-00:01:00,539 --> 00:01:03,468
-una hardware wallet, el móvil, o directamente un exchange.
+00:01:02,072 --> 00:01:03,812
+sin tener que confiar en nadie.
 
 21
-00:01:03,788 --> 00:01:05,321
-La tercera es la passphrase:
+00:01:04,132 --> 00:01:06,606
+La segunda es el dispositivo donde vive la llave:
 
 22
-00:01:05,321 --> 00:01:10,084
-una palabra o frase extra que, sumada a la semilla, abre una cartera distinta y oculta.
+00:01:06,606 --> 00:01:09,535
+una hardware wallet, el móvil, o directamente un exchange.
 
 23
-00:01:10,404 --> 00:01:11,977
-Y la cuarta es la multifirma:
+00:01:09,855 --> 00:01:11,388
+La tercera es la passphrase:
 
 24
-00:01:11,977 --> 00:01:15,665
-varias llaves independientes, de forma que hacen falta, por ejemplo,
+00:01:11,388 --> 00:01:16,150
+una palabra o frase extra que, sumada a la semilla, abre una cartera distinta y oculta.
 
 25
-00:01:15,665 --> 00:01:17,454
-dos de tres para mover el dinero.
+00:01:16,470 --> 00:01:18,043
+Y la cuarta es la multifirma:
 
 26
-00:01:18,883 --> 00:01:20,994
-Este es el mapa completo.
+00:01:18,043 --> 00:01:21,731
+varias llaves independientes, de forma que hacen falta, por ejemplo,
 
 27
-00:01:20,994 --> 00:01:22,851
-Arriba, lo más seguro.
+00:01:21,731 --> 00:01:23,521
+dos de tres para mover el dinero.
 
 28
-00:01:22,851 --> 00:01:24,961
-Abajo, lo más arriesgado.
+00:01:24,950 --> 00:01:27,060
+Este es el mapa completo.
 
 29
-00:01:24,961 --> 00:01:28,000
-Lo vamos a recorrer nivel por nivel.
+00:01:27,060 --> 00:01:28,918
+Arriba, lo más seguro.
 
 30
-00:01:28,320 --> 00:01:29,799
-Una aclaración importante:
+00:01:28,918 --> 00:01:31,028
+Abajo, lo más arriesgado.
 
 31
-00:01:29,799 --> 00:01:32,188
-más seguro también significa más complejo.
+00:01:31,028 --> 00:01:34,067
+Lo vamos a recorrer nivel por nivel.
 
 32
-00:01:32,188 --> 00:01:36,738
-El mejor nivel para ti es el más alto que seas capaz de manejar sin equivocarte,
+00:01:34,387 --> 00:01:35,866
+Una aclaración importante:
 
 33
-00:01:36,738 --> 00:01:38,956
-y eso depende de cuánto dinero guardes.
+00:01:35,866 --> 00:01:38,255
+más seguro también significa más complejo.
 
 34
-00:01:40,383 --> 00:01:41,780
-Nivel uno, el máximo.
+00:01:38,255 --> 00:01:42,805
+El mejor nivel para ti es el más alto que seas capaz de manejar sin equivocarte,
 
 35
-00:01:41,780 --> 00:01:44,974
-Creas tres semillas, cada una con dados físicos,
+00:01:42,805 --> 00:01:45,023
+y eso depende de cuánto dinero guardes.
 
 36
-00:01:44,974 --> 00:01:47,967
-en tres hardware wallets de marcas distintas.
+00:01:46,450 --> 00:01:47,847
+Nivel uno, el máximo.
 
 37
-00:01:47,967 --> 00:01:51,493
-Por ejemplo, una Coldcard, una Trezor y una Keystone.
+00:01:47,847 --> 00:01:51,040
+Creas tres semillas, cada una con dados físicos,
 
 38
-00:01:51,813 --> 00:01:54,644
-Con ellas montas una cartera multifirma dos de tres,
+00:01:51,040 --> 00:01:54,034
+en tres hardware wallets de marcas distintas.
 
 39
-00:01:54,644 --> 00:01:56,712
-normalmente con Sparrow o con Nunchuk.
+00:01:54,034 --> 00:01:57,560
+Por ejemplo, una Coldcard, una Trezor y una Keystone.
 
 40
-00:01:56,712 --> 00:01:59,978
-Para gastar hacen falta dos llaves cualesquiera de las tres.
+00:01:57,880 --> 00:02:00,710
+Con ellas montas una cartera multifirma dos de tres,
 
 41
-00:02:00,298 --> 00:02:03,774
-Y además, cada llave lleva su propia passphrase de seis palabras,
+00:02:00,710 --> 00:02:02,779
+normalmente con Sparrow o con Nunchuk.
 
 42
-00:02:03,774 --> 00:02:05,164
-también sacadas con dados.
+00:02:02,779 --> 00:02:06,045
+Para gastar hacen falta dos llaves cualesquiera de las tres.
 
 43
-00:02:05,484 --> 00:02:06,487
-¿Qué te protege?
+00:02:06,365 --> 00:02:09,840
+Y además, cada llave lleva su propia passphrase de seis palabras,
 
 44
-00:02:06,487 --> 00:02:10,184
-Si te roban una semilla o un dispositivo, no pueden gastar.
+00:02:09,840 --> 00:02:11,231
+también sacadas con dados.
 
 45
-00:02:10,184 --> 00:02:15,510
-Si un fabricante tiene un fallo o una puerta trasera, las otras dos marcas te cubren.
+00:02:11,551 --> 00:02:12,553
+¿Qué te protege?
 
 46
-00:02:15,510 --> 00:02:19,458
-Y como el azar lo pones tú, no dependes del generador de nadie.
+00:02:12,553 --> 00:02:16,250
+Si te roban una semilla o un dispositivo, no pueden gastar.
 
 47
-00:02:20,178 --> 00:02:22,422
-Lo que no te protege es la complejidad.
+00:02:16,250 --> 00:02:21,577
+Si un fabricante tiene un fallo o una puerta trasera, las otras dos marcas te cubren.
 
 48
-00:02:22,422 --> 00:02:25,874
-Hay muchas piezas, y si pierdes el descriptor de la cartera,
+00:02:21,577 --> 00:02:25,525
+Y como el azar lo pones tú, no dependes del generador de nadie.
 
 49
-00:02:25,874 --> 00:02:30,017
-o te olvidas de dónde guardaste cada cosa, puedes bloquearte a ti mismo.
+00:02:26,245 --> 00:02:28,489
+Lo que no te protege es la complejidad.
 
 50
-00:02:30,017 --> 00:02:33,412
-Es para cantidades grandes y para gente que practica antes.
+00:02:28,489 --> 00:02:31,941
+Hay muchas piezas, y si pierdes el descriptor de la cartera,
 
 51
-00:02:34,817 --> 00:02:35,346
-Nivel dos:
+00:02:31,941 --> 00:02:36,084
+o te olvidas de dónde guardaste cada cosa, puedes bloquearte a ti mismo.
 
 52
-00:02:35,346 --> 00:02:39,529
-la misma multifirma dos de tres con tres marcas distintas, pero sin passphrase,
+00:02:36,084 --> 00:02:39,479
+Es para cantidades grandes y para gente que practica antes.
 
 53
-00:02:39,529 --> 00:02:42,495
-y dejando que cada dispositivo genere su propia semilla.
+00:02:40,883 --> 00:02:41,413
+Nivel dos:
 
 54
-00:02:42,815 --> 00:02:45,304
-Pierdes una capa, pero ganas mucha sencillez.
+00:02:41,413 --> 00:02:45,596
+la misma multifirma dos de tres con tres marcas distintas, pero sin passphrase,
 
 55
-00:02:45,304 --> 00:02:47,793
-Sigues protegido frente al robo de una llave,
+00:02:45,596 --> 00:02:48,561
+y dejando que cada dispositivo genere su propia semilla.
 
 56
-00:02:47,793 --> 00:02:51,887
-frente al fallo de un fabricante y frente a la pérdida de una de las tres.
+00:02:48,881 --> 00:02:51,371
+Pierdes una capa, pero ganas mucha sencillez.
 
 57
-00:02:52,207 --> 00:02:55,688
-Lo que nunca puedes olvidar en multifirma es el descriptor:
+00:02:51,371 --> 00:02:53,860
+Sigues protegido frente al robo de una llave,
 
 58
-00:02:55,688 --> 00:02:58,992
-un archivo o código QR que describe la cartera completa.
+00:02:53,860 --> 00:02:57,953
+frente al fallo de un fabricante y frente a la pérdida de una de las tres.
 
 59
-00:02:58,992 --> 00:03:03,358
-Sin él, aunque tengas dos semillas, reconstruir la cartera es muy difícil.
+00:02:58,273 --> 00:03:01,754
+Lo que nunca puedes olvidar en multifirma es el descriptor:
 
 60
-00:03:03,358 --> 00:03:05,836
-El descriptor no permite gastar, solo ver,
+00:03:01,754 --> 00:03:05,059
+un archivo o código QR que describe la cartera completa.
 
 61
-00:03:05,836 --> 00:03:08,550
-así que guarda una copia junto a cada semilla.
+00:03:05,059 --> 00:03:09,425
+Sin él, aunque tengas dos semillas, reconstruir la cartera es muy difícil.
 
 62
-00:03:09,983 --> 00:03:10,696
-Nivel tres:
+00:03:09,425 --> 00:03:11,903
+El descriptor no permite gastar, solo ver,
 
 63
-00:03:10,696 --> 00:03:13,028
-una sola firma, pero muy bien hecha.
+00:03:11,903 --> 00:03:14,617
+así que guarda una copia junto a cada semilla.
 
 64
-00:03:13,028 --> 00:03:16,527
-Semilla con dados en un dispositivo air-gap, es decir,
+00:03:16,050 --> 00:03:16,763
+Nivel tres:
 
 65
-00:03:16,527 --> 00:03:19,378
-que nunca se conecta por cable al ordenador:
+00:03:16,763 --> 00:03:19,095
+una sola firma, pero muy bien hecha.
 
 66
-00:03:19,378 --> 00:03:22,229
-firma mediante códigos QR o tarjeta microSD.
+00:03:19,095 --> 00:03:22,594
+Semilla con dados en un dispositivo air-gap, es decir,
 
 67
-00:03:22,229 --> 00:03:25,857
-Coldcard, SeedSigner, Keystone o Passport funcionan así.
+00:03:22,594 --> 00:03:25,444
+que nunca se conecta por cable al ordenador:
 
 68
-00:03:26,177 --> 00:03:28,082
-Le sumas una passphrase con dados.
+00:03:25,444 --> 00:03:28,295
+firma mediante códigos QR o tarjeta microSD.
 
 69
-00:03:28,082 --> 00:03:30,717
-Si alguien encuentra tus veinticuatro palabras,
+00:03:28,295 --> 00:03:31,923
+Coldcard, SeedSigner, Keystone o Passport funcionan así.
 
 70
-00:03:30,717 --> 00:03:33,183
-sin la passphrase solo ve una cartera vacía,
+00:03:32,243 --> 00:03:34,149
+Le sumas una passphrase con dados.
 
 71
-00:03:33,183 --> 00:03:37,050
-o una cartera señuelo con un poco de dinero que tú dejas a propósito.
+00:03:34,149 --> 00:03:36,783
+Si alguien encuentra tus veinticuatro palabras,
 
 72
-00:03:37,370 --> 00:03:41,099
-Te protege de que encuentren la semilla, de un generador de azar defectuoso,
+00:03:36,783 --> 00:03:39,249
+sin la passphrase solo ve una cartera vacía,
 
 73
-00:03:41,099 --> 00:03:44,829
-y del malware del ordenador, porque la firma se hace dentro del dispositivo.
+00:03:39,249 --> 00:03:43,117
+o una cartera señuelo con un poco de dinero que tú dejas a propósito.
 
 74
-00:03:45,149 --> 00:03:45,817
-Los riesgos:
+00:03:43,437 --> 00:03:47,166
+Te protege de que encuentren la semilla, de un generador de azar defectuoso,
 
 75
-00:03:45,817 --> 00:03:49,768
-dependes de una única marca, y si alguien encuentra a la vez la semilla
+00:03:47,166 --> 00:03:50,895
+y del malware del ordenador, porque la firma se hace dentro del dispositivo.
 
 76
-00:03:49,768 --> 00:03:51,660
-y la passphrase, se lo lleva todo.
+00:03:51,215 --> 00:03:51,883
+Los riesgos:
 
 77
-00:03:51,660 --> 00:03:56,223
-Para la mayoría de personas con ahorros importantes, este nivel es el punto ideal.
+00:03:51,883 --> 00:03:55,834
+dependes de una única marca, y si alguien encuentra a la vez la semilla
 
 78
-00:03:57,650 --> 00:03:58,378
-Nivel cuatro:
+00:03:55,834 --> 00:03:57,727
+y la passphrase, se lo lleva todo.
 
 79
-00:03:58,378 --> 00:04:02,239
-una hardware wallet normal, como una Trezor, una BitBox o una Ledger,
+00:03:57,727 --> 00:04:02,290
+Para la mayoría de personas con ahorros importantes, este nivel es el punto ideal.
 
 80
-00:04:02,239 --> 00:04:06,156
-con su semilla generada por el propio dispositivo, más una passphrase.
+00:04:03,717 --> 00:04:04,444
+Nivel cuatro:
 
 81
-00:04:06,476 --> 00:04:08,533
-Es muy sencillo y ya te protege bien:
+00:04:04,444 --> 00:04:08,306
+una hardware wallet normal, como una Trezor, una BitBox o una Ledger,
 
 82
-00:04:08,533 --> 00:04:11,368
-un ladrón que encuentre tus palabras no tiene nada.
+00:04:08,306 --> 00:04:12,223
+con su semilla generada por el propio dispositivo, más una passphrase.
 
 83
-00:04:11,368 --> 00:04:15,648
-A cambio, confías en que el fabricante genere bien el azar y no tenga fallos.
+00:04:12,543 --> 00:04:14,600
+Es muy sencillo y ya te protege bien:
 
 84
-00:04:17,050 --> 00:04:19,787
-Nivel cinco, el mínimo recomendable para tus ahorros:
+00:04:14,600 --> 00:04:17,434
+un ladrón que encuentre tus palabras no tiene nada.
 
 85
-00:04:19,787 --> 00:04:22,678
-hardware wallet y semilla grabada en una placa de acero.
+00:04:17,434 --> 00:04:21,715
+A cambio, confías en que el fabricante genere bien el azar y no tenga fallos.
 
 86
-00:04:22,998 --> 00:04:26,857
-Te protege del malware, porque la llave nunca sale del dispositivo,
+00:04:23,117 --> 00:04:25,853
+Nivel cinco, el mínimo recomendable para tus ahorros:
 
 87
-00:04:26,857 --> 00:04:29,621
-y la placa aguanta un incendio o una inundación.
+00:04:25,853 --> 00:04:28,745
+hardware wallet y semilla grabada en una placa de acero.
 
 88
-00:04:29,621 --> 00:04:33,191
-Si se rompe la hardware wallet, compras otra y recuperas todo.
+00:04:29,065 --> 00:04:32,923
+Te protege del malware, porque la llave nunca sale del dispositivo,
 
 89
-00:04:33,511 --> 00:04:35,050
-Pero aquí la semilla es todo:
+00:04:32,923 --> 00:04:35,687
+y la placa aguanta un incendio o una inundación.
 
 90
-00:04:35,050 --> 00:04:37,385
-quien encuentre la placa se lleva el dinero.
+00:04:35,687 --> 00:04:39,258
+Si se rompe la hardware wallet, compras otra y recuperas todo.
 
 91
-00:04:37,385 --> 00:04:41,896
-Y si alguien te obliga a abrir la cartera, no tienes una cartera señuelo que enseñar.
+00:04:39,578 --> 00:04:41,117
+Pero aquí la semilla es todo:
 
 92
-00:04:43,317 --> 00:04:44,005
-Nivel seis:
+00:04:41,117 --> 00:04:43,452
+quien encuentre la placa se lleva el dinero.
 
 93
-00:04:44,005 --> 00:04:46,444
-lo mismo, pero con la semilla en papel.
+00:04:43,452 --> 00:04:47,963
+Y si alguien te obliga a abrir la cartera, no tienes una cartera señuelo que enseñar.
 
 94
-00:04:46,444 --> 00:04:50,259
-Es como empieza casi todo el mundo, y está bien para empezar.
+00:04:49,383 --> 00:04:50,071
+Nivel seis:
 
 95
-00:04:50,579 --> 00:04:54,353
-Pero el papel se quema, se moja, la tinta se borra con los años,
+00:04:50,071 --> 00:04:52,511
+lo mismo, pero con la semilla en papel.
 
 96
-00:04:54,353 --> 00:04:56,948
-y es fácil que acabe en el sitio equivocado.
+00:04:52,511 --> 00:04:56,326
+Es como empieza casi todo el mundo, y está bien para empezar.
 
 97
-00:04:56,948 --> 00:04:59,719
-En cuanto tus ahorros crezcan, pásate al metal.
+00:04:56,646 --> 00:05:00,420
+Pero el papel se quema, se moja, la tinta se borra con los años,
 
 98
-00:05:01,150 --> 00:05:01,846
-Nivel siete:
+00:05:00,420 --> 00:05:03,014
+y es fácil que acabe en el sitio equivocado.
 
 99
-00:05:01,846 --> 00:05:03,643
-una app de cartera en el móvil.
+00:05:03,014 --> 00:05:05,786
+En cuanto tus ahorros crezcan, pásate al metal.
 
 100
-00:05:03,643 --> 00:05:07,990
-Aquí la llave vive en un aparato conectado a internet, lleno de otras apps.
+00:05:07,217 --> 00:05:07,912
+Nivel siete:
 
 101
-00:05:08,310 --> 00:05:11,185
-Es perfecta como cartera de gasto, como el monedero
+00:05:07,912 --> 00:05:09,709
+una app de cartera en el móvil.
 
 102
-00:05:11,185 --> 00:05:13,552
-que llevas en el bolsillo con poco dinero.
+00:05:09,709 --> 00:05:14,057
+Aquí la llave vive en un aparato conectado a internet, lleno de otras apps.
 
 103
-00:05:13,552 --> 00:05:15,131
-Pero nunca para tus ahorros.
+00:05:14,377 --> 00:05:17,252
+Es perfecta como cartera de gasto, como el monedero
 
 104
-00:05:16,550 --> 00:05:17,199
-Nivel ocho:
+00:05:17,252 --> 00:05:19,619
+que llevas en el bolsillo con poco dinero.
 
 105
-00:05:17,199 --> 00:05:19,088
-dejar el bitcoin en un exchange.
+00:05:19,619 --> 00:05:21,197
+Pero nunca para tus ahorros.
 
 106
-00:05:19,088 --> 00:05:20,445
-Aquí no tienes semilla:
+00:05:22,617 --> 00:05:23,266
+Nivel ocho:
 
 107
-00:05:20,445 --> 00:05:22,982
-tienes una promesa de que te lo devolverán.
+00:05:23,266 --> 00:05:25,154
+dejar el bitcoin en un exchange.
 
 108
-00:05:23,302 --> 00:05:28,416
-Es cómodo, pero si el exchange quiebra o lo hackean, como pasó con FTX o con Mt.
+00:05:25,154 --> 00:05:26,512
+Aquí no tienes semilla:
 
 109
-00:05:28,416 --> 00:05:29,887
-Gox, pierdes tu dinero.
+00:05:26,512 --> 00:05:29,049
+tienes una promesa de que te lo devolverán.
 
 110
-00:05:29,887 --> 00:05:33,466
-Te pueden congelar la cuenta, y si se filtran sus datos,
+00:05:29,369 --> 00:05:34,483
+Es cómodo, pero si el exchange quiebra o lo hackean, como pasó con FTX o con Mt.
 
 111
-00:05:33,466 --> 00:05:35,895
-todo el mundo sabe que tienes bitcoin.
+00:05:34,483 --> 00:05:35,953
+Gox, pierdes tu dinero.
 
 112
-00:05:35,895 --> 00:05:38,388
-Úsalo para comprar, nunca para guardar.
+00:05:35,953 --> 00:05:39,533
+Te pueden congelar la cuenta, y si se filtran sus datos,
 
 113
-00:05:39,817 --> 00:05:42,001
-Y el nivel nueve, lo que nunca debes hacer.
+00:05:39,533 --> 00:05:41,962
+todo el mundo sabe que tienes bitcoin.
 
 114
-00:05:42,321 --> 00:05:45,959
-Guardar la semilla en una foto, en la nube, en las notas del móvil,
+00:05:41,962 --> 00:05:44,455
+Úsalo para comprar, nunca para guardar.
 
 115
-00:05:45,959 --> 00:05:48,239
-en el email o en un gestor de contraseñas.
+00:05:45,883 --> 00:05:48,067
+Y el nivel nueve, lo que nunca debes hacer.
 
 116
-00:05:48,239 --> 00:05:51,606
-Cualquier virus o cualquier filtración de tu cuenta la expone.
+00:05:48,387 --> 00:05:52,025
+Guardar la semilla en una foto, en la nube, en las notas del móvil,
 
 117
-00:05:51,926 --> 00:05:55,421
-Generarla en una página web, o inventarte las palabras tú mismo.
+00:05:52,025 --> 00:05:54,306
+en el email o en un gestor de contraseñas.
 
 118
-00:05:55,421 --> 00:05:57,933
-Los humanos somos muy malos eligiendo al azar,
+00:05:54,306 --> 00:05:57,673
+Cualquier virus o cualquier filtración de tu cuenta la expone.
 
 119
-00:05:57,933 --> 00:06:01,046
-y hay programas que prueban esas combinaciones sin parar.
+00:05:57,993 --> 00:06:02,940
+Generarla en una página web abierta en internet, o inventarte las palabras de memoria.
 
 120
-00:06:01,366 --> 00:06:06,174
-Y jamás la escribas en una web o se la des a alguien que dice ser de soporte técnico.
+00:06:02,940 --> 00:06:05,586
+Los humanos somos muy malos eligiendo al azar,
 
 121
-00:06:06,174 --> 00:06:08,380
-Ningún soporte real te la pedirá nunca.
+00:06:05,586 --> 00:06:08,865
+y hay programas que prueban esas combinaciones sin parar.
 
 122
-00:06:09,783 --> 00:06:11,348
-Resumamos todo en una tabla.
+00:06:08,865 --> 00:06:12,834
+Si quieres hacerla tú, hazla con dados, como verás en el vídeo uno B.
 
 123
-00:06:11,668 --> 00:06:15,731
-Con passphrase o con multifirma, que te encuentren la semilla deja de ser una
+00:06:13,154 --> 00:06:17,961
+Y jamás la escribas en una web o se la des a alguien que dice ser de soporte técnico.
 
 124
-00:06:15,731 --> 00:06:16,311
-catástrofe.
+00:06:17,961 --> 00:06:20,167
+Ningún soporte real te la pedirá nunca.
 
 125
-00:06:16,311 --> 00:06:20,427
-Las marcas distintas y los dados te protegen frente a un fallo del fabricante.
+00:06:21,583 --> 00:06:23,145
+Resumamos todo en una tabla.
 
 126
-00:06:20,747 --> 00:06:24,193
-Y la hardware wallet es lo que te separa del malware.
+00:06:23,465 --> 00:06:27,527
+Con passphrase o con multifirma, que te encuentren la semilla deja de ser una
 
 127
-00:06:24,193 --> 00:06:26,013
-Fíjate en la última columna:
+00:06:27,527 --> 00:06:28,108
+catástrofe.
 
 128
-00:06:26,013 --> 00:06:28,094
-cuanto más arriba, menos cómodo.
+00:06:28,108 --> 00:06:32,223
+Las marcas distintas y los dados te protegen frente a un fallo del fabricante.
 
 129
-00:06:28,094 --> 00:06:29,525
-Siempre hay un precio.
+00:06:32,543 --> 00:06:35,989
+Y la hardware wallet es lo que te separa del malware.
 
 130
-00:06:30,950 --> 00:06:32,217
-¿Y cuál elijo yo?
+00:06:35,989 --> 00:06:37,810
+Fíjate en la última columna:
 
 131
-00:06:32,217 --> 00:06:34,154
-Depende de cuánto guardes.
+00:06:37,810 --> 00:06:39,890
+cuanto más arriba, menos cómodo.
 
 132
-00:06:34,154 --> 00:06:36,837
-No necesitas el nivel uno para todo.
+00:06:39,890 --> 00:06:41,321
+Siempre hay un precio.
 
 133
-00:06:37,157 --> 00:06:40,089
-Para lo que gastas en un mes, una app del móvil es perfecta.
+00:06:42,750 --> 00:06:44,017
+¿Y cuál elijo yo?
 
 134
-00:06:40,409 --> 00:06:43,741
-Para tus primeros ahorros, una hardware wallet con la semilla en metal.
+00:06:44,017 --> 00:06:45,954
+Depende de cuánto guardes.
 
 135
-00:06:44,061 --> 00:06:47,370
-Cuando los ahorros ya son importantes, sube al nivel tres:
+00:06:45,954 --> 00:06:48,637
+No necesitas el nivel uno para todo.
 
 136
-00:06:47,370 --> 00:06:48,967
-air-gap, dados y passphrase.
+00:06:48,957 --> 00:06:51,889
+Para lo que gastas en un mes, una app del móvil es perfecta.
 
 137
-00:06:49,287 --> 00:06:52,257
-Y si hablamos de un patrimonio grande, o de dinero familiar,
+00:06:52,209 --> 00:06:55,541
+Para tus primeros ahorros, una hardware wallet con la semilla en metal.
 
 138
-00:06:52,257 --> 00:06:54,287
-la multifirma dos de tres es el estándar.
+00:06:55,861 --> 00:06:59,170
+Cuando los ahorros ya son importantes, sube al nivel tres:
 
 139
-00:06:54,607 --> 00:06:55,751
-Y en todos los casos:
+00:06:59,170 --> 00:07:00,767
+air-gap, dados y passphrase.
 
 140
-00:06:55,751 --> 00:06:59,674
-practica la recuperación con poco dinero antes de confiarle tus ahorros.
+00:07:01,087 --> 00:07:04,058
+Y si hablamos de un patrimonio grande, o de dinero familiar,
 
 141
-00:06:59,674 --> 00:07:04,251
-Si no has probado a recuperar tu cartera, no sabes si tienes una copia de seguridad.
+00:07:04,058 --> 00:07:06,087
+la multifirma dos de tres es el estándar.
 
 142
-00:07:05,683 --> 00:07:06,740
-Basta de teoría.
+00:07:06,407 --> 00:07:07,551
+Y en todos los casos:
 
 143
-00:07:06,740 --> 00:07:10,837
-Ahora vamos a hacerlo, paso a paso, como lo harías tú en casa.
+00:07:07,551 --> 00:07:11,474
+practica la recuperación con poco dinero antes de confiarle tus ahorros.
 
 144
-00:07:11,157 --> 00:07:15,686
-Necesitas una hardware wallet comprada directamente al fabricante, y un dado de casino,
+00:07:11,474 --> 00:07:16,051
+Si no has probado a recuperar tu cartera, no sabes si tienes una copia de seguridad.
 
 145
-00:07:15,686 --> 00:07:17,040
-que está bien equilibrado.
+00:07:17,483 --> 00:07:18,540
+Basta de teoría.
 
 146
-00:07:17,360 --> 00:07:19,092
-Papel y bolígrafo para el borrador,
+00:07:18,540 --> 00:07:22,637
+Ahora vamos a hacerlo, paso a paso, como lo harías tú en casa.
 
 147
-00:07:19,092 --> 00:07:23,101
-y una placa de acero inoxidable con un juego de punzones de letras y un martillo.
+00:07:22,957 --> 00:07:27,487
+Necesitas una hardware wallet comprada directamente al fabricante, y un dado de casino,
 
 148
-00:07:23,421 --> 00:07:26,266
-Para la passphrase, una lista Diceware impresa.
+00:07:27,487 --> 00:07:28,840
+que está bien equilibrado.
 
 149
-00:07:26,266 --> 00:07:30,322
-Y un sitio tranquilo, sin cámaras, con el móvil en otra habitación.
+00:07:29,160 --> 00:07:30,892
+Papel y bolígrafo para el borrador,
 
 150
-00:07:31,750 --> 00:07:35,010
-En las demostraciones usamos una hardware wallet genérica.
+00:07:30,892 --> 00:07:34,901
+y una placa de acero inoxidable con un juego de punzones de letras y un martillo.
 
 151
-00:07:35,010 --> 00:07:39,394
-En la tuya los menús se llamarán algo distinto, pero los pasos son los mismos.
+00:07:35,221 --> 00:07:38,066
+Para la passphrase, una lista Diceware impresa.
 
 152
-00:07:39,714 --> 00:07:44,253
-Antes de encenderla, comprueba que la caja y el precinto están intactos.
+00:07:38,066 --> 00:07:42,122
+Y un sitio tranquilo, sin cámaras, con el móvil en otra habitación.
 
 153
-00:07:44,253 --> 00:07:47,280
-Si algo parece abierto o manipulado, no la uses.
+00:07:43,550 --> 00:07:46,810
+En las demostraciones usamos una hardware wallet genérica.
 
 154
-00:07:47,600 --> 00:07:52,130
-Al encenderla, el propio dispositivo comprueba que su software es auténtico.
+00:07:46,810 --> 00:07:51,194
+En la tuya los menús se llamarán algo distinto, pero los pasos son los mismos.
 
 155
-00:07:52,130 --> 00:07:54,515
-Si te avisa de cualquier problema, para.
+00:07:51,514 --> 00:07:56,053
+Antes de encenderla, comprueba que la caja y el precinto están intactos.
 
 156
-00:07:54,835 --> 00:07:58,694
-Después eliges un PIN largo, de ocho cifras o más, y lo repites.
+00:07:56,053 --> 00:07:59,080
+Si algo parece abierto o manipulado, no la uses.
 
 157
-00:07:58,694 --> 00:08:03,457
-El PIN protege el aparato si alguien lo coge, pero no es tu copia de seguridad.
+00:07:59,400 --> 00:08:03,930
+Al encenderla, el propio dispositivo comprueba que su software es auténtico.
 
 158
-00:08:03,777 --> 00:08:05,286
-Ahora, nueva semilla.
+00:08:03,930 --> 00:08:06,315
+Si te avisa de cualquier problema, para.
 
 159
-00:08:05,286 --> 00:08:09,024
-Eliges tirar dados, y después veinticuatro palabras.
+00:08:06,635 --> 00:08:10,494
+Después eliges un PIN largo, de ocho cifras o más, y lo repites.
 
 160
-00:08:09,344 --> 00:08:10,832
-Y empiezas a tirar.
+00:08:10,494 --> 00:08:15,257
+El PIN protege el aparato si alguien lo coge, pero no es tu copia de seguridad.
 
 161
-00:08:10,832 --> 00:08:14,279
-Cada resultado lo tecleas en el dispositivo:
+00:08:15,577 --> 00:08:17,086
+Ahora, nueva semilla.
 
 162
-00:08:14,279 --> 00:08:17,178
-un cuatro, un dos, un seis, un uno...
+00:08:17,086 --> 00:08:20,824
+Eliges tirar dados, y después veinticuatro palabras.
 
 163
-00:08:17,178 --> 00:08:18,901
-Una tirada, una tecla.
+00:08:21,144 --> 00:08:22,632
+Y empiezas a tirar.
 
 164
-00:08:18,901 --> 00:08:19,685
-Sin prisa:
+00:08:22,632 --> 00:08:26,079
+Cada resultado lo tecleas en el dispositivo:
 
 165
-00:08:19,685 --> 00:08:21,408
-tardarás unos minutos.
+00:08:26,079 --> 00:08:28,978
+un cuatro, un dos, un seis, un uno...
 
 166
-00:08:21,728 --> 00:08:23,868
-Al llegar a noventa y nueve tiradas,
+00:08:28,978 --> 00:08:30,701
+Una tirada, una tecla.
 
 167
-00:08:23,868 --> 00:08:27,019
-el dispositivo confirma que ya tiene azar suficiente.
+00:08:30,701 --> 00:08:31,485
+Sin prisa:
 
 168
-00:08:27,019 --> 00:08:28,030
-Pulsas confirmar.
+00:08:31,485 --> 00:08:33,208
+tardarás unos minutos.
 
 169
-00:08:29,450 --> 00:08:33,935
-El dispositivo te enseña ahora tus veinticuatro palabras, en grupos de seis.
+00:08:33,528 --> 00:08:35,668
+Al llegar a noventa y nueve tiradas,
 
 170
-00:08:33,935 --> 00:08:35,646
-Ten a mano papel y bolígrafo.
+00:08:35,668 --> 00:08:38,819
+el dispositivo confirma que ya tiene azar suficiente.
 
 171
-00:08:35,966 --> 00:08:39,415
-Apunta cada palabra con su número de orden delante, con letra clara.
+00:08:38,819 --> 00:08:39,830
+Pulsas confirmar.
 
 172
-00:08:41,335 --> 00:08:44,492
-Cuando acabas un grupo, pulsas confirmar y pasas al siguiente.
+00:08:41,250 --> 00:08:45,735
+El dispositivo te enseña ahora tus veinticuatro palabras, en grupos de seis.
 
 173
-00:08:46,712 --> 00:08:49,927
-Si una palabra te parece rara, compárala letra a letra.
+00:08:45,735 --> 00:08:47,446
+Ten a mano papel y bolígrafo.
 
 174
-00:08:49,927 --> 00:08:53,785
-Todas salen de una lista fija de dos mil cuarenta y ocho palabras.
+00:08:47,766 --> 00:08:51,215
+Apunta cada palabra con su número de orden delante, con letra clara.
 
 175
-00:08:54,105 --> 00:08:55,258
-Y el último grupo.
+00:08:53,135 --> 00:08:56,292
+Cuando acabas un grupo, pulsas confirmar y pasas al siguiente.
 
 176
-00:08:55,258 --> 00:08:59,548
-Al acabar, repasa la lista completa una vez más contra la pantalla.
+00:08:58,512 --> 00:09:01,727
+Si una palabra te parece rara, compárala letra a letra.
 
 177
-00:09:00,950 --> 00:09:04,468
-Antes de terminar, el dispositivo te pregunta algunas palabras al azar,
+00:09:01,727 --> 00:09:05,585
+Todas salen de una lista fija de dos mil cuarenta y ocho palabras.
 
 178
-00:09:04,468 --> 00:09:06,698
-para asegurarse de que las has apuntado bien.
+00:09:05,905 --> 00:09:07,058
+Y el último grupo.
 
 179
-00:09:07,018 --> 00:09:09,864
-Eliges la correcta en cada pregunta, mirando tu papel.
+00:09:07,058 --> 00:09:11,348
+Al acabar, repasa la lista completa una vez más contra la pantalla.
 
 180
-00:09:10,184 --> 00:09:10,895
-Todo correcto:
+00:09:12,750 --> 00:09:16,268
+Antes de terminar, el dispositivo te pregunta algunas palabras al azar,
 
 181
-00:09:10,895 --> 00:09:14,648
-la semilla está creada dentro del dispositivo, y nunca ha tocado internet.
+00:09:16,268 --> 00:09:18,498
+para asegurarse de que las has apuntado bien.
 
 182
-00:09:14,968 --> 00:09:17,268
-Por último, la huella de la cartera:
+00:09:18,818 --> 00:09:21,664
+Eliges la correcta en cada pregunta, mirando tu papel.
 
 183
-00:09:17,268 --> 00:09:20,271
-un código de ocho caracteres que la identifica.
+00:09:21,984 --> 00:09:22,695
+Todo correcto:
 
 184
-00:09:20,271 --> 00:09:21,549
-No da acceso a nada.
+00:09:22,695 --> 00:09:26,448
+la semilla está creada dentro del dispositivo, y nunca ha tocado internet.
 
 185
-00:09:21,549 --> 00:09:22,124
-Apúntala:
+00:09:26,768 --> 00:09:29,068
+Por último, la huella de la cartera:
 
 186
-00:09:22,124 --> 00:09:27,299
-te servirá para comprobar que, al recuperar la cartera, lo has escrito todo bien.
+00:09:29,068 --> 00:09:32,071
+un código de ocho caracteres que la identifica.
 
 187
-00:09:28,717 --> 00:09:30,638
-El papel es solo un borrador.
+00:09:32,071 --> 00:09:33,349
+No da acceso a nada.
 
 188
-00:09:30,638 --> 00:09:32,891
-Ahora la pasas a acero inoxidable.
+00:09:33,349 --> 00:09:33,924
+Apúntala:
 
 189
-00:09:33,211 --> 00:09:35,784
-Con los punzones y el martillo, grabas el número
+00:09:33,924 --> 00:09:39,099
+te servirá para comprobar que, al recuperar la cartera, lo has escrito todo bien.
 
 190
-00:09:35,784 --> 00:09:38,196
-y las cuatro primeras letras de cada palabra.
+00:09:40,517 --> 00:09:42,438
+El papel es solo un borrador.
 
 191
-00:09:38,196 --> 00:09:39,482
-Con cuatro letras basta:
+00:09:42,438 --> 00:09:44,691
+Ahora la pasas a acero inoxidable.
 
 192
-00:09:39,482 --> 00:09:42,215
-en la lista no hay dos palabras que empiecen igual.
+00:09:45,011 --> 00:09:47,584
+Con los punzones y el martillo, grabas el número
 
 193
-00:09:42,535 --> 00:09:45,949
-Un golpe firme y seco por letra, sobre una superficie dura.
+00:09:47,584 --> 00:09:49,996
+y las cuatro primeras letras de cada palabra.
 
 194
-00:09:45,949 --> 00:09:49,653
-Una guía te ayuda a que las letras queden rectas y se lean bien.
+00:09:49,996 --> 00:09:51,282
+Con cuatro letras basta:
 
 195
-00:09:49,973 --> 00:09:51,452
-Y fíjate en lo que no grabas:
+00:09:51,282 --> 00:09:54,015
+en la lista no hay dos palabras que empiecen igual.
 
 196
-00:09:51,452 --> 00:09:55,075
-ni la palabra bitcoin, ni tu nombre, ni nada que diga qué es esa placa.
+00:09:54,335 --> 00:09:57,749
+Un golpe firme y seco por letra, sobre una superficie dura.
 
 197
-00:09:56,483 --> 00:09:59,965
-Ahora comprueba que la placa es correcta, con la propia hardware wallet.
+00:09:57,749 --> 00:10:01,452
+Una guía te ayuda a que las letras queden rectas y se lean bien.
 
 198
-00:10:00,285 --> 00:10:04,510
-Casi todas tienen una opción para verificar la copia sin borrar nada.
+00:10:01,772 --> 00:10:03,250
+Y fíjate en lo que no grabas:
 
 199
-00:10:04,510 --> 00:10:06,653
-En ajustes, eliges comprobar copia.
+00:10:03,250 --> 00:10:06,868
+ni la palabra bitcoin, ni tu nombre, ni nada que diga qué es esa placa.
 
 200
-00:10:06,973 --> 00:10:09,999
-Tecleas las palabras leyendo la placa, no el papel.
+00:10:08,283 --> 00:10:11,765
+Ahora comprueba que la placa es correcta, con la propia hardware wallet.
 
 201
-00:10:09,999 --> 00:10:13,975
-Con las cuatro primeras letras, el dispositivo completa la palabra.
+00:10:12,085 --> 00:10:16,310
+Casi todas tienen una opción para verificar la copia sin borrar nada.
 
 202
-00:10:14,295 --> 00:10:16,217
-Si coincide, tu placa es buena.
+00:10:16,310 --> 00:10:18,453
+En ajustes, eliges comprobar copia.
 
 203
-00:10:16,537 --> 00:10:18,899
-Y el borrador de papel ya no hace falta:
+00:10:18,773 --> 00:10:21,799
+Tecleas las palabras leyendo la placa, no el papel.
 
 204
-00:10:18,899 --> 00:10:21,084
-rómpelo en trozos pequeños y quémalo.
+00:10:21,799 --> 00:10:25,775
+Con las cuatro primeras letras, el dispositivo completa la palabra.
 
 205
-00:10:21,084 --> 00:10:23,092
-Nunca lo tires entero a la basura.
+00:10:26,095 --> 00:10:28,017
+Si coincide, tu placa es buena.
 
 206
-00:10:24,517 --> 00:10:27,044
-Ahora la passphrase, también con dados.
+00:10:28,337 --> 00:10:30,699
+Y el borrador de papel ya no hace falta:
 
 207
-00:10:27,044 --> 00:10:28,924
-Necesitas una lista Diceware:
+00:10:30,699 --> 00:10:32,884
+rómpelo en trozos pequeños y quémalo.
 
 208
-00:10:28,924 --> 00:10:34,497
-siete mil setecientas setenta y seis palabras, cada una con un número de cinco cifras.
+00:10:32,884 --> 00:10:34,892
+Nunca lo tires entero a la basura.
 
 209
-00:10:34,497 --> 00:10:36,441
-Existe en español y en inglés.
+00:10:36,317 --> 00:10:38,844
+Ahora la passphrase, también con dados.
 
 210
-00:10:36,761 --> 00:10:40,662
-Tiras cinco dados a la vez y lees de izquierda a derecha:
+00:10:38,844 --> 00:10:40,724
+Necesitas una lista Diceware:
 
 211
-00:10:40,662 --> 00:10:42,715
-seis, uno, cuatro, dos, cinco.
+00:10:40,724 --> 00:10:46,297
+siete mil setecientas setenta y seis palabras, cada una con un número de cinco cifras.
 
 212
-00:10:42,715 --> 00:10:46,889
-Buscas ese número en la lista, y ahí está tu primera palabra:
+00:10:46,297 --> 00:10:48,241
+Existe en español y en inglés.
 
 213
-00:10:46,889 --> 00:10:47,299
-tigre.
+00:10:48,561 --> 00:10:52,462
+Tiras cinco dados a la vez y lees de izquierda a derecha:
 
 214
-00:10:47,619 --> 00:10:50,634
-Repites cinco veces más, hasta tener seis palabras.
+00:10:52,462 --> 00:10:54,515
+seis, uno, cuatro, dos, cinco.
 
 215
-00:10:51,454 --> 00:10:54,680
-Seis palabras sacadas así son imposibles de adivinar.
+00:10:54,515 --> 00:10:58,689
+Buscas ese número en la lista, y ahí está tu primera palabra:
 
 216
-00:10:54,680 --> 00:10:58,635
-Escríbelas en minúsculas, sin tildes, y separadas por un espacio.
+00:10:58,689 --> 00:10:59,099
+tigre.
 
 217
-00:11:00,050 --> 00:11:02,333
-Ahora añades la passphrase en la hardware wallet.
+00:10:59,419 --> 00:11:02,434
+Repites cinco veces más, hasta tener seis palabras.
 
 218
-00:11:02,653 --> 00:11:04,507
-En ajustes, entras en passphrase.
+00:11:03,254 --> 00:11:06,480
+Seis palabras sacadas así son imposibles de adivinar.
 
 219
-00:11:04,827 --> 00:11:09,553
-Tecleas las seis palabras exactamente como las apuntaste, con sus espacios, y aplicas.
+00:11:06,480 --> 00:11:10,435
+Escríbelas en minúsculas, sin tildes, y separadas por un espacio.
 
 220
-00:11:10,573 --> 00:11:11,100
-Fíjate:
+00:11:11,850 --> 00:11:14,133
+Ahora añades la passphrase en la hardware wallet.
 
 221
-00:11:11,100 --> 00:11:12,756
-la huella ha cambiado.
+00:11:14,453 --> 00:11:16,307
+En ajustes, entras en passphrase.
 
 222
-00:11:12,756 --> 00:11:14,788
-Es otra cartera, la oculta.
+00:11:16,627 --> 00:11:21,353
+Tecleas las seis palabras exactamente como las apuntaste, con sus espacios, y aplicas.
 
 223
-00:11:14,788 --> 00:11:16,669
-Apunta esta nueva huella.
+00:11:22,373 --> 00:11:22,900
+Fíjate:
 
 224
-00:11:16,669 --> 00:11:21,335
-A partir de ahora, ésta es la cartera donde guardas tu dinero.
+00:11:22,900 --> 00:11:24,556
+la huella ha cambiado.
 
 225
-00:11:21,655 --> 00:11:24,632
-Mira qué pasa si te equivocas en una sola letra:
+00:11:24,556 --> 00:11:26,588
+Es otra cartera, la oculta.
 
 226
-00:11:24,632 --> 00:11:25,438
-nube con uve.
+00:11:26,588 --> 00:11:28,469
+Apunta esta nueva huella.
 
 227
-00:11:25,438 --> 00:11:26,678
-No hay ningún error:
+00:11:28,469 --> 00:11:33,135
+A partir de ahora, ésta es la cartera donde guardas tu dinero.
 
 228
-00:11:26,678 --> 00:11:30,213
-el dispositivo abre otra cartera, vacía, con otra huella.
+00:11:33,455 --> 00:11:36,432
+Mira qué pasa si te equivocas en una sola letra:
 
 229
-00:11:30,533 --> 00:11:32,200
-Por eso apuntas la huella.
+00:11:36,432 --> 00:11:37,238
+nube con uve.
 
 230
-00:11:32,200 --> 00:11:36,817
-Si al teclear la passphrase no ves tu huella, es que la has escrito mal.
+00:11:37,238 --> 00:11:38,478
+No hay ningún error:
 
 231
-00:11:36,817 --> 00:11:38,741
-Bórrala y vuelve a escribirla.
+00:11:38,478 --> 00:11:42,013
+el dispositivo abre otra cartera, vacía, con otra huella.
 
 232
-00:11:40,150 --> 00:11:42,622
-Atención a esto, porque es el error más común.
+00:11:42,333 --> 00:11:44,000
+Por eso apuntas la huella.
 
 233
-00:11:42,942 --> 00:11:45,264
-La passphrase no se puede recuperar.
+00:11:44,000 --> 00:11:48,617
+Si al teclear la passphrase no ves tu huella, es que la has escrito mal.
 
 234
-00:11:45,264 --> 00:11:47,972
-No hay botón de he olvidado mi contraseña.
+00:11:48,617 --> 00:11:50,541
+Bórrala y vuelve a escribirla.
 
 235
-00:11:47,972 --> 00:11:51,066
-Si la olvidas, el dinero se pierde para siempre.
+00:11:51,950 --> 00:11:54,422
+Atención a esto, porque es el error más común.
 
 236
-00:11:51,386 --> 00:11:54,644
-Y si te equivocas al escribirla, la cartera no da error:
+00:11:54,742 --> 00:11:57,064
+La passphrase no se puede recuperar.
 
 237
-00:11:54,644 --> 00:11:56,797
-simplemente abre otra cartera, vacía.
+00:11:57,064 --> 00:11:59,772
+No hay botón de he olvidado mi contraseña.
 
 238
-00:11:56,797 --> 00:12:00,985
-Mucha gente cree que le han robado cuando solo ha escrito mal una letra.
+00:11:59,772 --> 00:12:02,866
+Si la olvidas, el dinero se pierde para siempre.
 
 239
-00:12:01,305 --> 00:12:04,235
-Por eso la passphrase necesita su propia copia de seguridad,
+00:12:03,186 --> 00:12:06,444
+Y si te equivocas al escribirla, la cartera no da error:
 
 240
-00:12:04,235 --> 00:12:05,602
-tan cuidada como la semilla.
+00:12:06,444 --> 00:12:08,597
+simplemente abre otra cartera, vacía.
 
 241
-00:12:07,017 --> 00:12:08,398
-Y ahora el nivel máximo:
+00:12:08,597 --> 00:12:12,786
+Mucha gente cree que le han robado cuando solo ha escrito mal una letra.
 
 242
-00:12:08,398 --> 00:12:09,894
-la multifirma dos de tres.
+00:12:13,106 --> 00:12:16,035
+Por eso la passphrase necesita su propia copia de seguridad,
 
 243
-00:12:09,894 --> 00:12:13,002
-La montas con una cartera de escritorio, como Sparrow,
+00:12:16,035 --> 00:12:17,403
+tan cuidada como la semilla.
 
 244
-00:12:13,002 --> 00:12:17,894
-y tres hardware wallets de marcas distintas, cada una con su semilla hecha con dados.
+00:12:18,817 --> 00:12:20,198
+Y ahora el nivel máximo:
 
 245
-00:12:18,214 --> 00:12:22,338
-En Sparrow creas una cartera nueva, le pones nombre, eliges multifirma,
+00:12:20,198 --> 00:12:21,694
+la multifirma dos de tres.
 
 246
-00:12:22,338 --> 00:12:23,558
-y dos firmas de tres.
+00:12:21,694 --> 00:12:24,802
+La montas con una cartera de escritorio, como Sparrow,
 
 247
-00:12:23,878 --> 00:12:28,409
-Para la primera llave, eliges hardware wallet sin cables y pulsas escanear.
+00:12:24,802 --> 00:12:29,694
+y tres hardware wallets de marcas distintas, cada una con su semilla hecha con dados.
 
 248
-00:12:28,409 --> 00:12:32,034
-En la hardware wallet entras en exportar, opción multifirma,
+00:12:30,014 --> 00:12:34,138
+En Sparrow creas una cartera nueva, le pones nombre, eliges multifirma,
 
 249
-00:12:32,034 --> 00:12:34,270
-y aparece un QR con su clave pública.
+00:12:34,138 --> 00:12:35,358
+y dos firmas de tres.
 
 250
-00:12:34,270 --> 00:12:36,505
-Lo enseñas a la cámara del ordenador.
+00:12:35,678 --> 00:12:40,209
+Para la primera llave, eliges hardware wallet sin cables y pulsas escanear.
 
 251
-00:12:36,825 --> 00:12:38,839
-Repites con la segunda y la tercera.
+00:12:40,209 --> 00:12:43,834
+En la hardware wallet entras en exportar, opción multifirma,
 
 252
-00:12:38,839 --> 00:12:40,684
-Cada llave aparece con su huella:
+00:12:43,834 --> 00:12:46,070
+y aparece un QR con su clave pública.
 
 253
-00:12:40,684 --> 00:12:43,649
-compruébala con la que apuntaste de cada dispositivo.
+00:12:46,070 --> 00:12:48,305
+Lo enseñas a la cámara del ordenador.
 
 254
-00:12:43,969 --> 00:12:46,791
-Pulsas aplicar, y la cartera multifirma está creada.
+00:12:48,625 --> 00:12:50,639
+Repites con la segunda y la tercera.
 
 255
-00:12:48,217 --> 00:12:50,683
-Falta lo más importante de una multifirma:
+00:12:50,639 --> 00:12:52,484
+Cada llave aparece con su huella:
 
 256
-00:12:50,683 --> 00:12:51,505
-el descriptor.
+00:12:52,484 --> 00:12:55,449
+compruébala con la que apuntaste de cada dispositivo.
 
 257
-00:12:51,505 --> 00:12:52,973
-Es el mapa de la cartera:
+00:12:55,769 --> 00:12:58,591
+Pulsas aplicar, y la cartera multifirma está creada.
 
 258
-00:12:52,973 --> 00:12:56,086
-dice qué tres llaves la forman y que hacen falta dos.
+00:13:00,017 --> 00:13:02,483
+Falta lo más importante de una multifirma:
 
 259
-00:12:56,406 --> 00:12:59,726
-En Sparrow lo exportas en PDF e imprimes tres copias.
+00:13:02,483 --> 00:13:03,305
+el descriptor.
 
 260
-00:12:59,726 --> 00:13:02,733
-Cada copia irá junto a una de las tres semillas.
+00:13:03,305 --> 00:13:04,773
+Es el mapa de la cartera:
 
 261
-00:13:03,053 --> 00:13:05,773
-Después, Sparrow te enseña el descriptor como QR,
+00:13:04,773 --> 00:13:07,886
+dice qué tres llaves la forman y que hacen falta dos.
 
 262
-00:13:05,773 --> 00:13:07,937
-y lo escaneas con cada hardware wallet.
+00:13:08,206 --> 00:13:11,526
+En Sparrow lo exportas en PDF e imprimes tres copias.
 
 263
-00:13:08,257 --> 00:13:10,903
-Cada dispositivo te pide confirmar la cartera.
+00:13:11,526 --> 00:13:14,533
+Cada copia irá junto a una de las tres semillas.
 
 264
-00:13:10,903 --> 00:13:14,411
-Comprueba que aparecen las tres huellas correctas, y aceptas.
+00:13:14,853 --> 00:13:17,573
+Después, Sparrow te enseña el descriptor como QR,
 
 265
-00:13:14,411 --> 00:13:19,300
-Así la hardware wallet podrá avisarte si un pago intenta mandar el cambio fuera de tu
+00:13:17,573 --> 00:13:19,737
+y lo escaneas con cada hardware wallet.
 
 266
-00:13:19,300 --> 00:13:19,933
-multifirma.
+00:13:20,057 --> 00:13:22,703
+Cada dispositivo te pide confirmar la cartera.
 
 267
-00:13:20,253 --> 00:13:24,034
-Con el descriptor y dos semillas cualesquiera, recuperas todo.
+00:13:22,703 --> 00:13:26,211
+Comprueba que aparecen las tres huellas correctas, y aceptas.
 
 268
-00:13:24,034 --> 00:13:27,814
-Sin el descriptor, aunque tengas las semillas, es muy difícil.
+00:13:26,211 --> 00:13:31,100
+Así la hardware wallet podrá avisarte si un pago intenta mandar el cambio fuera de tu
 
 269
-00:13:29,217 --> 00:13:30,042
-La regla de oro:
+00:13:31,100 --> 00:13:31,733
+multifirma.
 
 270
-00:13:30,042 --> 00:13:34,065
-tu semilla nunca toca un aparato conectado a internet, y tú sabes recuperarla.
+00:13:32,053 --> 00:13:35,834
+Con el descriptor y dos semillas cualesquiera, recuperas todo.
 
 271
-00:13:34,385 --> 00:13:38,686
-En el próximo vídeo usaremos la cartera en el día a día, paso a paso:
+00:13:35,834 --> 00:13:39,614
+Sin el descriptor, aunque tengas las semillas, es muy difícil.
 
 272
-00:13:38,686 --> 00:13:42,676
-vigilar el saldo, recibir y firmar pagos sin exponer tus llaves.
+00:13:41,017 --> 00:13:41,842
+La regla de oro:
 
 273
-00:13:42,676 --> 00:13:43,611
+00:13:41,842 --> 00:13:45,865
+tu semilla nunca toca un aparato conectado a internet, y tú sabes recuperarla.
+
+274
+00:13:46,185 --> 00:13:49,685
+En el próximo vídeo, el uno B, crearás tu semilla tú mismo,
+
+275
+00:13:49,685 --> 00:13:51,524
+sin depender de ningún aparato:
+
+276
+00:13:51,524 --> 00:13:56,271
+a mano con un dado, y con una página web en un ordenador sin conexión con Tails.
+
+277
+00:13:56,271 --> 00:13:57,161
 Nos vemos allí.

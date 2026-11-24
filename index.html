@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Bitcoin práctico y seguro</title>
-<meta name="description" content="Guía visual y 5 vídeos: crear tu semilla, usar tu cartera, guardarla, comprar y vender, y gastar bitcoin con privacidad.">
+<meta name="description" content="Guía visual y 6 vídeos: crear tu semilla (con dados, a mano o con Tails sin conexión), usar tu cartera, guardarla, comprar y vender, y gastar bitcoin con privacidad.">
 <meta property="og:title" content="Bitcoin práctico y seguro">
 <meta property="og:description" content="5 vídeos y una guía visual para usar bitcoin en la vida real sin perderlo y sin exponerte.">
 <meta property="og:image" content="img/01.jpg">
@@ -32,6 +32,7 @@ b,strong{color:#fff}
 .wrap{max-width:1140px;margin:0 auto;padding:0 20px}
 .muted{color:var(--ink2)}
 .small{font-size:14px;color:var(--ink3)}
+code{font-family:"JetBrains Mono",monospace;font-size:.9em;background:rgba(255,255,255,.07);padding:1px 6px;border-radius:6px;color:#fff}
 
 /* nav */
 nav.top{position:sticky;top:0;z-index:50;background:rgba(11,17,27,.86);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
@@ -236,6 +237,7 @@ footer .rules b{display:block;color:var(--btc);font-family:"Bebas Neue";font-siz
 <nav class="top"><div class="wrap">
   <a class="brand" href="#inicio"><span class="coin">₿</span>BITCOIN PRÁCTICO Y SEGURO</a>
   <a class="pill" href="#v1"><span>1</span> Semilla</a>
+  <a class="pill" href="#v1b"><span>1B</span> A mano</a>
   <a class="pill" href="#v2"><span>2</span> Usar</a>
   <a class="pill" href="#v3"><span>3</span> Guardar</a>
   <a class="pill" href="#v4"><span>4</span> Comprar</a>
@@ -244,28 +246,29 @@ footer .rules b{display:block;color:var(--btc);font-family:"Bebas Neue";font-siz
 
 <header class="hero" id="inicio">
   <div class="wrap">
-    <div class="kicker">Serie de 5 vídeos + guía visual</div>
+    <div class="kicker">Serie de 6 vídeos + guía visual</div>
     <h1>Bitcoin <span class="hl">práctico</span> y seguro</h1>
     <p class="lead">Teoría justa y mucha práctica: cómo crear tu semilla, usar tu cartera, guardarla, comprar, vender y gastar bitcoin en la vida real <b>sin perderlo y sin exponerte</b>.</p>
     <div class="stats">
-      <div class="stat"><b>5</b>vídeos</div>
-      <div class="stat"><b>34</b>minutos</div>
+      <div class="stat"><b>6</b>vídeos</div>
+      <div class="stat"><b>57</b>minutos</div>
       <div class="stat"><b>9</b>niveles de seguridad</div>
       <div class="stat"><b>0</b>teoría innecesaria</div>
     </div>
     <div class="eps">
-      <a class="ep" href="#v1"><img src="img/01.jpg" alt="Portada del vídeo 1" loading="lazy"><div><small>VÍDEO 1 · 9 MIN</small><strong>Tu semilla: de la más segura a la más arriesgada</strong></div></a>
-      <a class="ep" href="#v2"><img src="img/02.jpg" alt="Portada del vídeo 2" loading="lazy"><div><small>VÍDEO 2 · 6 MIN</small><strong>Usar tu cartera: recibir, ver y firmar</strong></div></a>
-      <a class="ep" href="#v3"><img src="img/03.jpg" alt="Portada del vídeo 3" loading="lazy"><div><small>VÍDEO 3 · 5 MIN</small><strong>Dónde y cómo guardar semillas y hardware wallets</strong></div></a>
-      <a class="ep" href="#v4"><img src="img/04.jpg" alt="Portada del vídeo 4" loading="lazy"><div><small>VÍDEO 4 · 7 MIN</small><strong>Comprar y vender bitcoin de forma segura</strong></div></a>
-      <a class="ep" href="#v5"><img src="img/05.jpg" alt="Portada del vídeo 5" loading="lazy"><div><small>VÍDEO 5 · 7 MIN</small><strong>Gastar con privacidad y vivir de tu patrimonio</strong></div></a>
+      <a class="ep" href="#v1"><img src="img/01.jpg" alt="Portada del vídeo 1" loading="lazy"><div><small>VÍDEO 1 · 14 MIN</small><strong>Tu semilla: de la más segura a la más arriesgada</strong></div></a>
+      <a class="ep" href="#v1b"><img src="img/01b.jpg" alt="Portada del vídeo 1B" loading="lazy"><div><small>VÍDEO 1B · 9 MIN</small><strong>Crea tu semilla sin aparatos: a mano y con Tails</strong></div></a>
+      <a class="ep" href="#v2"><img src="img/02.jpg" alt="Portada del vídeo 2" loading="lazy"><div><small>VÍDEO 2 · 8 MIN</small><strong>Usar tu cartera: recibir, ver y firmar</strong></div></a>
+      <a class="ep" href="#v3"><img src="img/03.jpg" alt="Portada del vídeo 3" loading="lazy"><div><small>VÍDEO 3 · 6,5 MIN</small><strong>Dónde y cómo guardar semillas y hardware wallets</strong></div></a>
+      <a class="ep" href="#v4"><img src="img/04.jpg" alt="Portada del vídeo 4" loading="lazy"><div><small>VÍDEO 4 · 12 MIN</small><strong>Comprar y vender bitcoin de forma segura</strong></div></a>
+      <a class="ep" href="#v5"><img src="img/05.jpg" alt="Portada del vídeo 5" loading="lazy"><div><small>VÍDEO 5 · 7,5 MIN</small><strong>Gastar con privacidad y vivir de tu patrimonio</strong></div></a>
     </div>
   </div>
 </header>
 
 <!-- ============================================================ V1 -->
 <section class="v" id="v1"><div class="wrap">
-  <div class="vhead"><div class="vnum">01</div><div><div class="kicker">Semillas</div><h2>Tu semilla: de la más segura a la más arriesgada</h2><p>Qué combinación usar, qué te protege cada una y qué no.</p></div></div>
+  <div class="vhead"><div class="vnum">01</div><div><div class="kicker">Semillas</div><h2>Tu semilla: de la más segura a la más arriesgada</h2><p>Qué combinación usar, qué te protege cada una y qué no. Y cómo crearla con dados, pasarla a acero y añadirle passphrase.</p></div></div>
   <div class="player"><video controls preload="none" playsinline poster="img/01.jpg" src="videos/01_tu_semilla_de_la_mas_segura_a_la_mas_arriesgada.mp4"></video></div>
   <div class="vmeta"><span>⏱ 14 min · subtítulos incluidos</span><a href="videos/01_tu_semilla_de_la_mas_segura_a_la_mas_arriesgada.mp4" download>Descargar MP4</a><a href="videos/01_tu_semilla_de_la_mas_segura_a_la_mas_arriesgada.srt" download>Subtítulos .srt</a></div>
   <div class="practice"><h4>En la práctica, paso a paso</h4><ol><li>Revisar <b>caja y precinto</b> y comprobar el firmware</li><li>Elegir un <b>PIN</b> largo</li><li><b>99 tiradas de dado</b> tecleadas en la hardware wallet</li><li>Copiar las <b>24 palabras en papel</b>, grupo a grupo</li><li>Responder la <b>comprobación</b> y apuntar la <b>huella</b></li><li><b>Estampar la placa</b> de acero letra a letra</li><li><b>Verificar la placa</b> en el dispositivo y quemar el borrador</li><li>Sacar la <b>passphrase con 5 dados</b> y la lista Diceware</li><li>Activar la passphrase: <b>una letra mal = otra cartera vacía</b></li><li>Montar la <b>multifirma 2 de 3</b> en Sparrow con 3 dispositivos</li><li>Imprimir y registrar el <b>descriptor</b></li></ol></div>
@@ -350,7 +353,7 @@ footer .rules b{display:block;color:var(--btc);font-family:"Bebas Neue";font-siz
   </div></details>
 
   <details class="lvl" style="--c:#ef4444"><summary><span class="num">9</span><span class="t">Semilla digital o inventada</span><span class="tag">Nunca</span></summary><div class="body">
-    <ul class="xl"><li>Foto, captura de pantalla o nube</li><li>Notas del móvil, email, WhatsApp o gestor de contraseñas</li><li>Generada en una web o inventada por ti: los humanos somos malos eligiendo al azar</li><li>Escrita en un formulario de «soporte técnico». <b>Ningún soporte real te la pedirá nunca.</b></li></ul>
+    <ul class="xl"><li>Foto, captura de pantalla o nube</li><li>Notas del móvil, email, WhatsApp o gestor de contraseñas</li><li>Generada en una web <b>con internet</b> o inventada de memoria: los humanos somos malos eligiendo al azar (si la haces tú, hazla con dados: <a href="#v1b" style="color:var(--btc)">vídeo 1B</a>)</li><li>Escrita en un formulario de «soporte técnico». <b>Ningún soporte real te la pedirá nunca.</b></li></ul>
   </div></details>
 
   <h3>Cómo crear la semilla con dados</h3>
@@ -412,6 +415,59 @@ footer .rules b{display:block;color:var(--btc);font-family:"Bebas Neue";font-siz
     <div style="background:#fb923c;width:min(100%,840px)">Lo que gastas en un mes<small>App del móvil (nivel 7)</small></div>
   </div>
   <div class="alert green"><h4>Siempre: practica la recuperación</h4><ul><li>Si no has probado a recuperar tu cartera, no sabes si tienes una copia de seguridad.</li><li>La regla de oro: tu semilla <b>nunca</b> toca un aparato conectado a internet.</li></ul></div>
+</div></section>
+
+<!-- ============================================================ V1B -->
+<section class="v" id="v1b"><div class="wrap">
+  <div class="vhead"><div class="vnum">1B</div><div><div class="kicker">Semilla sin aparatos</div><h2>Crea tu semilla sin aparatos: a mano y con Tails</h2><p>El azar lo pones tú: a mano con un dado, lápiz, papel y la lista BIP39, o con dados y una página web descargada en un ordenador sin conexión.</p></div></div>
+  <div class="player"><video controls preload="none" playsinline poster="img/01b.jpg" src="videos/01b_crea_tu_semilla_a_mano_y_con_tails.mp4"></video></div>
+  <div class="vmeta"><span>⏱ 9 min · subtítulos incluidos</span><a href="videos/01b_crea_tu_semilla_a_mano_y_con_tails.mp4" download>Descargar MP4</a><a href="videos/01b_crea_tu_semilla_a_mano_y_con_tails.srt" download>Subtítulos .srt</a></div>
+  <div class="practice"><h4>En la práctica, paso a paso</h4><ol><li><b>Semilla a mano</b>: dado (impar 1, par 0) → bits</li><li>Grupos de <b>11 bits</b> → número → <b>+1</b> → palabra de la lista</li><li><b>Palabra 24</b>: los 3 bits que sobran + 8 bits de control (SHA-256)</li><li>Descargar y <b>verificar bip39-standalone.html</b> (SHA-256)</li><li>Arrancar <b>Tails en modo sin conexión</b></li><li>Abrir la página desde la carpeta <b>Tor Browser</b></li><li><b>~160 tiradas</b> en modo Dice hasta Total Bits 256 o más</li><li>Calcular la <b>palabra 24</b> de tu semilla hecha a mano (Binary + Raw Entropy)</li><li>Apagar Tails: <b>no queda rastro</b></li></ol></div>
+
+  <h3>Sin ningún aparato: la semilla a mano</h3>
+  <p class="muted" style="max-width:760px">La lista BIP39 oficial tiene <b>2048 palabras</b>, y 2048 = 2<sup>11</sup>: cada palabra son <b>11 bits</b>. Si los bits los sacas tú con un dado o una moneda, no dependes del generador de azar de nadie.</p>
+  <div class="grid g2">
+    <ol class="steps">
+      <li>Tira un dado y apunta un bit por tirada: <b>impar = 1, par = 0</b> (o moneda: cara 1, cruz 0).</li>
+      <li><b>256 tiradas</b> para 24 palabras (128 para 12). Apunta los bits en <b>grupos de 11</b>, uno por línea.</li>
+      <li>Pasa cada grupo a número: valores <b>1024, 512, 256… 2, 1</b>; suma los que tienen un 1.</li>
+      <li>Súmale <b>1</b> (la lista va del 1 al 2048) y busca esa línea en la lista oficial.</li>
+      <li>Repasa cada suma dos veces: <b>un error cambia la palabra</b>.</li>
+    </ol>
+    <div class="diagram reveal">
+      <p class="small" style="margin:0 0 8px">Ejemplo (no lo uses): primeras 11 tiradas</p>
+      <div class="tbl"><table style="font-family:'JetBrains Mono',monospace;text-align:center">
+        <tbody>
+        <tr><td>🎲</td><td>1</td><td>3</td><td>5</td><td>5</td><td>6</td><td>1</td><td>2</td><td>5</td><td>5</td><td>5</td><td>4</td></tr>
+        <tr><td>bit</td><td class="y">1</td><td class="y">1</td><td class="y">1</td><td class="y">1</td><td>0</td><td class="y">1</td><td>0</td><td class="y">1</td><td class="y">1</td><td class="y">1</td><td>0</td></tr>
+        <tr><td>valor</td><td>1024</td><td>512</td><td>256</td><td>128</td><td>64</td><td>32</td><td>16</td><td>8</td><td>4</td><td>2</td><td>1</td></tr>
+        </tbody></table></div>
+      <p style="text-align:center;margin:14px 0 4px;font-family:'JetBrains Mono',monospace">1024+512+256+128+32+8+4+2 = 1966</p>
+      <p style="text-align:center;margin:4px 0">1966 + 1 = <b style="font-size:28px;color:var(--btc)">1967</b> → <b style="font-size:24px">volume</b></p>
+    </div>
+  </div>
+  <div class="alert yellow"><h4>La palabra 24 lleva una suma de control</h4><ul><li>Con 256 bits, 23 palabras usan 253 bits. La palabra 24 son los <b>3 bits que sobran + 8 bits de control</b>: los primeros 8 bits del <b>SHA-256</b> de tus 256 bits.</li><li>Con 12 palabras: 11 palabras + 7 bits + <b>4 bits de control</b>.</li><li>Sin esa suma de control, ninguna cartera aceptará la semilla. A lápiz son horas de cálculo: lo práctico es calcularla en un <b>ordenador sin conexión con Tails</b> (abajo).</li></ul></div>
+
+  <h3>Con dados y una web sin internet: Tails</h3>
+  <p class="muted" style="max-width:760px"><b>Tails</b> arranca desde un pen drive y no guarda nada: al apagar, la memoria se borra. La herramienta BIP39 de <b>Ian Coleman</b> es una página completa en un solo archivo HTML que funciona sin internet.</p>
+  <div class="grid g2">
+    <ol class="steps">
+      <li>En tu ordenador de siempre, descarga <b>bip39-standalone.html</b> solo desde <b>github.com/iancoleman/bip39/releases</b>.</li>
+      <li>Calcula su <b>SHA-256</b> (<code>sha256sum bip39-standalone.html</code>) y compárala con la publicada en la versión. Si no coincide, bórralo.</li>
+      <li>Cópialo a un <b>segundo pen drive</b>. Tails, en otro, descargado y verificado desde <b>tails.net</b>.</li>
+      <li>En el ordenador que vas a usar: <b>sin cable de red y sin wifi</b>. Arranca Tails y en <b>Configuración adicional</b> activa el <b>modo sin conexión</b>.</li>
+      <li>Copia la página a la carpeta <b>Tor Browser</b> (la única que puede abrir el navegador de Tails). Abre Tor Browser → <b>iniciar de todos modos</b> → abre el archivo.</li>
+    </ol>
+    <ol class="steps" style="counter-reset:s 5">
+      <li>Marca <b>Show entropy details</b>, elige tipo <b>Dice [1-6]</b> y teclea tus tiradas en <b>Entropy</b>.</li>
+      <li>La herramienta cuenta <b>1,67 bits por tirada</b>: tira <b>unas 160 veces</b>, hasta que <b>Total Bits</b> marque 256 o más.</li>
+      <li><b>Mnemonic Length: 24 Words</b>. Si sale el aviso rojo «<i>The mnemonic will appear more secure than it really is</i>», te faltan tiradas.</li>
+      <li>Copia las palabras de <b>BIP39 Mnemonic</b> a mano, en orden, y repásalas.</li>
+      <li>¿Semilla hecha a mano? Elige <b>Binary</b>, teclea tus 256 bits y deja <b>Use Raw Entropy</b>: verás tus 23 palabras, el <b>Binary Checksum</b> y la <b>palabra 24</b>.</li>
+    </ol>
+  </div>
+  <div class="alert red"><h4>Al terminar, que no quede ni rastro</h4><ul><li>No guardes, no imprimas, no hagas capturas: la semilla <b>solo en papel</b>, y luego en acero.</li><li><b>Apaga Tails</b>: la memoria se borra.</li><li><b>Nunca</b> abras esta página con internet ni en tu sistema de siempre.</li><li>Para usarla, impórtala en tu hardware wallet (importar / recuperar semilla) y apunta su <b>huella</b>.</li></ul></div>
+
 </div></section>
 
 <!-- ============================================================ V2 -->

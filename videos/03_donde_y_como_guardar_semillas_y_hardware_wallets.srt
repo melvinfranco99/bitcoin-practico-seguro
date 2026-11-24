@@ -11,421 +11,517 @@ Ahora, la pregunta que más gente se hace:
 ¿dónde lo guardo todo?
 
 4
-00:00:07,808 --> 00:00:11,583
-Vamos a ver en qué material, en qué lugares, cómo repartir las piezas,
+00:00:07,808 --> 00:00:08,873
+Y no solo la teoría:
 
 5
-00:00:11,583 --> 00:00:15,843
-cómo protegerte de las personas, y cómo dejarlo todo preparado para tu familia.
+00:00:08,873 --> 00:00:12,387
+veremos cómo grabar las arandelas, cerrar las bolsas de seguridad,
 
 6
-00:00:17,250 --> 00:00:19,313
-Primero, perderle el miedo al aparato.
+00:00:12,387 --> 00:00:16,806
+configurar el dispositivo, repartir las llaves y escribir la carta para tu familia.
 
 7
-00:00:19,633 --> 00:00:22,840
-Si pierdes o se rompe tu hardware wallet, compras otra,
+00:00:18,217 --> 00:00:20,280
+Primero, perderle el miedo al aparato.
 
 8
-00:00:22,840 --> 00:00:25,115
-introduces la semilla y recuperas todo.
+00:00:20,600 --> 00:00:23,807
+Si pierdes o se rompe tu hardware wallet, compras otra,
 
 9
-00:00:25,115 --> 00:00:28,206
-Y si alguien la encuentra, está protegida por el PIN.
+00:00:23,807 --> 00:00:26,081
+introduces la semilla y recuperas todo.
 
 10
-00:00:28,526 --> 00:00:32,476
-Pero si pierdes la semilla y el dispositivo falla, el dinero se pierde.
+00:00:26,081 --> 00:00:29,172
+Y si alguien la encuentra, está protegida por el PIN.
 
 11
-00:00:32,476 --> 00:00:35,146
-Por eso el cuidado de verdad es para la semilla.
+00:00:29,492 --> 00:00:33,442
+Pero si pierdes la semilla y el dispositivo falla, el dinero se pierde.
 
 12
-00:00:36,550 --> 00:00:38,200
-En qué material guardar la semilla.
+00:00:33,442 --> 00:00:36,113
+Por eso el cuidado de verdad es para la semilla.
 
 13
-00:00:38,520 --> 00:00:44,265
-El papel es barato y rápido, pero se quema, se moja, y la tinta se borra con los años.
+00:00:37,517 --> 00:00:39,157
+En qué material guardar la semilla.
 
 14
-00:00:44,265 --> 00:00:46,135
-Vale para empezar, nada más.
+00:00:39,477 --> 00:00:45,221
+El papel es barato y rápido, pero se quema, se moja, y la tinta se borra con los años.
 
 15
-00:00:46,455 --> 00:00:49,229
-Lo recomendado es una placa de acero inoxidable,
+00:00:45,221 --> 00:00:47,092
+Vale para empezar, nada más.
 
 16
-00:00:49,229 --> 00:00:52,927
-con las letras grabadas con punzón o con fichas intercambiables.
+00:00:47,412 --> 00:00:50,185
+Lo recomendado es una placa de acero inoxidable,
 
 17
-00:00:52,927 --> 00:00:55,643
-Aguanta un incendio doméstico y una inundación.
+00:00:50,185 --> 00:00:53,884
+con las letras grabadas con punzón o con fichas intercambiables.
 
 18
-00:00:55,963 --> 00:00:57,793
-Y una opción casera muy buena:
+00:00:53,884 --> 00:00:56,600
+Aguanta un incendio doméstico y una inundación.
 
 19
-00:00:57,793 --> 00:01:03,101
-arandelas de acero inoxidable, una por palabra, con las letras estampadas con punzones,
+00:00:56,920 --> 00:00:58,750
+Y una opción casera muy buena:
 
 20
-00:01:03,101 --> 00:01:04,688
-ensartadas en un tornillo.
+00:00:58,750 --> 00:01:04,058
+arandelas de acero inoxidable, una por palabra, con las letras estampadas con punzones,
 
 21
-00:01:04,688 --> 00:01:05,847
-Cuesta pocos euros.
+00:01:04,058 --> 00:01:05,644
+ensartadas en un tornillo.
 
 22
-00:01:06,167 --> 00:01:07,085
-Lo que nunca:
+00:01:05,644 --> 00:01:06,804
+Cuesta pocos euros.
 
 23
-00:01:07,085 --> 00:01:08,922
-cualquier formato digital.
+00:01:07,124 --> 00:01:08,042
+Lo que nunca:
 
 24
-00:01:08,922 --> 00:01:12,666
-Ni foto, ni nube, ni notas, ni gestor de contraseñas.
+00:01:08,042 --> 00:01:09,879
+cualquier formato digital.
 
 25
-00:01:14,083 --> 00:01:15,917
-Unas buenas prácticas con el metal.
+00:01:09,879 --> 00:01:13,623
+Ni foto, ni nube, ni notas, ni gestor de contraseñas.
 
 26
-00:01:16,237 --> 00:01:17,699
-Que sea acero inoxidable.
+00:01:15,050 --> 00:01:16,884
+Unas buenas prácticas con el metal.
 
 27
-00:01:17,699 --> 00:01:20,915
-El aluminio se funde a unos seiscientos sesenta grados,
+00:01:17,204 --> 00:01:18,666
+Que sea acero inoxidable.
 
 28
-00:01:20,915 --> 00:01:24,190
-y un incendio en una casa puede superar esa temperatura.
+00:01:18,666 --> 00:01:21,882
+El aluminio se funde a unos seiscientos sesenta grados,
 
 29
-00:01:24,510 --> 00:01:26,758
-No hace falta grabar la palabra entera:
+00:01:21,882 --> 00:01:25,157
+y un incendio en una casa puede superar esa temperatura.
 
 30
-00:01:26,758 --> 00:01:31,369
-en la lista estándar, cada palabra se identifica con sus cuatro primeras letras.
+00:01:25,477 --> 00:01:27,724
+No hace falta grabar la palabra entera:
 
 31
-00:01:31,369 --> 00:01:32,982
-Así cabe en cualquier placa.
+00:01:27,724 --> 00:01:32,335
+en la lista estándar, cada palabra se identifica con sus cuatro primeras letras.
 
 32
-00:01:33,302 --> 00:01:35,750
-Graba también el número de cada palabra.
+00:01:32,335 --> 00:01:33,949
+Así cabe en cualquier placa.
 
 33
-00:01:35,750 --> 00:01:37,402
-El orden es imprescindible.
+00:01:34,269 --> 00:01:36,717
+Graba también el número de cada palabra.
 
 34
-00:01:37,722 --> 00:01:42,137
-No pongas bitcoin, ni el nombre de la cartera, ni nada que indique lo que es.
+00:01:36,717 --> 00:01:38,369
+El orden es imprescindible.
 
 35
-00:01:42,137 --> 00:01:45,406
-Para quien no sepa, son solo letras en un trozo de metal.
+00:01:38,689 --> 00:01:43,104
+No pongas bitcoin, ni el nombre de la cartera, ni nada que indique lo que es.
 
 36
-00:01:45,726 --> 00:01:49,641
-Y antes de guardarla, léela con calma y compárala con la original.
+00:01:43,104 --> 00:01:46,372
+Para quien no sepa, son solo letras en un trozo de metal.
 
 37
-00:01:49,641 --> 00:01:52,606
-Un error al grabar se descubre cuando ya es tarde.
+00:01:46,692 --> 00:01:50,607
+Y antes de guardarla, léela con calma y compárala con la original.
 
 38
-00:01:54,017 --> 00:01:55,584
-Ahora, la clave de todo:
+00:01:50,607 --> 00:01:53,573
+Un error al grabar se descubre cuando ya es tarde.
 
 39
-00:01:55,584 --> 00:01:56,825
-separar las piezas.
+00:01:54,983 --> 00:01:58,337
+Si no quieres comprar una placa, hay una opción casera y barata:
 
 40
-00:01:57,145 --> 00:02:01,484
-Si usas una sola firma con passphrase, el dispositivo puede estar en casa.
+00:01:58,337 --> 00:01:59,910
+arandelas de acero inoxidable.
 
 41
-00:02:01,484 --> 00:02:05,236
-Tiene PIN, y además sin la passphrase no da acceso a tus fondos.
+00:02:00,230 --> 00:02:02,680
+En cada arandela grabas, con los punzones,
 
 42
-00:02:05,556 --> 00:02:06,959
-La semilla, en un lugar.
+00:02:02,680 --> 00:02:06,355
+el número de orden y las cuatro primeras letras de una palabra.
 
 43
-00:02:07,279 --> 00:02:10,282
-Y la passphrase, en otro lugar distinto.
+00:02:06,355 --> 00:02:09,038
+Veinticuatro arandelas, veinticuatro palabras.
 
 44
-00:02:10,282 --> 00:02:11,258
-Nunca juntas.
+00:02:09,358 --> 00:02:11,820
+Después las ensartas en orden en un tornillo largo,
 
 45
-00:02:11,578 --> 00:02:14,617
-Así, ningún lugar por sí solo da acceso a tu dinero.
+00:02:11,820 --> 00:02:14,813
+y lo cierras con tuerca y contratuerca para que no se suelten.
 
 46
-00:02:14,617 --> 00:02:17,773
-Un ladrón que encuentre una pieza no puede hacer nada.
+00:02:15,133 --> 00:02:17,081
+Cuesta pocos euros, aguanta el fuego,
 
 47
-00:02:17,773 --> 00:02:22,741
-Y si un lugar se quema, con lo que queda puedes mover los fondos a una cartera nueva.
+00:02:17,081 --> 00:02:20,292
+y no parece nada especial dentro de una caja de herramientas.
 
 48
-00:02:23,061 --> 00:02:27,507
-Si quieres más redundancia, haz dos copias de cada pieza, siempre en lugares distintos.
+00:02:21,717 --> 00:02:23,797
+Para saber si alguien ha tocado tus copias,
 
 49
-00:02:28,917 --> 00:02:31,444
-En multifirma dos de tres la regla es sencilla:
+00:02:23,797 --> 00:02:26,457
+usa bolsas de seguridad con precinto y número de serie,
 
 50
-00:02:31,444 --> 00:02:35,478
-cada llave en un lugar distinto, y en cada lugar, una copia del descriptor.
+00:02:26,457 --> 00:02:28,827
+como las que usan los bancos para mover efectivo.
 
 51
-00:02:35,798 --> 00:02:36,461
-Por ejemplo:
+00:02:29,147 --> 00:02:32,566
+Metes la placa, retiras la tira del adhesivo y cierras.
 
 52
-00:02:36,461 --> 00:02:38,948
-tu casa, la casa de un familiar de confianza,
+00:02:32,566 --> 00:02:35,549
+Ese cierre no se puede despegar sin dejar marca.
 
 53
-00:02:38,948 --> 00:02:41,545
-y una caja de seguridad o una segunda vivienda.
+00:02:35,869 --> 00:02:40,413
+Apuntas el número de serie de cada bolsa y la fecha en tu cuaderno de inventario.
 
 54
-00:02:41,865 --> 00:02:44,235
-Si roban o se quema un lugar, no pasa nada:
+00:02:40,413 --> 00:02:42,152
+Nunca apuntes ahí las palabras.
 
 55
-00:02:44,235 --> 00:02:48,202
-con los otros dos puedes gastar, y mueves el dinero a una cartera nueva.
+00:02:42,472 --> 00:02:44,356
+Cada seis o doce meses, revisas:
 
 56
-00:02:48,522 --> 00:02:51,306
-Y ningún lugar por sí solo puede mover el dinero.
+00:02:44,356 --> 00:02:47,654
+el número debe coincidir y el cierre debe estar intacto.
 
 57
-00:02:51,306 --> 00:02:53,978
-Ni siquiera la persona que te guarda una llave.
+00:02:47,654 --> 00:02:52,189
+Si aparece la palabra VOID, o el número no es el tuyo, alguien lo ha abierto:
 
 58
-00:02:55,383 --> 00:02:56,705
-¿Y qué lugares puedes usar?
+00:02:52,189 --> 00:02:54,368
+mueve tus fondos a una semilla nueva.
 
 59
-00:02:57,025 --> 00:02:57,488
-Tu casa:
+00:02:55,783 --> 00:02:57,351
+Ahora, la clave de todo:
 
 60
-00:02:57,488 --> 00:03:01,366
-lo más cómodo, con una caja fuerte anclada o un escondite discreto.
+00:02:57,351 --> 00:02:58,592
+separar las piezas.
 
 61
-00:03:01,366 --> 00:03:04,202
-Pero es el primer sitio donde buscaría un ladrón,
+00:02:58,912 --> 00:03:03,251
+Si usas una sola firma con passphrase, el dispositivo puede estar en casa.
 
 62
-00:03:04,202 --> 00:03:06,691
-así que nunca guardes ahí todas las piezas.
+00:03:03,251 --> 00:03:07,003
+Tiene PIN, y además sin la passphrase no da acceso a tus fondos.
 
 63
-00:03:07,011 --> 00:03:09,057
-Un familiar o un amigo de confianza:
+00:03:07,323 --> 00:03:08,731
+La semilla, en un lugar.
 
 64
-00:03:09,057 --> 00:03:12,410
-ideal para guardar una pieza que, sola, no sirve para nada.
+00:03:09,051 --> 00:03:12,055
+Y la passphrase, en otro lugar distinto.
 
 65
-00:03:12,730 --> 00:03:14,824
-Una caja de seguridad en un banco:
+00:03:12,055 --> 00:03:13,031
+Nunca juntas.
 
 66
-00:03:14,824 --> 00:03:18,396
-resistente, pero tiene horarios, el banco sabe que existe,
+00:03:13,351 --> 00:03:16,390
+Así, ningún lugar por sí solo da acceso a tu dinero.
 
 67
-00:03:18,396 --> 00:03:21,968
-y en determinadas situaciones su acceso se puede bloquear.
+00:03:16,390 --> 00:03:19,546
+Un ladrón que encuentre una pieza no puede hacer nada.
 
 68
-00:03:21,968 --> 00:03:24,617
-Mejor para una sola pieza, nunca para todo.
+00:03:19,546 --> 00:03:24,513
+Y si un lugar se quema, con lo que queda puedes mover los fondos a una cartera nueva.
 
 69
-00:03:24,937 --> 00:03:26,920
-Y una segunda vivienda o una oficina:
+00:03:24,833 --> 00:03:29,280
+Si quieres más redundancia, haz dos copias de cada pieza, siempre en lugares distintos.
 
 70
-00:03:26,920 --> 00:03:28,688
-te da separación geográfica real.
+00:03:30,683 --> 00:03:33,198
+La hardware wallet también se protege.
 
 71
-00:03:30,117 --> 00:03:32,226
-Cuatro trucos para proteger lo que guardas.
+00:03:33,198 --> 00:03:35,117
+Entras en ajustes, seguridad.
 
 72
-00:03:32,546 --> 00:03:37,714
-Mete cada pieza en una bolsa con precinto numerado, de esas que se rompen al abrirlas.
+00:03:35,437 --> 00:03:40,506
+Activa que se borre sola después de varios PIN incorrectos, por ejemplo diez.
 
 73
-00:03:37,714 --> 00:03:38,736
-Apunta el número.
+00:03:40,506 --> 00:03:43,535
+Si te la roban, no podrán probar PINs sin fin.
 
 74
-00:03:38,736 --> 00:03:43,363
-Si un día no coincide, sabrás que alguien lo ha abierto y moverás tus fondos.
+00:03:43,535 --> 00:03:44,917
+Y tú no pierdes nada:
 
 75
-00:03:43,683 --> 00:03:45,991
-Usa un PIN largo en la hardware wallet,
+00:03:44,917 --> 00:03:45,971
+tienes la placa.
 
 76
-00:03:45,991 --> 00:03:48,949
-y activa el borrado tras varios intentos fallidos.
+00:03:46,291 --> 00:03:48,530
+Algunos modelos permiten un PIN señuelo:
 
 77
-00:03:48,949 --> 00:03:49,541
-Tranquilo:
+00:03:48,530 --> 00:03:53,009
+un segundo PIN que abre una cartera con poco dinero, o que borra el dispositivo.
 
 78
-00:03:49,541 --> 00:03:50,606
-tienes la semilla.
+00:03:53,009 --> 00:03:55,024
+Útil si alguien te obliga a abrirla.
 
 79
-00:03:50,926 --> 00:03:53,271
-Revisa tus copias cada seis o doce meses:
+00:03:55,344 --> 00:03:58,248
+Y guarda la hardware wallet separada de la placa.
 
 80
-00:03:53,271 --> 00:03:55,501
-que siguen ahí, legibles y en su sitio.
+00:03:58,248 --> 00:04:01,033
+Quien encuentre una, no debe encontrar la otra.
 
 81
-00:03:55,821 --> 00:03:58,336
-Y cuanta menos gente sepa que existen, mejor.
+00:04:02,450 --> 00:04:05,830
+Veamos un reparto real de una multifirma dos de tres.
 
 82
-00:03:59,750 --> 00:04:02,123
-Y ahora, la amenaza que más ha crecido:
+00:04:05,830 --> 00:04:07,169
+Tienes tres paquetes.
 
 83
-00:04:02,123 --> 00:04:03,948
-el ataque de la llave inglesa.
+00:04:07,169 --> 00:04:07,935
+En cada uno:
 
 84
-00:04:03,948 --> 00:04:06,808
-Es decir, que alguien te obligue por la fuerza.
+00:04:07,935 --> 00:04:12,527
+una placa con su semilla, una copia del descriptor y su hardware wallet,
 
 85
-00:04:07,128 --> 00:04:11,653
-En los últimos años ha habido asaltos y secuestros a poseedores de bitcoin en Europa.
+00:04:12,527 --> 00:04:13,930
+en bolsas precintadas.
 
 86
-00:04:11,653 --> 00:04:13,516
-El mayor riesgo ya no es un hacker:
+00:04:14,250 --> 00:04:17,498
+El paquete A se queda en casa, en una caja fuerte anclada a la pared.
 
 87
-00:04:13,516 --> 00:04:15,592
-es alguien que sabe que tienes bitcoin.
+00:04:17,818 --> 00:04:22,170
+El paquete B, en casa de un familiar de confianza, en un sobre sellado.
 
 88
-00:04:15,912 --> 00:04:18,808
-Así que la primera defensa es el silencio.
+00:04:22,170 --> 00:04:24,561
+Con una sola llave no puede hacer nada.
 
 89
-00:04:18,808 --> 00:04:22,324
-No lo cuentes en redes, en el trabajo ni en el bar.
+00:04:24,881 --> 00:04:29,736
+Y el C, en una caja de seguridad del banco, o en otra vivienda, lejos de las otras dos.
 
 90
-00:04:22,324 --> 00:04:23,703
-No enseñes tu saldo.
+00:04:30,056 --> 00:04:33,112
+Un ladrón en tu casa solo encuentra una llave:
 
 91
-00:04:24,023 --> 00:04:25,747
-Y la segunda defensa, el diseño:
+00:04:33,112 --> 00:04:34,176
+no puede gastar.
 
 92
-00:04:25,747 --> 00:04:28,711
-con una passphrase puedes entregar una cartera señuelo,
+00:04:34,176 --> 00:04:35,837
+Un incendio destruye una:
 
 93
-00:04:28,711 --> 00:04:31,190
-y con una multifirma cuyas llaves están lejos,
+00:04:35,837 --> 00:04:36,767
+te quedan dos.
 
 94
-00:04:31,190 --> 00:04:33,723
-físicamente no puedes darlo todo en el momento.
+00:04:36,767 --> 00:04:39,891
+Y con dos lugares cualesquiera, recuperas todo.
 
 95
-00:04:35,150 --> 00:04:37,755
-Por último, algo que casi todo el mundo olvida:
+00:04:41,317 --> 00:04:42,631
+¿Y qué lugares puedes usar?
 
 96
-00:04:37,755 --> 00:04:41,026
-si te pasa algo, ¿tu familia podría recuperar tus bitcoins?
+00:04:42,951 --> 00:04:43,414
+Tu casa:
 
 97
-00:04:41,346 --> 00:04:44,263
-Escribe una carta de instrucciones, sin secretos:
+00:04:43,414 --> 00:04:47,292
+lo más cómodo, con una caja fuerte anclada o un escondite discreto.
 
 98
-00:04:44,263 --> 00:04:48,253
-qué tienes, dónde está cada pieza, y cómo se recupera, paso a paso.
+00:04:47,292 --> 00:04:50,128
+Pero es el primer sitio donde buscaría un ladrón,
 
 99
-00:04:48,573 --> 00:04:51,187
-Elige una persona de confianza que entienda lo básico,
+00:04:50,128 --> 00:04:52,617
+así que nunca guardes ahí todas las piezas.
 
 100
-00:04:51,187 --> 00:04:53,607
-o indica a quién pueden acudir para que les ayude.
+00:04:52,937 --> 00:04:54,983
+Un familiar o un amigo de confianza:
 
 101
-00:04:53,927 --> 00:04:57,919
-Si usas multifirma, explica dónde está cada llave y cada copia del descriptor.
+00:04:54,983 --> 00:04:58,336
+ideal para guardar una pieza que, sola, no sirve para nada.
 
 102
-00:04:58,239 --> 00:05:00,480
-Nunca pongas la semilla en el testamento:
+00:04:58,656 --> 00:05:00,750
+Una caja de seguridad en un banco:
 
 103
-00:05:00,480 --> 00:05:02,994
-lo leen notarios, abogados y varios herederos.
+00:05:00,750 --> 00:05:04,322
+resistente, pero tiene horarios, el banco sabe que existe,
 
 104
-00:05:03,314 --> 00:05:05,977
-Y revísalo cada año, porque las cosas cambian.
+00:05:04,322 --> 00:05:07,894
+y en determinadas situaciones su acceso se puede bloquear.
 
 105
-00:05:07,383 --> 00:05:08,023
-En resumen:
+00:05:07,894 --> 00:05:10,543
+Mejor para una sola pieza, nunca para todo.
 
 106
-00:05:08,023 --> 00:05:11,979
-semilla en metal, piezas separadas en lugares distintos, y silencio.
+00:05:10,863 --> 00:05:12,846
+Y una segunda vivienda o una oficina:
 
 107
-00:05:12,299 --> 00:05:16,228
-En el próximo vídeo veremos cómo comprar y vender bitcoin de forma segura:
+00:05:12,846 --> 00:05:14,614
+te da separación geográfica real.
 
 108
-00:05:16,228 --> 00:05:18,671
+00:05:16,017 --> 00:05:18,390
+Y ahora, la amenaza que más ha crecido:
+
+109
+00:05:18,390 --> 00:05:20,215
+el ataque de la llave inglesa.
+
+110
+00:05:20,215 --> 00:05:23,075
+Es decir, que alguien te obligue por la fuerza.
+
+111
+00:05:23,395 --> 00:05:27,920
+En los últimos años ha habido asaltos y secuestros a poseedores de bitcoin en Europa.
+
+112
+00:05:27,920 --> 00:05:29,783
+El mayor riesgo ya no es un hacker:
+
+113
+00:05:29,783 --> 00:05:31,859
+es alguien que sabe que tienes bitcoin.
+
+114
+00:05:32,179 --> 00:05:35,075
+Así que la primera defensa es el silencio.
+
+115
+00:05:35,075 --> 00:05:38,591
+No lo cuentes en redes, en el trabajo ni en el bar.
+
+116
+00:05:38,591 --> 00:05:39,970
+No enseñes tu saldo.
+
+117
+00:05:40,290 --> 00:05:42,014
+Y la segunda defensa, el diseño:
+
+118
+00:05:42,014 --> 00:05:44,978
+con una passphrase puedes entregar una cartera señuelo,
+
+119
+00:05:44,978 --> 00:05:47,457
+y con una multifirma cuyas llaves están lejos,
+
+120
+00:05:47,457 --> 00:05:49,989
+físicamente no puedes darlo todo en el momento.
+
+121
+00:05:51,417 --> 00:05:53,525
+Y el plan de herencia, en la práctica:
+
+122
+00:05:53,525 --> 00:05:56,410
+una carta escrita a mano, sin ningún secreto dentro.
+
+123
+00:05:56,730 --> 00:06:00,430
+Explica qué tienes, dónde está cada pieza y cómo se recupera.
+
+124
+00:06:00,430 --> 00:06:00,855
+Fíjate:
+
+125
+00:06:00,855 --> 00:06:04,374
+no aparece ni una palabra de la semilla, ni la passphrase.
+
+126
+00:06:04,694 --> 00:06:08,806
+Nombra a una persona de confianza que entienda el tema, y avisa de las estafas:
+
+127
+00:06:08,806 --> 00:06:11,149
+nadie legítimo les pedirá nunca las palabras.
+
+128
+00:06:11,469 --> 00:06:15,989
+Guárdala con tus documentos importantes, y revísala cada año, o cuando cambies algo.
+
+129
+00:06:17,417 --> 00:06:18,057
+En resumen:
+
+130
+00:06:18,057 --> 00:06:22,012
+semilla en metal, piezas separadas en lugares distintos, y silencio.
+
+131
+00:06:22,332 --> 00:06:26,262
+En el próximo vídeo veremos cómo comprar y vender bitcoin de forma segura:
+
+132
+00:06:26,262 --> 00:06:28,705
 en exchanges, entre particulares y en persona.

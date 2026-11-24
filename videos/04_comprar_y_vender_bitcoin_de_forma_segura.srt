@@ -7,16 +7,16 @@ Ya sabes guardar tu bitcoin.
 Ahora, ¿dónde lo compras, y cómo lo vendes cuando lo necesitas, sin que te estafen?
 
 3
-00:00:08,004 --> 00:00:10,143
-Vamos a repasar todas las opciones:
+00:00:08,004 --> 00:00:09,307
+Y lo haremos paso a paso:
 
 4
-00:00:10,143 --> 00:00:15,033
-exchanges, plataformas entre particulares como Bisq, Hodl Hodl, RoboSats o Peer,
+00:00:09,307 --> 00:00:13,009
+retirar de un exchange, una compra completa en Hodl Hodl con su escrow,
 
 5
-00:00:15,033 --> 00:00:17,050
-quedar en persona, y los cajeros.
+00:00:13,009 --> 00:00:17,075
+el pago desde el banco, una compra en persona y una venta sin caer en estafas.
 
 6
 00:00:18,483 --> 00:00:19,429
@@ -103,405 +103,837 @@ desde dos mil veintiséis los exchanges recopilan tus operaciones
 para comunicarlas a Hacienda.
 
 27
-00:01:26,348 --> 00:01:29,959
+00:01:26,348 --> 00:01:29,955
 Por eso, en tu cartera, etiqueta esos bitcoins como KYC:
 
 28
-00:01:29,959 --> 00:01:32,023
+00:01:29,955 --> 00:01:32,016
 ya están vinculados a tu nombre.
 
 29
-00:01:33,450 --> 00:01:36,647
-Las plataformas entre particulares funcionan casi todas igual:
+00:01:33,417 --> 00:01:37,800
+Si compras en un exchange, lo primero es sacar los bitcoins a tu cartera.
 
 30
-00:01:36,647 --> 00:01:39,226
-con una garantía en medio, lo que se llama escrow.
+00:01:37,800 --> 00:01:39,301
+Así se hace una retirada.
 
 31
-00:01:39,546 --> 00:01:42,472
-El vendedor bloquea sus bitcoins en la garantía.
+00:01:39,621 --> 00:01:42,458
+En el exchange eliges retirar bitcoin, y la red:
 
 32
-00:01:42,472 --> 00:01:44,667
-Ya no los puede retirar a su antojo.
+00:01:42,458 --> 00:01:43,462
+Bitcoin, no otra.
 
 33
-00:01:44,987 --> 00:01:49,997
-El comprador, al ver los bitcoins bloqueados, le paga en euros por el método acordado:
+00:01:43,782 --> 00:01:44,788
+Pegas tu dirección:
 
 34
-00:01:49,997 --> 00:01:51,745
-transferencia, Bizum, Revolut…
+00:01:44,788 --> 00:01:48,705
+la que copiaste de la pestaña recibir y comprobaste en la hardware wallet.
 
 35
-00:01:52,065 --> 00:01:54,614
-Cuando el vendedor confirma que ha recibido el dinero,
+00:01:48,705 --> 00:01:50,399
+Y miras que se ha pegado entera.
 
 36
-00:01:54,614 --> 00:01:56,738
-la garantía libera los bitcoins al comprador.
+00:01:50,719 --> 00:01:51,411
+Importe:
 
 37
-00:01:57,058 --> 00:02:01,475
-Y si hay un problema, un árbitro revisa las pruebas de las dos partes y decide.
+00:01:51,411 --> 00:01:51,843
+todo.
 
 38
-00:02:01,475 --> 00:02:04,383
-Por eso es tan importante guardar los justificantes.
+00:01:51,843 --> 00:01:56,426
+Y confirmas con el código de tu app de autenticación.
 
 39
-00:02:05,783 --> 00:02:08,835
-Vamos con las plataformas, una a una.
+00:01:56,426 --> 00:01:57,636
+Nunca por SMS.
 
 40
-00:02:08,835 --> 00:02:09,989
-Primero, Bisq.
+00:01:57,956 --> 00:02:00,522
+Muchos exchanges permiten una lista blanca:
 
 41
-00:02:10,309 --> 00:02:12,810
-Es un programa que instalas en el ordenador.
+00:02:00,522 --> 00:02:04,340
+solo se puede retirar a direcciones que tú hayas aprobado antes.
 
 42
-00:02:12,810 --> 00:02:16,277
-No hay empresa ni servidor central, y todo va por la red Tor.
+00:02:04,340 --> 00:02:04,877
+Actívala.
 
 43
-00:02:16,597 --> 00:02:19,544
-Para empezar está Bisq Easy, dentro de Bisq dos.
+00:02:04,877 --> 00:02:09,172
+Si alguien entra en tu cuenta, no podrá llevarse el dinero a otra parte.
 
 44
-00:02:19,544 --> 00:02:22,552
-El comprador no necesita depósito ni experiencia:
+00:02:10,583 --> 00:02:13,781
+Las plataformas entre particulares funcionan casi todas igual:
 
 45
-00:02:22,552 --> 00:02:25,499
-la seguridad la pone la reputación del vendedor.
+00:02:13,781 --> 00:02:16,359
+con una garantía en medio, lo que se llama escrow.
 
 46
-00:02:25,499 --> 00:02:28,016
-Por eso es solo para cantidades pequeñas.
+00:02:16,679 --> 00:02:19,605
+El vendedor bloquea sus bitcoins en la garantía.
 
 47
-00:02:28,336 --> 00:02:30,651
-Para cantidades mayores está Bisq uno.
+00:02:19,605 --> 00:02:21,799
+Ya no los puede retirar a su antojo.
 
 48
-00:02:30,651 --> 00:02:35,829
-Ahí los dos dejan un depósito en una multifirma, y si alguien hace trampa, lo pierde.
+00:02:22,119 --> 00:02:27,130
+El comprador, al ver los bitcoins bloqueados, le paga en euros por el método acordado:
 
 49
-00:02:35,829 --> 00:02:38,996
-Necesitas tener ya algo de bitcoin para el depósito.
+00:02:27,130 --> 00:02:28,877
+transferencia, Bizum, Revolut…
 
 50
-00:02:39,316 --> 00:02:42,175
-El precio suele estar algo por encima del mercado.
+00:02:29,197 --> 00:02:31,747
+Cuando el vendedor confirma que ha recibido el dinero,
 
 51
-00:02:42,175 --> 00:02:45,090
-Es lo que pagas por no dar tus datos a una empresa.
+00:02:31,747 --> 00:02:33,871
+la garantía libera los bitcoins al comprador.
 
 52
-00:02:46,517 --> 00:02:47,688
-Ahora, Hodl Hodl.
+00:02:34,191 --> 00:02:38,608
+Y si hay un problema, un árbitro revisa las pruebas de las dos partes y decide.
 
 53
-00:02:48,008 --> 00:02:51,324
-Funciona desde el navegador, y no te pide enviar tu documentación.
+00:02:38,608 --> 00:02:41,515
+Por eso es tan importante guardar los justificantes.
 
 54
-00:02:51,644 --> 00:02:55,213
-Los bitcoins del vendedor quedan en una multifirma dos de tres:
+00:02:42,917 --> 00:02:45,968
+Vamos con las plataformas, una a una.
 
 55
-00:02:55,213 --> 00:02:59,349
-una llave para el comprador, otra para el vendedor y otra para Hodl Hodl.
+00:02:45,968 --> 00:02:47,123
+Primero, Bisq.
 
 56
-00:02:59,349 --> 00:03:02,182
-La plataforma, sola, nunca puede mover los fondos.
+00:02:47,443 --> 00:02:49,943
+Es un programa que instalas en el ordenador.
 
 57
-00:03:02,502 --> 00:03:06,336
-Elige contrapartes con buena reputación y muchas operaciones completadas.
+00:02:49,943 --> 00:02:53,411
+No hay empresa ni servidor central, y todo va por la red Tor.
 
 58
-00:03:06,656 --> 00:03:09,090
-Y habla solo por el chat de la plataforma.
+00:02:53,731 --> 00:02:56,677
+Para empezar está Bisq Easy, dentro de Bisq dos.
 
 59
-00:03:09,090 --> 00:03:12,682
-Si te proponen seguir por Telegram o por WhatsApp, mala señal.
+00:02:56,677 --> 00:02:59,685
+El comprador no necesita depósito ni experiencia:
 
 60
-00:03:14,083 --> 00:03:15,189
-Dos opciones más.
+00:02:59,685 --> 00:03:02,632
+la seguridad la pone la reputación del vendedor.
 
 61
-00:03:15,509 --> 00:03:19,182
-RoboSats funciona con Lightning, sin cuenta y a través de Tor.
+00:03:02,632 --> 00:03:05,149
+Por eso es solo para cantidades pequeñas.
 
 62
-00:03:19,182 --> 00:03:24,100
-Las dos partes dejan una pequeña fianza en Lightning, que pierde quien haga trampa.
+00:03:05,469 --> 00:03:07,784
+Para cantidades mayores está Bisq uno.
 
 63
-00:03:24,100 --> 00:03:25,818
-Ideal para importes pequeños.
+00:03:07,784 --> 00:03:12,962
+Ahí los dos dejan un depósito en una multifirma, y si alguien hace trampa, lo pierde.
 
 64
-00:03:26,138 --> 00:03:28,006
-Y Peer, antes llamado ZKP2P.
+00:03:12,962 --> 00:03:16,130
+Necesitas tener ya algo de bitcoin para el depósito.
 
 65
-00:03:28,006 --> 00:03:31,410
-Pagas a un particular con apps como Revolut o Wise,
+00:03:16,450 --> 00:03:19,308
+El precio suele estar algo por encima del mercado.
 
 66
-00:03:31,410 --> 00:03:35,882
-y una prueba criptográfica demuestra tu pago sin revelar tus datos.
+00:03:19,308 --> 00:03:22,224
+Es lo que pagas por no dar tus datos a una empresa.
 
 67
-00:03:35,882 --> 00:03:40,154
-Pero recibes USDC, un dólar digital, en la red Base, no bitcoin.
+00:03:23,650 --> 00:03:24,821
+Ahora, Hodl Hodl.
 
 68
-00:03:40,154 --> 00:03:44,826
-Después tienes que cambiarlo a bitcoin con un servicio de intercambio.
+00:03:25,141 --> 00:03:28,457
+Funciona desde el navegador, y no te pide enviar tu documentación.
 
 69
-00:03:44,826 --> 00:03:48,164
-Y recuerda que tu app de pagos sí sabe quién eres.
+00:03:28,777 --> 00:03:32,347
+Los bitcoins del vendedor quedan en una multifirma dos de tres:
 
 70
-00:03:49,583 --> 00:03:52,121
-Cinco reglas de oro para comprar entre particulares.
+00:03:32,347 --> 00:03:36,483
+una llave para el comprador, otra para el vendedor y otra para Hodl Hodl.
 
 71
-00:03:52,440 --> 00:03:55,696
-Empieza con importes pequeños, hasta que conozcas la plataforma.
+00:03:36,483 --> 00:03:39,316
+La plataforma, sola, nunca puede mover los fondos.
 
 72
-00:03:56,017 --> 00:04:00,292
-Paga solo cuando veas que los bitcoins están bloqueados en la garantía.
+00:03:39,636 --> 00:03:43,470
+Elige contrapartes con buena reputación y muchas operaciones completadas.
 
 73
-00:04:00,292 --> 00:04:01,015
-Nunca antes.
+00:03:43,790 --> 00:03:46,223
+Y habla solo por el chat de la plataforma.
 
 74
-00:04:01,335 --> 00:04:06,036
-En el concepto de la transferencia, no escribas bitcoin ni el nombre de la plataforma.
+00:03:46,223 --> 00:03:49,816
+Si te proponen seguir por Telegram o por WhatsApp, mala señal.
 
 75
-00:04:06,036 --> 00:04:10,027
-Lo recomiendan las propias plataformas, para evitar bloqueos de tu banco.
+00:03:51,217 --> 00:03:53,107
+Ahora, Hodl Hodl en la práctica.
 
 76
-00:04:10,347 --> 00:04:13,962
-Paga desde una cuenta a tu nombre y guarda los justificantes.
+00:03:53,107 --> 00:03:56,180
+Lo que ves es una recreación simplificada de su web,
 
 77
-00:04:13,962 --> 00:04:15,740
-Si hay disputa, son tu prueba.
+00:03:56,180 --> 00:03:58,779
+con los mismos pasos y los mismos conceptos.
 
 78
-00:04:16,060 --> 00:04:17,941
-Y nunca salgas del chat oficial.
+00:03:59,099 --> 00:04:02,388
+Para registrarte basta un email y una contraseña.
 
 79
-00:04:17,941 --> 00:04:21,997
-La mayoría de las estafas empiezan con un vamos a hablarlo por fuera.
+00:04:02,388 --> 00:04:05,274
+Usa un email alias, que no lleve tu nombre.
 
 80
-00:04:23,417 --> 00:04:27,026
-Y si eres tú quien vende, cuidado, porque el riesgo cambia de lado.
+00:04:05,274 --> 00:04:07,221
+No te piden ningún documento.
 
 81
-00:04:27,346 --> 00:04:31,129
-Evita los métodos de pago reversibles, como PayPal o las tarjetas.
+00:04:07,541 --> 00:04:09,505
+Activa la verificación en dos pasos:
 
 82
-00:04:31,129 --> 00:04:34,969
-El comprador puede recibir tus bitcoins y luego reclamar el dinero.
+00:04:09,505 --> 00:04:11,852
+escaneas el QR con tu app de autenticación,
 
 83
-00:04:35,289 --> 00:04:37,644
-Comprueba que el dinero ha llegado mirando tu banco,
+00:04:11,852 --> 00:04:14,362
+y escribes el código de seis cifras que te da.
 
 84
-00:04:37,644 --> 00:04:40,361
-nunca con una captura de pantalla que te envíe el comprador.
+00:04:15,783 --> 00:04:17,104
+En comprar, filtras:
 
 85
-00:04:40,681 --> 00:04:44,626
-Y comprueba que el pago viene de la misma persona con la que tratas.
+00:04:17,104 --> 00:04:20,604
+bitcoin con euros, por transferencia SEPA, y tu país.
 
 86
-00:04:44,626 --> 00:04:46,947
-Existe un fraude, llamado triangulación,
+00:04:20,924 --> 00:04:22,641
+Aparece la lista de ofertas.
 
 87
-00:04:46,947 --> 00:04:51,298
-en el que el estafador hace que una tercera persona engañada te pague a ti.
+00:04:22,641 --> 00:04:27,732
+De cada vendedor ves el precio sobre el de mercado, los límites, el método de pago,
 
 88
-00:04:51,298 --> 00:04:54,315
-Cuando esa persona lo denuncia, el problema es tuyo.
+00:04:27,732 --> 00:04:28,713
+y su reputación.
 
 89
-00:04:54,635 --> 00:04:57,811
-En ese caso, tu banco puede bloquearte la cuenta.
+00:04:29,033 --> 00:04:30,661
+No elijas la más barata.
 
 90
-00:04:57,811 --> 00:05:02,090
-Por eso, si el titular del pago es distinto, rechaza la operación.
+00:04:30,661 --> 00:04:31,679
+Fíjate en ésta:
 
 91
-00:05:03,517 --> 00:05:06,503
-Comprar o vender en persona sigue siendo la forma más privada.
+00:04:31,679 --> 00:04:35,681
+un tres por ciento por debajo del mercado, y sin historial.
 
 92
-00:05:06,823 --> 00:05:10,719
-Lo normal es hacerlo con gente de comunidades y meetups bitcoiners de tu ciudad,
+00:04:35,681 --> 00:04:38,055
+Es justo el perfil de un estafador.
 
 93
-00:05:10,719 --> 00:05:12,862
-donde la gente se conoce y tiene reputación.
+00:04:38,375 --> 00:04:43,358
+Elige un vendedor con muchas operaciones y buenas valoraciones, aunque cobre algo más.
 
 94
-00:05:13,182 --> 00:05:15,823
-Queda en un lugar público, de día y con gente:
+00:04:43,358 --> 00:04:46,602
+Abres su oferta, y lees sus condiciones antes de seguir.
 
 95
-00:05:15,823 --> 00:05:17,833
-una cafetería, un centro comercial.
+00:04:48,017 --> 00:04:51,343
+Escribes cuánto quieres comprar, por ejemplo trescientos euros,
 
 96
-00:05:18,153 --> 00:05:20,711
-Ve acompañado, y nunca a un domicilio.
+00:04:51,343 --> 00:04:53,666
+y la web te dice cuántos bitcoins recibirás.
 
 97
-00:05:20,711 --> 00:05:24,011
-Si alguien insiste en un sitio apartado, cancela.
+00:04:53,986 --> 00:04:56,106
+Después, tu dirección de recepción.
 
 98
-00:05:24,331 --> 00:05:29,193
-Usa Lightning, que es instantáneo, o espera la confirmación en la cadena antes de
+00:04:56,106 --> 00:05:01,075
+La sacas de Sparrow, de la pestaña recibir, y la compruebas en la hardware wallet,
 
 99
-00:05:29,193 --> 00:05:30,454
-entregar el efectivo.
+00:05:01,075 --> 00:05:02,711
+como vimos en el vídeo dos.
 
 100
-00:05:30,454 --> 00:05:32,615
-Y si recibes billetes, compruébalos.
+00:05:03,031 --> 00:05:04,571
+Y la contraseña de pago.
 
 101
-00:05:32,935 --> 00:05:36,816
-Y lleva una cartera con solo lo necesario para esa operación.
+00:05:04,571 --> 00:05:05,341
+Es especial:
 
 102
-00:05:36,816 --> 00:05:38,598
-Nunca enseñes tu saldo real.
+00:05:05,341 --> 00:05:09,642
+con ella tu navegador genera tu propia llave del escrow multifirma,
 
 103
-00:05:40,017 --> 00:05:41,452
-Los cajeros de bitcoin.
+00:05:09,642 --> 00:05:11,439
+y Hodl Hodl nunca la conoce.
 
 104
-00:05:41,452 --> 00:05:44,761
-Hace años eran la forma de comprar sin dar tus datos.
+00:05:11,439 --> 00:05:12,337
+Apúntala bien:
 
 105
-00:05:45,081 --> 00:05:48,682
-Hoy, en España, piden identificarte, igual que un exchange.
+00:05:12,337 --> 00:05:14,006
+sin ella no podrás firmar.
 
 106
-00:05:49,002 --> 00:05:53,062
-Y sus comisiones son muy altas comparadas con cualquier otra opción.
+00:05:14,326 --> 00:05:15,717
+Pulsas crear contrato.
 
 107
-00:05:53,062 --> 00:05:55,511
-Útiles en un apuro, malos como costumbre.
+00:05:15,717 --> 00:05:19,511
+El vendedor recibe el aviso, y tienes un número de contrato.
 
 108
-00:05:55,831 --> 00:05:57,451
-Y una advertencia muy seria:
+00:05:20,917 --> 00:05:23,645
+Ahora el vendedor deposita los bitcoins en el escrow:
 
 109
-00:05:57,451 --> 00:06:01,965
-si alguien por teléfono te pide que ingreses efectivo en un cajero de bitcoin,
+00:05:23,645 --> 00:05:26,579
+una dirección multifirma dos de tres, con una llave tuya,
 
 110
-00:06:01,965 --> 00:06:05,843
-diga que es tu banco, la policía o Hacienda, es siempre una estafa.
+00:05:26,579 --> 00:05:28,432
+una del vendedor y una de Hodl Hodl.
 
 111
-00:06:05,843 --> 00:06:06,248
-Cuelga.
+00:05:28,752 --> 00:05:30,982
+Mientras tanto, tú esperas.
 
 112
-00:06:07,650 --> 00:06:08,737
-¿Y cuando quieras vender?
+00:05:30,982 --> 00:05:32,469
+No pagues todavía.
 
 113
-00:06:09,057 --> 00:06:12,208
-En un exchange vendes y retiras a tu cuenta bancaria.
+00:05:32,789 --> 00:05:36,877
+Cuando la transacción del vendedor se confirma, el contrato cambia a:
 
 114
-00:06:12,208 --> 00:06:15,359
-Es lo más fácil, y todo queda registrado a tu nombre.
+00:05:36,877 --> 00:05:37,943
+escrow financiado.
 
 115
-00:06:15,679 --> 00:06:20,086
-Entre particulares, en Bisq, Hodl Hodl o RoboSats, pero esta vez como vendedor,
+00:05:37,943 --> 00:05:39,721
+Los bitcoins están bloqueados:
 
 116
-00:06:20,086 --> 00:06:22,373
-con las precauciones que acabamos de ver.
+00:05:39,721 --> 00:05:42,150
+el vendedor ya no puede llevárselos solo.
 
 117
-00:06:22,693 --> 00:06:25,007
-En persona, con las mismas reglas de seguridad.
+00:05:42,470 --> 00:05:45,255
+Solo ahora ves sus datos bancarios, y el aviso:
 
 118
-00:06:25,327 --> 00:06:27,162
-O, directamente, no vender:
+00:05:45,255 --> 00:05:46,203
+ya puedes pagar.
 
 119
-00:06:27,162 --> 00:06:29,745
-gastar tu bitcoin sin pasar por euros.
+00:05:47,617 --> 00:05:50,623
+Abres la app de tu banco, y haces una transferencia normal.
 
 120
-00:06:29,745 --> 00:06:32,328
-Es lo que veremos en el próximo vídeo.
+00:05:50,943 --> 00:05:51,933
+Beneficiario:
 
 121
-00:06:32,648 --> 00:06:37,513
-Y en todos los casos, guarda un registro de cuándo y a qué precio compraste y vendiste.
+00:05:51,933 --> 00:05:54,901
+el nombre exacto que te da el contrato.
 
 122
-00:06:37,513 --> 00:06:39,974
-Las ganancias tributan, y te lo van a pedir.
+00:05:54,901 --> 00:05:56,956
+El IBAN, copiado de la web.
 
 123
-00:06:41,383 --> 00:06:42,020
-En resumen:
+00:05:56,956 --> 00:05:57,564
+Importe:
 
 124
-00:06:42,020 --> 00:06:45,432
-compra poco a poco, usa garantías, desconfía de las prisas,
+00:05:57,564 --> 00:05:59,543
+trescientos euros exactos.
 
 125
-00:06:45,432 --> 00:06:47,572
-y retira siempre a tu propia cartera.
+00:05:59,863 --> 00:06:02,525
+Y en el concepto, solo el número de contrato.
 
 126
-00:06:47,892 --> 00:06:51,631
-En el último vídeo de la serie veremos cómo gastar tu bitcoin con privacidad,
+00:06:02,525 --> 00:06:05,955
+Nada de bitcoin, ni cripto, ni el nombre de la plataforma:
 
 127
-00:06:51,631 --> 00:06:55,369
+00:06:05,955 --> 00:06:08,558
+algunos bancos bloquean esas transferencias.
+
+128
+00:06:08,878 --> 00:06:11,706
+Envías, y guardas el justificante.
+
+129
+00:06:11,706 --> 00:06:13,951
+Después, en la web, pulsas:
+
+130
+00:06:13,951 --> 00:06:14,783
+he pagado.
+
+131
+00:06:16,183 --> 00:06:18,956
+El vendedor comprueba en su banco que el dinero ha llegado,
+
+132
+00:06:18,956 --> 00:06:20,506
+y libera los bitcoins del escrow.
+
+133
+00:06:20,826 --> 00:06:22,066
+Te llega el aviso:
+
+134
+00:06:22,066 --> 00:06:23,443
+contrato completado.
+
+135
+00:06:23,443 --> 00:06:26,267
+Los bitcoins van directos a tu dirección.
+
+136
+00:06:26,267 --> 00:06:28,334
+Hodl Hodl nunca los ha tenido.
+
+137
+00:06:28,654 --> 00:06:31,170
+En Sparrow ves la transacción entrante.
+
+138
+00:06:31,170 --> 00:06:35,815
+Le pones la etiqueta, P2P Hodl Hodl, y dejas una valoración al vendedor.
+
+139
+00:06:37,217 --> 00:06:39,562
+¿Y si pagas y el vendedor no libera?
+
+140
+00:06:39,562 --> 00:06:40,214
+Tranquilo:
+
+141
+00:06:40,214 --> 00:06:41,778
+para eso está el escrow.
+
+142
+00:06:42,098 --> 00:06:45,533
+Pulsas abrir disputa, y subes el justificante de la transferencia.
+
+143
+00:06:45,853 --> 00:06:48,937
+Un árbitro revisa las pruebas de las dos partes.
+
+144
+00:06:48,937 --> 00:06:54,076
+Si tienes razón, firma junto a ti, y los bitcoins del escrow van a tu dirección.
+
+145
+00:06:54,076 --> 00:06:55,297
+Dos firmas de tres:
+
+146
+00:06:55,297 --> 00:06:56,903
+la tuya y la del árbitro.
+
+147
+00:06:58,317 --> 00:07:00,854
+Cinco reglas de oro para comprar entre particulares.
+
+148
+00:07:01,174 --> 00:07:04,430
+Empieza con importes pequeños, hasta que conozcas la plataforma.
+
+149
+00:07:04,750 --> 00:07:09,016
+Paga solo cuando veas que los bitcoins están bloqueados en la garantía.
+
+150
+00:07:09,016 --> 00:07:09,737
+Nunca antes.
+
+151
+00:07:10,057 --> 00:07:14,758
+En el concepto de la transferencia, no escribas bitcoin ni el nombre de la plataforma.
+
+152
+00:07:14,758 --> 00:07:18,749
+Lo recomiendan las propias plataformas, para evitar bloqueos de tu banco.
+
+153
+00:07:19,069 --> 00:07:22,684
+Paga desde una cuenta a tu nombre y guarda los justificantes.
+
+154
+00:07:22,684 --> 00:07:24,462
+Si hay disputa, son tu prueba.
+
+155
+00:07:24,782 --> 00:07:26,663
+Y nunca salgas del chat oficial.
+
+156
+00:07:26,663 --> 00:07:30,719
+La mayoría de las estafas empiezan con un vamos a hablarlo por fuera.
+
+157
+00:07:32,150 --> 00:07:33,256
+Dos opciones más.
+
+158
+00:07:33,576 --> 00:07:37,249
+RoboSats funciona con Lightning, sin cuenta y a través de Tor.
+
+159
+00:07:37,249 --> 00:07:42,166
+Las dos partes dejan una pequeña fianza en Lightning, que pierde quien haga trampa.
+
+160
+00:07:42,166 --> 00:07:43,884
+Ideal para importes pequeños.
+
+161
+00:07:44,204 --> 00:07:46,073
+Y Peer, antes llamado ZKP2P.
+
+162
+00:07:46,073 --> 00:07:49,477
+Pagas a un particular con apps como Revolut o Wise,
+
+163
+00:07:49,477 --> 00:07:53,949
+y una prueba criptográfica demuestra tu pago sin revelar tus datos.
+
+164
+00:07:53,949 --> 00:07:58,221
+Pero recibes USDC, un dólar digital, en la red Base, no bitcoin.
+
+165
+00:07:58,221 --> 00:08:02,893
+Después tienes que cambiarlo a bitcoin con un servicio de intercambio.
+
+166
+00:08:02,893 --> 00:08:06,230
+Y recuerda que tu app de pagos sí sabe quién eres.
+
+167
+00:08:07,650 --> 00:08:10,637
+Comprar o vender en persona sigue siendo la forma más privada.
+
+168
+00:08:10,957 --> 00:08:14,852
+Lo normal es hacerlo con gente de comunidades y meetups bitcoiners de tu ciudad,
+
+169
+00:08:14,852 --> 00:08:16,995
+donde la gente se conoce y tiene reputación.
+
+170
+00:08:17,315 --> 00:08:19,956
+Queda en un lugar público, de día y con gente:
+
+171
+00:08:19,956 --> 00:08:21,966
+una cafetería, un centro comercial.
+
+172
+00:08:22,286 --> 00:08:24,845
+Ve acompañado, y nunca a un domicilio.
+
+173
+00:08:24,845 --> 00:08:28,144
+Si alguien insiste en un sitio apartado, cancela.
+
+174
+00:08:28,464 --> 00:08:33,327
+Usa Lightning, que es instantáneo, o espera la confirmación en la cadena antes de
+
+175
+00:08:33,327 --> 00:08:34,587
+entregar el efectivo.
+
+176
+00:08:34,587 --> 00:08:36,748
+Y si recibes billetes, compruébalos.
+
+177
+00:08:37,068 --> 00:08:40,950
+Y lleva una cartera con solo lo necesario para esa operación.
+
+178
+00:08:40,950 --> 00:08:42,731
+Nunca enseñes tu saldo real.
+
+179
+00:08:44,150 --> 00:08:46,894
+En persona, lo más rápido y seguro es Lightning.
+
+180
+00:08:46,894 --> 00:08:50,495
+Imagina que compras cincuenta euros a alguien en una cafetería.
+
+181
+00:08:50,815 --> 00:08:55,911
+En tu móvil, en la cartera Lightning, pulsas recibir, y pones el importe en euros.
+
+182
+00:08:55,911 --> 00:08:58,770
+La cartera genera una factura, en forma de QR.
+
+183
+00:08:59,090 --> 00:09:02,732
+El vendedor la escanea con su móvil, comprueba el importe, y paga.
+
+184
+00:09:03,052 --> 00:09:05,939
+En un par de segundos tu móvil muestra:
+
+185
+00:09:05,939 --> 00:09:06,605
+recibido.
+
+186
+00:09:06,605 --> 00:09:09,048
+Solo entonces le das el efectivo.
+
+187
+00:09:09,048 --> 00:09:10,159
+Nunca al revés.
+
+188
+00:09:11,583 --> 00:09:13,019
+Los cajeros de bitcoin.
+
+189
+00:09:13,019 --> 00:09:16,328
+Hace años eran la forma de comprar sin dar tus datos.
+
+190
+00:09:16,648 --> 00:09:20,249
+Hoy, en España, piden identificarte, igual que un exchange.
+
+191
+00:09:20,569 --> 00:09:24,629
+Y sus comisiones son muy altas comparadas con cualquier otra opción.
+
+192
+00:09:24,629 --> 00:09:27,077
+Útiles en un apuro, malos como costumbre.
+
+193
+00:09:27,397 --> 00:09:29,018
+Y una advertencia muy seria:
+
+194
+00:09:29,018 --> 00:09:33,532
+si alguien por teléfono te pide que ingreses efectivo en un cajero de bitcoin,
+
+195
+00:09:33,532 --> 00:09:37,409
+diga que es tu banco, la policía o Hacienda, es siempre una estafa.
+
+196
+00:09:37,409 --> 00:09:37,814
+Cuelga.
+
+197
+00:09:39,217 --> 00:09:40,301
+¿Y cuando quieras vender?
+
+198
+00:09:40,621 --> 00:09:43,772
+En un exchange vendes y retiras a tu cuenta bancaria.
+
+199
+00:09:43,772 --> 00:09:46,924
+Es lo más fácil, y todo queda registrado a tu nombre.
+
+200
+00:09:47,244 --> 00:09:51,650
+Entre particulares, en Bisq, Hodl Hodl o RoboSats, pero esta vez como vendedor,
+
+201
+00:09:51,650 --> 00:09:53,937
+con las precauciones que acabamos de ver.
+
+202
+00:09:54,257 --> 00:09:56,572
+En persona, con las mismas reglas de seguridad.
+
+203
+00:09:56,892 --> 00:09:58,727
+O, directamente, no vender:
+
+204
+00:09:58,727 --> 00:10:01,310
+gastar tu bitcoin sin pasar por euros.
+
+205
+00:10:01,310 --> 00:10:03,893
+Es lo que veremos en el próximo vídeo.
+
+206
+00:10:04,213 --> 00:10:09,078
+Y en todos los casos, guarda un registro de cuándo y a qué precio compraste y vendiste.
+
+207
+00:10:09,078 --> 00:10:11,538
+Las ganancias tributan, y te lo van a pedir.
+
+208
+00:10:12,950 --> 00:10:15,694
+Si eres tú quien vende, el proceso es el espejo.
+
+209
+00:10:15,694 --> 00:10:17,809
+Cuando un comprador acepta tu oferta,
+
+210
+00:10:17,809 --> 00:10:22,726
+depositas los bitcoins en el escrow desde tu cartera, firmando con tu hardware wallet.
+
+211
+00:10:23,046 --> 00:10:25,295
+El comprador te avisa de que ha pagado.
+
+212
+00:10:25,295 --> 00:10:27,775
+No te fíes de su mensaje ni de una captura:
+
+213
+00:10:27,775 --> 00:10:30,024
+abres tu banco y compruebas el ingreso.
+
+214
+00:10:30,344 --> 00:10:32,057
+Mira el nombre de quien paga:
+
+215
+00:10:32,057 --> 00:10:34,833
+debe ser exactamente el comprador del contrato.
+
+216
+00:10:34,833 --> 00:10:38,613
+Si viene de otra persona, puede ser una estafa de triangulación:
+
+217
+00:10:38,613 --> 00:10:40,208
+no liberes, y abre disputa.
+
+218
+00:10:40,528 --> 00:10:45,400
+Si el importe y el nombre coinciden, liberas el escrow con tu contraseña de pago.
+
+219
+00:10:45,400 --> 00:10:45,881
+Y listo.
+
+220
+00:10:47,283 --> 00:10:50,893
+Y si eres tú quien vende, cuidado, porque el riesgo cambia de lado.
+
+221
+00:10:51,213 --> 00:10:54,995
+Evita los métodos de pago reversibles, como PayPal o las tarjetas.
+
+222
+00:10:54,995 --> 00:10:58,835
+El comprador puede recibir tus bitcoins y luego reclamar el dinero.
+
+223
+00:10:59,155 --> 00:11:01,510
+Comprueba que el dinero ha llegado mirando tu banco,
+
+224
+00:11:01,510 --> 00:11:04,228
+nunca con una captura de pantalla que te envíe el comprador.
+
+225
+00:11:04,548 --> 00:11:08,493
+Y comprueba que el pago viene de la misma persona con la que tratas.
+
+226
+00:11:08,493 --> 00:11:10,814
+Existe un fraude, llamado triangulación,
+
+227
+00:11:10,814 --> 00:11:15,165
+en el que el estafador hace que una tercera persona engañada te pague a ti.
+
+228
+00:11:15,165 --> 00:11:18,182
+Cuando esa persona lo denuncia, el problema es tuyo.
+
+229
+00:11:18,502 --> 00:11:21,678
+En ese caso, tu banco puede bloquearte la cuenta.
+
+230
+00:11:21,678 --> 00:11:25,956
+Por eso, si el titular del pago es distinto, rechaza la operación.
+
+231
+00:11:27,383 --> 00:11:28,020
+En resumen:
+
+232
+00:11:28,020 --> 00:11:31,432
+compra poco a poco, usa garantías, desconfía de las prisas,
+
+233
+00:11:31,432 --> 00:11:33,572
+y retira siempre a tu propia cartera.
+
+234
+00:11:33,892 --> 00:11:37,631
+En el último vídeo de la serie veremos cómo gastar tu bitcoin con privacidad,
+
+235
+00:11:37,631 --> 00:11:41,369
 y cómo vivir de tu patrimonio mes a mes sin que nadie vea todo lo que tienes.

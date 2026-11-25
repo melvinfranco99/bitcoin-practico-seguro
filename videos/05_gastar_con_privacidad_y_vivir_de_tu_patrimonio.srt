@@ -1,607 +1,615 @@
 1
-00:00:00,900 --> 00:00:02,544
-Último vídeo, y el más práctico:
+00:00:00,900 --> 00:00:02,998
+Vídeo cinco, y uno de los más prácticos:
 
 2
-00:00:02,544 --> 00:00:06,449
+00:00:02,998 --> 00:00:06,984
 cómo vivir el día a día con tu bitcoin sin que nadie vea todo lo que tienes.
 
 3
-00:00:06,769 --> 00:00:09,901
+00:00:07,305 --> 00:00:10,436
 Vas a ver el sistema completo, y cómo se hace paso a paso:
 
 4
-00:00:09,901 --> 00:00:14,059
+00:00:10,436 --> 00:00:14,594
 elegir monedas en la bóveda, el swap a Lightning, comprar una tarjeta regalo,
 
 5
-00:00:14,059 --> 00:00:16,866
+00:00:14,594 --> 00:00:17,402
 recargar la tarjeta de débito y pagar en una tienda.
 
 6
-00:00:18,283 --> 00:00:20,591
+00:00:18,817 --> 00:00:21,124
 Antes de empezar, una aclaración importante:
 
 7
-00:00:20,591 --> 00:00:22,583
+00:00:21,124 --> 00:00:23,117
 privacidad no es esconderse de la ley.
 
 8
-00:00:22,903 --> 00:00:25,978
+00:00:23,437 --> 00:00:26,512
 Es que la persona que te cobra, una web que sufre un hackeo
 
 9
-00:00:25,978 --> 00:00:27,802
+00:00:26,512 --> 00:00:28,336
 o un ladrón no sepan cuánto tienes.
 
 10
-00:00:27,802 --> 00:00:31,659
+00:00:28,336 --> 00:00:32,192
 Igual que no vas por la calle con tu extracto bancario colgado del cuello.
 
 11
-00:00:31,979 --> 00:00:35,015
+00:00:32,512 --> 00:00:35,548
 Tus obligaciones fiscales siguen siendo las mismas.
 
 12
-00:00:35,015 --> 00:00:39,242
+00:00:35,548 --> 00:00:39,776
 Declara lo que toque, y si tienes dudas, consulta con un asesor fiscal.
 
 13
-00:00:40,650 --> 00:00:41,962
+00:00:41,183 --> 00:00:42,495
 ¿Por qué hace falta todo esto?
 
 14
-00:00:42,282 --> 00:00:43,754
+00:00:42,815 --> 00:00:44,287
 Porque bitcoin es público.
 
 15
-00:00:43,754 --> 00:00:48,283
+00:00:44,287 --> 00:00:48,817
 Cada pago queda en la cadena de bloques, visible para cualquiera y para siempre.
 
 16
-00:00:48,603 --> 00:00:51,492
+00:00:49,137 --> 00:00:52,025
 Si pagas un café directamente desde tu cartera de ahorros,
 
 17
-00:00:51,492 --> 00:00:54,828
+00:00:52,025 --> 00:00:55,361
 el que cobra puede seguir el rastro del cambio y ver cuánto tienes.
 
 18
-00:00:55,148 --> 00:00:59,813
+00:00:55,681 --> 00:01:00,347
 Además, cuando un exchange sufre una filtración, nombres y direcciones quedan unidos.
 
 19
-00:01:00,133 --> 00:01:04,149
+00:01:00,667 --> 00:01:04,682
 Y como vimos en el vídeo tres, saber que tienes mucho te convierte en un objetivo.
 
 20
-00:01:05,550 --> 00:01:07,057
+00:01:06,083 --> 00:01:07,590
 Este es el sistema completo.
 
 21
-00:01:07,377 --> 00:01:08,951
+00:01:07,910 --> 00:01:09,484
 A la izquierda, tu bóveda:
 
 22
-00:01:08,951 --> 00:01:12,583
+00:01:09,484 --> 00:01:13,116
 la multifirma o la hardware wallet donde está tu patrimonio.
 
 23
-00:01:12,583 --> 00:01:13,854
+00:01:13,116 --> 00:01:14,387
 Su regla es sencilla:
 
 24
-00:01:13,854 --> 00:01:15,791
+00:01:14,387 --> 00:01:16,324
 nunca paga a nadie directamente.
 
 25
-00:01:16,111 --> 00:01:20,381
+00:01:16,644 --> 00:01:20,914
 Una vez al mes, la bóveda envía a tu cartera de gasto el presupuesto del mes.
 
 26
-00:01:20,381 --> 00:01:23,375
+00:01:20,914 --> 00:01:23,908
 Es una cartera Lightning en el móvil, con poco dinero.
 
 27
-00:01:23,695 --> 00:01:25,974
+00:01:24,228 --> 00:01:26,508
 Y desde la cartera de gasto pagas tu vida:
 
 28
-00:01:25,974 --> 00:01:29,665
+00:01:26,508 --> 00:01:30,199
 tarjetas regalo, una tarjeta de débito, pagos directos en Lightning,
 
 29
-00:01:29,665 --> 00:01:32,054
+00:01:30,199 --> 00:01:32,587
 o vendiendo a particulares para tener euros.
 
 30
-00:01:32,374 --> 00:01:35,546
+00:01:32,907 --> 00:01:36,079
 Así, quien te cobra solo ve una cartera pequeña.
 
 31
-00:01:35,546 --> 00:01:37,066
+00:01:36,079 --> 00:01:37,599
 La bóveda queda oculta.
 
 32
-00:01:38,483 --> 00:01:40,883
+00:01:39,017 --> 00:01:41,416
 Veamos el ritual mensual, paso a paso.
 
 33
-00:01:41,203 --> 00:01:42,899
+00:01:41,736 --> 00:01:43,432
 El día uno decides tu presupuesto:
 
 34
-00:01:42,899 --> 00:01:45,991
+00:01:43,432 --> 00:01:46,524
 por ejemplo, el equivalente a mil quinientos euros en bitcoin.
 
 35
-00:01:46,311 --> 00:01:50,293
+00:01:46,844 --> 00:01:50,827
 Firmas una sola transacción desde la bóveda, con tu hardware wallet,
 
 36
-00:01:50,293 --> 00:01:51,874
+00:01:50,827 --> 00:01:52,408
 como vimos en el vídeo dos.
 
 37
-00:01:51,874 --> 00:01:53,924
+00:01:52,408 --> 00:01:54,457
 Una al mes, no una por cada compra.
 
 38
-00:01:54,244 --> 00:01:58,269
+00:01:54,777 --> 00:01:58,802
 Mejor si ese envío pasa por un swap a Lightning, que ahora te explico.
 
 39
-00:01:58,269 --> 00:02:01,259
+00:01:58,802 --> 00:02:01,792
 Así se rompe el rastro entre la bóveda y tus gastos.
 
 40
-00:02:01,579 --> 00:02:04,906
+00:02:02,112 --> 00:02:05,439
 Durante el mes gastas solo desde la cartera de gasto.
 
 41
-00:02:04,906 --> 00:02:08,797
+00:02:05,439 --> 00:02:09,330
 Si se acaba antes, haces una recarga extra, de la misma forma.
 
 42
-00:02:08,797 --> 00:02:11,182
+00:02:09,330 --> 00:02:11,716
 Nunca un pago directo desde la bóveda.
 
 43
-00:02:11,502 --> 00:02:14,461
+00:02:12,036 --> 00:02:15,000
 Y lo que sobre se queda en la cartera de gasto.
 
 44
-00:02:14,461 --> 00:02:16,413
+00:02:15,000 --> 00:02:16,955
 El mes siguiente, envías menos.
 
 45
-00:02:17,817 --> 00:02:18,942
+00:02:18,383 --> 00:02:19,509
 Día uno del mes.
 
 46
-00:02:18,942 --> 00:02:22,810
+00:02:19,509 --> 00:02:23,377
 Abres Sparrow con tu bóveda y vas a la pestaña monedas.
 
 47
-00:02:22,810 --> 00:02:24,499
+00:02:23,377 --> 00:02:25,065
 Cada fila es una moneda:
 
 48
-00:02:24,499 --> 00:02:26,468
+00:02:25,065 --> 00:02:27,035
 un ingreso, con su historia.
 
 49
-00:02:26,788 --> 00:02:29,541
+00:02:27,355 --> 00:02:30,107
 Si alguna no tiene etiqueta, pónsela ahora:
 
 50
-00:02:29,541 --> 00:02:31,589
+00:02:30,107 --> 00:02:32,156
 de dónde vino, y si es KYC o no.
 
 51
-00:02:31,909 --> 00:02:35,266
+00:02:32,476 --> 00:02:35,832
 Para el gasto del mes marcas solo monedas sin KYC.
 
 52
-00:02:35,266 --> 00:02:39,495
+00:02:35,832 --> 00:02:40,062
 Nunca mezcles en un mismo pago monedas KYC con monedas sin KYC:
 
 53
-00:02:39,495 --> 00:02:41,509
+00:02:40,062 --> 00:02:42,075
 quedarían unidas para siempre.
 
 54
-00:02:41,829 --> 00:02:45,164
+00:02:42,395 --> 00:02:45,730
 Con las monedas marcadas, pulsas enviar seleccionadas.
 
 55
-00:02:45,164 --> 00:02:48,560
+00:02:45,730 --> 00:02:49,127
 Así controlas exactamente qué dinero sale de la bóveda.
 
 56
-00:02:49,983 --> 00:02:51,163
+00:02:50,550 --> 00:02:51,729
 ¿Qué es un swap a Lightning?
 
 57
-00:02:51,483 --> 00:02:54,244
+00:02:52,049 --> 00:02:54,811
 Desde la bóveda haces un pago normal, en la cadena,
 
 58
-00:02:54,244 --> 00:02:57,168
+00:02:54,811 --> 00:02:57,735
 a un servicio de intercambio sin custodia, como Boltz.
 
 59
-00:02:57,488 --> 00:03:00,990
+00:02:58,055 --> 00:03:01,557
 El servicio te entrega lo mismo, menos una pequeña comisión,
 
 60
-00:03:00,990 --> 00:03:02,974
+00:03:01,557 --> 00:03:03,541
 en tu cartera Lightning del móvil:
 
 61
-00:03:02,974 --> 00:03:04,900
+00:03:03,541 --> 00:03:05,467
 Phoenix, Breez, Aqua o similares.
 
 62
-00:03:05,220 --> 00:03:08,841
+00:03:05,787 --> 00:03:09,408
 En la cadena pública solo queda un pago a un servicio de swap.
 
 63
-00:03:08,841 --> 00:03:10,652
+00:03:09,408 --> 00:03:11,218
 No a una tienda, ni a tu móvil.
 
 64
-00:03:10,972 --> 00:03:14,616
+00:03:11,538 --> 00:03:15,183
 Y tus pagos con Lightning no quedan registrados en la cadena pública.
 
 65
-00:03:14,616 --> 00:03:17,944
+00:03:15,183 --> 00:03:18,510
 Quien te cobra no ve de dónde viene el dinero ni cuánto tienes.
 
 66
-00:03:19,350 --> 00:03:20,264
+00:03:19,917 --> 00:03:20,831
 Ahora, el swap.
 
 67
-00:03:20,264 --> 00:03:25,016
+00:03:20,831 --> 00:03:25,583
 En la cartera Lightning del móvil, por ejemplo Phoenix o Aqua, pulsas recibir,
 
 68
-00:03:25,016 --> 00:03:26,905
+00:03:25,583 --> 00:03:27,472
 y pides el presupuesto del mes:
 
 69
-00:03:26,905 --> 00:03:28,550
+00:03:27,472 --> 00:03:29,117
 cuatrocientos mil satoshis.
 
 70
-00:03:28,870 --> 00:03:31,724
+00:03:29,437 --> 00:03:32,291
 La cartera genera una factura Lightning.
 
 71
-00:03:31,724 --> 00:03:32,437
+00:03:32,291 --> 00:03:33,004
 La copias.
 
 72
-00:03:32,757 --> 00:03:36,471
+00:03:33,324 --> 00:03:37,038
 En un servicio de swap sin custodia, como Boltz, eliges:
 
 73
-00:03:36,471 --> 00:03:37,997
+00:03:37,038 --> 00:03:38,563
 de bitcoin a Lightning.
 
 74
-00:03:37,997 --> 00:03:39,257
+00:03:38,563 --> 00:03:39,824
 Y pegas la factura.
 
 75
-00:03:39,577 --> 00:03:44,126
+00:03:40,144 --> 00:03:44,692
 El servicio te da una dirección de bitcoin, y el importe exacto que debes enviar.
 
 76
-00:03:44,126 --> 00:03:48,001
+00:03:44,692 --> 00:03:48,567
 Si por lo que sea no pagara tu factura, podrías recuperar tus fondos:
 
 77
-00:03:48,001 --> 00:03:48,956
+00:03:48,567 --> 00:03:49,522
 no custodia nada.
 
 78
-00:03:50,383 --> 00:03:54,271
+00:03:50,950 --> 00:03:54,837
 En Sparrow envías desde la bóveda ese importe exacto a esa dirección,
 
 79
-00:03:54,271 --> 00:03:55,904
+00:03:54,837 --> 00:03:56,471
 con las monedas que marcaste.
 
 80
-00:03:55,904 --> 00:03:58,778
+00:03:56,471 --> 00:03:59,344
 Firmas en la hardware wallet, como en el vídeo dos.
 
 81
-00:03:59,098 --> 00:04:02,918
+00:03:59,664 --> 00:04:03,484
 En cuanto la transacción se confirma, el servicio paga tu factura Lightning.
 
 82
-00:04:03,238 --> 00:04:04,432
+00:04:03,804 --> 00:04:04,999
 Y en el móvil aparece:
 
 83
-00:04:04,432 --> 00:04:06,440
+00:04:04,999 --> 00:04:07,007
 recibidos cuatrocientos mil satoshis.
 
 84
-00:04:06,440 --> 00:04:09,263
+00:04:07,007 --> 00:04:09,830
 Tu cartera de gasto ya tiene el presupuesto del mes,
 
 85
-00:04:09,263 --> 00:04:13,443
+00:04:09,830 --> 00:04:14,010
 y quien vea tus pagos en Lightning no puede seguir el rastro hasta tu bóveda.
 
 86
-00:04:14,850 --> 00:04:16,515
+00:04:15,417 --> 00:04:17,081
 Opción A, en la práctica.
 
 87
-00:04:16,515 --> 00:04:20,377
+00:04:17,081 --> 00:04:20,943
 Entras en Bitrefill, sin crear cuenta, y buscas la tienda:
 
 88
-00:04:20,377 --> 00:04:22,308
+00:04:20,943 --> 00:04:22,874
 por ejemplo, tu supermercado.
 
 89
-00:04:22,628 --> 00:04:27,297
+00:04:23,194 --> 00:04:27,864
 Eliges el importe de la tarjeta regalo, cincuenta euros, y escribes un email alias,
 
 90
-00:04:27,297 --> 00:04:28,816
+00:04:27,864 --> 00:04:29,382
 donde te llegará el código.
 
 91
-00:04:29,136 --> 00:04:30,136
+00:04:29,702 --> 00:04:30,702
 Pagar con Lightning:
 
 92
-00:04:30,136 --> 00:04:31,586
+00:04:30,702 --> 00:04:32,152
 la web te enseña una factura.
 
 93
-00:04:31,906 --> 00:04:34,830
+00:04:32,472 --> 00:04:35,397
 La escaneas con la cartera de gasto del móvil, y pagas.
 
 94
-00:04:36,050 --> 00:04:37,771
+00:04:36,617 --> 00:04:38,338
 Al momento recibes el código.
 
 95
-00:04:37,771 --> 00:04:42,932
+00:04:38,338 --> 00:04:43,499
 En la caja lo enseñas, o lo cargas en la app de la tienda, como cualquier otro cliente.
 
 96
-00:04:44,350 --> 00:04:46,487
+00:04:44,917 --> 00:04:47,054
 Opción B, la tarjeta de débito.
 
 97
-00:04:46,487 --> 00:04:51,312
+00:04:47,054 --> 00:04:51,879
 En la app de Bit2Me, entras en tarjeta, y eliges recargar con bitcoin.
 
 98
-00:04:51,632 --> 00:04:54,588
+00:04:52,199 --> 00:04:55,155
 Recargas por Lightning, desde la cartera de gasto.
 
 99
-00:04:54,588 --> 00:04:57,722
+00:04:55,155 --> 00:04:58,289
 Solo el presupuesto del mes, y nunca desde la bóveda.
 
 100
-00:04:58,042 --> 00:04:59,937
+00:04:58,609 --> 00:05:00,504
 El saldo aparece en la tarjeta.
 
 101
-00:04:59,937 --> 00:05:03,178
+00:05:00,504 --> 00:05:03,745
 Al pagar en una tienda, acercas el móvil al datáfono,
 
 102
-00:05:03,178 --> 00:05:05,501
+00:05:03,745 --> 00:05:06,068
 y se convierte a euros en ese momento.
 
 103
-00:05:05,821 --> 00:05:06,374
+00:05:06,388 --> 00:05:06,940
 Recuerda:
 
 104
-00:05:06,374 --> 00:05:08,768
+00:05:06,940 --> 00:05:09,335
 Bit2Me sabe quién eres y ve tus gastos.
 
 105
-00:05:08,768 --> 00:05:11,899
+00:05:09,335 --> 00:05:12,465
 Y para Hacienda, cada pago es una venta de bitcoin:
 
 106
-00:05:11,899 --> 00:05:13,986
+00:05:12,465 --> 00:05:14,553
 guarda el registro de movimientos.
 
 107
-00:05:15,417 --> 00:05:16,004
+00:05:15,983 --> 00:05:16,571
 Opción C:
 
 108
-00:05:16,004 --> 00:05:19,397
+00:05:16,571 --> 00:05:19,963
 pagar directamente en comercios que aceptan bitcoin.
 
 109
-00:05:19,397 --> 00:05:21,745
+00:05:19,963 --> 00:05:22,312
 En BTC Map ves los que tienes cerca.
 
 110
-00:05:22,065 --> 00:05:25,211
+00:05:22,632 --> 00:05:25,778
 En la caja, el comercio te enseña un QR con el importe.
 
 111
-00:05:25,531 --> 00:05:29,992
+00:05:26,098 --> 00:05:30,558
 Lo escaneas con la cartera de gasto, compruebas el importe, y pagas.
 
 112
-00:05:29,992 --> 00:05:31,894
+00:05:30,558 --> 00:05:32,461
 El comercio solo ve ese pago:
 
 113
-00:05:31,894 --> 00:05:33,600
+00:05:32,461 --> 00:05:34,166
 ni tu saldo, ni tu bóveda.
 
 114
-00:05:35,017 --> 00:05:36,190
+00:05:35,583 --> 00:05:36,756
 Y dos opciones más.
 
 115
-00:05:36,510 --> 00:05:37,118
+00:05:37,076 --> 00:05:37,685
 Opción C:
 
 116
-00:05:37,118 --> 00:05:41,578
+00:05:37,685 --> 00:05:42,145
 pagar directamente con Lightning en comercios que aceptan bitcoin.
 
 117
-00:05:41,578 --> 00:05:44,078
+00:05:42,145 --> 00:05:44,645
 Los encuentras en el mapa de BTC Map.
 
 118
-00:05:44,078 --> 00:05:47,457
+00:05:44,645 --> 00:05:48,024
 Es rápido, barato, y el comercio solo ve ese pago.
 
 119
-00:05:47,777 --> 00:05:48,390
+00:05:48,344 --> 00:05:48,956
 Y opción D:
 
 120
-00:05:48,390 --> 00:05:52,676
+00:05:48,956 --> 00:05:53,243
 cada mes vendes tu presupuesto a particulares, en Bisq, Hodl Hodl o RoboSats,
 
 121
-00:05:52,676 --> 00:05:56,016
+00:05:53,243 --> 00:05:56,583
 y recibes euros en tu cuenta para el alquiler y los recibos.
 
 122
-00:05:57,417 --> 00:05:58,108
+00:05:57,983 --> 00:05:58,675
 Comparemos.
 
 123
-00:05:58,428 --> 00:05:58,980
+00:05:58,995 --> 00:05:59,547
 Bitrefill:
 
 124
-00:05:58,980 --> 00:06:00,637
+00:05:59,547 --> 00:06:01,203
 buena privacidad y muy cómodo.
 
 125
-00:06:00,957 --> 00:06:04,908
+00:06:01,523 --> 00:06:05,475
 La tarjeta es lo más cómodo de todo, pero la empresa lo ve todo de ese dinero.
 
 126
-00:06:05,228 --> 00:06:09,830
+00:06:05,795 --> 00:06:10,396
 Lightning directo es lo más privado, pero no todos los comercios lo aceptan.
 
 127
-00:06:09,830 --> 00:06:14,613
+00:06:10,396 --> 00:06:15,179
 Y la venta entre particulares te da euros en el banco, con algo más de trabajo.
 
 128
-00:06:14,613 --> 00:06:16,066
+00:06:15,179 --> 00:06:16,633
 Lo ideal es combinarlas.
 
 129
-00:06:17,483 --> 00:06:20,495
+00:06:18,050 --> 00:06:21,061
 Si quieres ir un paso más allá, hay medidas avanzadas.
 
 130
-00:06:20,815 --> 00:06:24,140
+00:06:21,381 --> 00:06:24,707
 Que las monedas que usas para gastar vengan de compras sin KYC,
 
 131
-00:06:24,140 --> 00:06:25,724
+00:06:24,707 --> 00:06:26,291
 como vimos en el vídeo cuatro.
 
 132
-00:06:26,044 --> 00:06:28,756
+00:06:26,611 --> 00:06:29,323
 Usar tu propio nodo, y conectarte a través de Tor.
 
 133
-00:06:29,076 --> 00:06:33,897
+00:06:29,643 --> 00:06:34,464
 Existen técnicas como el coinjoin, que mezcla tus monedas con las de otras personas,
 
 134
-00:06:33,897 --> 00:06:36,307
+00:06:34,464 --> 00:06:36,874
 con herramientas como Wasabi o JoinMarket.
 
 135
-00:06:36,307 --> 00:06:39,464
+00:06:36,874 --> 00:06:40,030
 Pero el panorama ha cambiado mucho en los últimos años,
 
 136
-00:06:39,464 --> 00:06:43,194
+00:06:40,030 --> 00:06:43,761
 y algunos exchanges bloquean monedas que han pasado por coinjoin.
 
 137
-00:06:43,194 --> 00:06:44,399
+00:06:43,761 --> 00:06:44,966
 Infórmate bien antes.
 
 138
-00:06:44,719 --> 00:06:45,820
+00:06:45,286 --> 00:06:46,387
 Y separa identidades:
 
 139
-00:06:45,820 --> 00:06:49,333
+00:06:46,387 --> 00:06:49,900
 usa un email alias, y no pongas tu nombre real donde no haga falta.
 
 140
-00:06:50,750 --> 00:06:53,072
+00:06:51,317 --> 00:06:53,639
 Y para terminar, los errores que te delatan.
 
 141
-00:06:53,392 --> 00:06:56,661
+00:06:53,959 --> 00:06:57,228
 Pagar directamente desde la bóveda, y reutilizar direcciones.
 
 142
-00:06:56,981 --> 00:07:01,493
+00:06:57,548 --> 00:07:02,059
 Juntar monedas KYC y sin KYC, y enseñar tu saldo o presumir de él.
 
 143
-00:07:01,813 --> 00:07:05,445
+00:07:02,379 --> 00:07:06,011
 Y enviar todo tu patrimonio de golpe a un exchange con tu nombre.
 
 144
-00:07:05,445 --> 00:07:09,524
+00:07:06,011 --> 00:07:10,091
 Si necesitas vender mucho, hazlo de forma planificada y bien documentada.
 
 145
-00:07:10,950 --> 00:07:11,580
+00:07:11,517 --> 00:07:12,146
 En resumen:
 
 146
-00:07:11,580 --> 00:07:16,387
+00:07:12,146 --> 00:07:16,954
 tu patrimonio en una bóveda que nadie ve, una recarga mensual a través de Lightning,
 
 147
-00:07:16,387 --> 00:07:18,619
+00:07:16,954 --> 00:07:19,186
 y tus gastos desde una cartera pequeña.
 
 148
-00:07:18,619 --> 00:07:21,881
+00:07:19,186 --> 00:07:22,448
 Oculto para curiosos y ladrones, y en regla con Hacienda.
 
 149
-00:07:22,201 --> 00:07:24,823
-Con esto termina la serie Bitcoin práctico y seguro.
+00:07:22,768 --> 00:07:24,881
+En el siguiente y último vídeo, el seis,
 
 150
-00:07:25,143 --> 00:07:30,524
-Repasa los vídeos cuando lo necesites, practica siempre con poco dinero, y recuerda:
+00:07:24,881 --> 00:07:27,680
+verás cómo dejar tu bitcoin en herencia a tu familia,
 
 151
-00:07:30,524 --> 00:07:32,510
-tus llaves, tu responsabilidad.
+00:07:27,680 --> 00:07:29,581
+cada uno con su cantidad y su fecha.
 
 152
-00:07:32,510 --> 00:07:33,343
+00:07:29,901 --> 00:07:35,282
+Repasa los vídeos cuando lo necesites, practica siempre con poco dinero, y recuerda:
+
+153
+00:07:35,282 --> 00:07:37,268
+tus llaves, tu responsabilidad.
+
+154
+00:07:37,268 --> 00:07:38,101
 Hasta pronto.

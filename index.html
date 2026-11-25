@@ -97,6 +97,31 @@ nav.top a.pill span{color:var(--btc)}
 .vault .meta{font-size:14px;color:var(--ink2);margin-top:6px}
 .vault code{display:block;margin-top:8px;font-size:12.5px;white-space:pre-wrap;word-break:break-all;background:var(--bg);padding:8px 10px}
 .inh .msg{margin-top:14px;padding:12px 14px;border-radius:12px;background:rgba(96,165,250,.08);border:1px solid rgba(96,165,250,.35);color:var(--ink2);font-size:15px}
+/* herencia por consola */
+.cli{background:var(--card);border:1px solid var(--line);border-radius:var(--r);padding:22px;margin-top:10px}
+.cli h4{margin:0 0 12px;font-size:15px;letter-spacing:.12em;text-transform:uppercase;color:var(--btc)}
+.cli-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:12px 18px}
+.cli label{font-size:13px;color:var(--ink3);display:block;margin:0 0 4px}
+.cli input,.cli select{width:100%;background:var(--bg);border:1px solid var(--line);color:var(--ink);border-radius:9px;padding:8px 9px;font:13.5px "JetBrains Mono",monospace}
+.cli input:focus,.cli select:focus{outline:2px solid var(--btc);border-color:transparent}
+.cli input.bad{border-color:var(--red)}
+.cli .hint{font-size:12.5px;color:var(--ink3);margin-top:4px;min-height:1em}
+.cli .hint.r{color:var(--red);font-weight:700}
+.cli .tabs{display:flex;gap:6px;flex-wrap:wrap;margin:18px 0 8px}
+.cli .tabs button{background:var(--card2);border:1px solid var(--line);color:var(--ink2);border-radius:99px;padding:7px 14px;font:inherit;font-size:14px;font-weight:600;cursor:pointer}
+.cli .tabs button.on{background:var(--btc);color:#111;border-color:var(--btc)}
+.term{position:relative;background:#070b12;border:1px solid var(--line);border-radius:12px;margin:8px 0 14px}
+.term pre{margin:0;padding:16px 18px;overflow:auto;max-height:560px;font:13px/1.6 "JetBrains Mono",monospace;color:#e2e8f0;white-space:pre}
+.term pre .c{color:#64748b}
+.term pre .w{color:#fbbf24}
+.term .copy{position:absolute;top:8px;right:10px;background:var(--card2);border:1px solid var(--line);color:var(--ink);border-radius:8px;padding:4px 10px;font:600 12.5px inherit;cursor:pointer}
+.term .copy:hover{border-color:var(--btc)}
+.descs{display:grid;gap:8px;margin:8px 0}
+.descs div{background:var(--bg);border:1px solid var(--line);border-left:4px solid var(--c);border-radius:10px;padding:8px 12px;font:12.5px/1.5 "JetBrains Mono",monospace;word-break:break-all;color:var(--ink2)}
+.descs b{font-family:Montserrat,system-ui,sans-serif;display:block;margin-bottom:2px}
+.rpc{width:100%;border-collapse:collapse;font-size:14.5px;margin:6px 0 10px}
+.rpc td{border-top:1px solid var(--line);padding:8px 10px;vertical-align:top;text-align:left}
+.rpc td:first-child{white-space:nowrap}
 .chk{list-style:none;padding:0;margin:0;display:grid;gap:8px}
 .chk label{display:flex;gap:12px;align-items:flex-start;background:var(--card);border:1px solid var(--line);border-radius:12px;padding:12px 14px;cursor:pointer;color:var(--ink2)}
 .chk input{width:20px;height:20px;accent-color:var(--green);margin-top:2px;flex:none}
@@ -292,7 +317,7 @@ footer .rules b{display:block;color:var(--btc);font-family:"Bebas Neue";font-siz
     <p class="lead">Teoría justa y mucha práctica: cómo crear tu semilla, usar tu cartera, guardarla, comprar, vender, gastar y dejar en herencia bitcoin en la vida real <b>sin perderlo y sin exponerte</b>.</p>
     <div class="stats">
       <div class="stat"><b>7</b>vídeos</div>
-      <div class="stat"><b>65</b>minutos</div>
+      <div class="stat"><b>70</b>minutos</div>
       <div class="stat"><b>9</b>niveles de seguridad</div>
       <div class="stat"><b>0</b>teoría innecesaria</div>
     </div>
@@ -303,7 +328,7 @@ footer .rules b{display:block;color:var(--btc);font-family:"Bebas Neue";font-siz
       <a class="ep" href="#v3"><img src="img/03.jpg" alt="Portada del vídeo 3" loading="lazy"><div><small>VÍDEO 3 · 6,5 MIN</small><strong>Dónde y cómo guardar semillas y hardware wallets</strong></div></a>
       <a class="ep" href="#v4"><img src="img/04.jpg" alt="Portada del vídeo 4" loading="lazy"><div><small>VÍDEO 4 · 12 MIN</small><strong>Comprar y vender bitcoin de forma segura</strong></div></a>
       <a class="ep" href="#v5"><img src="img/05.jpg" alt="Portada del vídeo 5" loading="lazy"><div><small>VÍDEO 5 · 7,5 MIN</small><strong>Gastar con privacidad y vivir de tu patrimonio</strong></div></a>
-      <a class="ep" href="#v6"><img src="img/06.jpg" alt="Portada del vídeo 6" loading="lazy"><div><small>VÍDEO 6 · 8,5 MIN</small><strong>Herencia en bitcoin: de un padre a tres hijos</strong></div></a>
+      <a class="ep" href="#v6"><img src="img/06.jpg" alt="Portada del vídeo 6" loading="lazy"><div><small>VÍDEO 6 · 13 MIN</small><strong>Herencia en bitcoin: de un padre a tres hijos</strong></div></a>
     </div>
   </div>
 </header>
@@ -902,8 +927,8 @@ footer .rules b{display:block;color:var(--btc);font-family:"Bebas Neue";font-siz
 <section class="v" id="v6"><div class="wrap">
   <div class="vhead"><div class="vnum">06</div><div><div class="kicker">Herencia</div><h2>Herencia en bitcoin: de un padre a tres hijos</h2><p>Una «hucha» por hijo con bloqueo de tiempo: cada uno recibe su cantidad en su fecha, y tú mantienes el control mientras vivas.</p></div></div>
   <div class="player"><video controls preload="none" playsinline poster="img/06.jpg" src="videos/06_herencia_en_bitcoin_de_un_padre_a_tres_hijos.mp4"></video></div>
-  <div class="vmeta"><span>⏱ 8,5 min · subtítulos incluidos</span><a href="videos/06_herencia_en_bitcoin_de_un_padre_a_tres_hijos.mp4" download>Descargar MP4</a><a href="videos/06_herencia_en_bitcoin_de_un_padre_a_tres_hijos.srt" download>Subtítulos .srt</a></div>
-  <div class="practice"><h4>En la práctica, paso a paso</h4><ol><li>Cada hijo crea <b>su semilla</b> y te da solo su <b>clave pública</b></li><li>Crear una <b>hucha miniscript</b> por hijo: padre siempre, hijo desde su fecha</li><li>Registrar cada hucha en tu <b>hardware wallet</b></li><li>Imprimir cada <b>descriptor</b> × 2: para el hijo y para la carta</li><li>Un pago con <b>tres destinos</b>: 0,5 · 0,3 · 0,2 BTC</li><li>Ver qué pasa con el <b>tiempo</b> y si el padre fallece</li><li>Ana <b>reclama</b> su hucha: rechazada antes de la fecha, válida después</li><li>Escribir la <b>carta</b> sin secretos</li></ol></div>
+  <div class="vmeta"><span>⏱ 13 min · subtítulos incluidos</span><a href="videos/06_herencia_en_bitcoin_de_un_padre_a_tres_hijos.mp4" download>Descargar MP4</a><a href="videos/06_herencia_en_bitcoin_de_un_padre_a_tres_hijos.srt" download>Subtítulos .srt</a></div>
+  <div class="practice"><h4>En la práctica, paso a paso</h4><ol><li>Cada hijo crea <b>su semilla</b> y te da solo su <b>clave pública</b></li><li>Crear una <b>hucha miniscript</b> por hijo: padre siempre, hijo desde su fecha</li><li>Registrar cada hucha en tu <b>hardware wallet</b></li><li>Imprimir cada <b>descriptor</b> × 2: para el hijo y para la carta</li><li>Un pago con <b>tres destinos</b>: 0,5 · 0,3 · 0,2 BTC</li><li>Ver qué pasa con el <b>tiempo</b> y si el padre fallece</li><li>Ana <b>reclama</b> su hucha: rechazada antes de la fecha, válida después</li><li>Escribir la <b>carta</b> sin secretos</li><li>Variante: todo con <b>Bitcoin Core por consola</b> (<code>bitcoin-cli</code>)</li></ol></div>
 
   <h3>Una hucha por hijo, con dos caminos</h3>
   <div class="grid g3">
@@ -937,6 +962,97 @@ footer .rules b{display:block;color:var(--btc);font-family:"Bebas Neue";font-siz
     </div>
   </div>
 
+
+  <h3>Variante: todo con Bitcoin Core, por consola</h3>
+  <p class="muted" style="max-width:820px">La misma herencia, sin ninguna aplicación intermedia: solo <code>bitcoind</code>, <code>bitcoin-cli</code> y <code>jq</code>. Cada comando de esta sección se ha probado de principio a fin en regtest con Bitcoin Core v32: crear las huchas, el reparto, el rechazo «non-final» antes de la fecha, el cobro después, la cartera de solo lectura y el cambio de plan del padre.</p>
+  <div class="grid g3">
+    <div class="card top-c reveal" style="--c:var(--blue)"><div class="ico">🖥️</div><h4>Lo que necesitas</h4><p><b>Bitcoin Core 25 o superior</b> (firma miniscript y acepta opciones con nombre), el nodo <b>sincronizado</b> y mejor <b>sin podar</b>: al importar una hucha, busca sus monedas desde la fecha de creación. Y <code>jq</code>.</p></div>
+    <div class="card top-c reveal" style="--c:var(--btc)"><div class="ico">🔑</div><h4>Sin 12 ni 24 palabras</h4><p>Bitcoin Core no usa semillas BIP39. La copia de cada llave es su <b>descriptor privado</b> (<code>listdescriptors true</code>, empieza por <code>xprv</code>). Se guarda como una semilla: papel o acero, nunca en internet.</p></div>
+    <div class="card top-c reveal" style="--c:var(--red)"><div class="ico">🛡️</div><h4>Las claves, en el ordenador</h4><p>Aquí no hay hardware wallet: usa un equipo <b>dedicado</b>, cifra las carteras (<code>encryptwallet</code>) y mantenlo sin internet siempre que puedas. <b>Nunca pegues un xprv en una web</b>, tampoco en esta.</p></div>
+  </div>
+
+  <h4 style="margin:22px 0 6px">Los comandos clave</h4>
+  <table class="rpc">
+    <tr><td><code>listdescriptors</code></td><td>Tu clave pública: lo que va entre <code>wpkh(</code> y <code>/0/*</code>, por ejemplo <code>[3e7a1c55/84h/0h/0h]xpub…</code>. Con <code>true</code>, la privada (secreta).</td></tr>
+    <tr><td><code>getdescriptorinfo</code></td><td>Comprueba un descriptor y le añade su <b>checksum</b> (<code>#…</code>). Si te equivocas en una letra, falla.</td></tr>
+    <tr><td><code>importdescriptors</code></td><td>Mete la hucha en una cartera. El padre la importa con su <code>xprv</code>; el hijo, con el suyo; quien solo vigila, con el descriptor público.</td></tr>
+    <tr><td><code>deriveaddresses</code></td><td>Saca las direcciones de la hucha a partir del descriptor.</td></tr>
+    <tr><td><code>sendall … locktime=</code></td><td>Vacía la hucha. El <b>locktime</b> debe ser la fecha de la hucha, o la firma del hijo queda incompleta.</td></tr>
+    <tr><td><code>testmempoolaccept</code></td><td>Pregunta a tu nodo si la red aceptaría la transacción sin enviarla: <code>"non-final"</code> = todavía no; <code>"allowed": true</code> = ya.</td></tr>
+  </table>
+
+  <h4 style="margin:22px 0 6px">Generador de comandos</h4>
+  <p class="muted" style="max-width:820px">Usa los hijos, cantidades y fechas del simulador de arriba. Pega solo <b>claves públicas</b>: la web calcula el checksum de cada descriptor y te da los comandos listos para copiar. Todo ocurre en tu navegador; no se envía nada a ningún sitio.</p>
+  <div class="cli" id="cli">
+    <div class="cli-grid">
+      <div><label for="cliPadre">Clave pública del padre</label><input id="cliPadre" spellcheck="false" autocomplete="off"><div class="hint" id="cliPadreH"></div></div>
+      <div><label for="cliDate">Fecha de creación de las huchas</label><input id="cliDate" type="date"><div class="hint">Desde aquí buscarán sus monedas los hijos al importar.</div></div>
+      <div><label for="cliFee">Comisión (sat/vB)</label><input id="cliFee" type="number" min="1" step="1" value="5"><div class="hint">Mírala en mempool.space el día que lo hagas.</div></div>
+    </div>
+    <div class="cli-grid" id="cliKids" style="margin-top:12px"></div>
+    <div class="tabs" id="cliTabs"><button data-t="padre" class="on">1 · Padre: montar</button><button data-t="hijo">2 · Hijo: cobrar</button><button data-t="vigila">3 · Hijo: vigilar</button><button data-t="cambio">4 · Padre: cambiar el plan</button><button data-t="ensayo">5 · Ensayo en regtest</button></div>
+    <div id="cliWho" class="row" style="display:none;gap:10px;align-items:center;margin:6px 0"><label for="cliKid" style="margin:0">Hijo:</label><select id="cliKid" style="max-width:240px"></select></div>
+    <div id="cliDescs"></div>
+    <div class="term"><button class="copy" data-copy="cliOut">Copiar</button><pre id="cliOut"></pre></div>
+    <p class="small" id="cliNote"></p>
+    <pre id="cliReg" hidden>#!/usr/bin/env bash
+# Ensayo completo de una herencia con bloqueo de tiempo, en REGTEST:
+# una red de pruebas privada donde tú fabricas los bloques. No toca tu nodo real ni dinero de verdad.
+# Requisitos: Bitcoin Core 25 o superior (bitcoind y bitcoin-cli) y jq.
+# Uso: bash ensayo-herencia-regtest.sh
+set -euo pipefail
+DIR=&quot;$HOME/ensayo-herencia&quot;
+mkdir -p &quot;$DIR&quot;
+cli() { bitcoin-cli -regtest -datadir=&quot;$DIR&quot; &quot;$@&quot;; }
+mina() { cli generatetoaddress &quot;$1&quot; &quot;$(cli -rpcwallet=padre getnewaddress)&quot; &gt;/dev/null; }
+
+bitcoind -regtest -datadir=&quot;$DIR&quot; -daemon -fallbackfee=0.0001 -listen=0
+sleep 5
+for w in padre llave llave_ana; do cli createwallet &quot;$w&quot; &gt;/dev/null; done
+mina 101
+echo &quot;1) Carteras creadas. Bloque actual: $(cli getblockcount)&quot;
+
+# Clave pública y privada (descriptor wpkh externo, sin el /0/*)
+clave() { cli -rpcwallet=&quot;$1&quot; listdescriptors ${2:-} | jq -r &#x27;.descriptors[] | select(.desc|startswith(&quot;wpkh(&quot;)) | select(.internal==false) | .desc&#x27; | sed &#x27;s/^wpkh(//; s/\/0\/\*).*//&#x27;; }
+PADRE=$(clave llave); PADRE_PRIV=$(clave llave true)
+ANA=$(clave llave_ana); ANA_PRIV=$(clave llave_ana true)
+
+# En regtest usamos una altura de bloque en vez de una fecha: 20 bloques en el futuro
+H=$(( $(cli getblockcount) + 20 ))
+D=$(cli getdescriptorinfo &quot;wsh(or_d(pk($PADRE/0/*),and_v(v:pk($ANA/0/*),after($H))))&quot; | jq -r .descriptor)
+echo &quot;2) Descriptor de la hucha de Ana (se libera en el bloque $H):&quot;
+echo &quot;   $D&quot;
+
+# Padre: cartera de herencia con su clave privada
+cli -named createwallet wallet_name=herencia blank=true &gt;/dev/null
+DP=&quot;wsh(or_d(pk($PADRE_PRIV/0/*),and_v(v:pk($ANA/0/*),after($H))))&quot;
+cli -rpcwallet=herencia importdescriptors &quot;[{\&quot;desc\&quot;:\&quot;$DP#$(cli getdescriptorinfo &quot;$DP&quot; | jq -r .checksum)\&quot;,\&quot;timestamp\&quot;:\&quot;now\&quot;}]&quot; &gt;/dev/null
+A=$(cli deriveaddresses &quot;$D&quot; &quot;[0,0]&quot; | jq -r &#x27;.[0]&#x27;)
+cli -rpcwallet=padre send &quot;{\&quot;$A\&quot;:0.5}&quot; &gt;/dev/null
+mina 1
+echo &quot;3) El padre envía 0,5 a la hucha. Saldo de la cartera herencia: $(cli -rpcwallet=herencia getbalances | jq .mine.trusted)&quot;
+
+# Ana: importa la hucha con su clave privada
+cli -named createwallet wallet_name=herencia_ana blank=true &gt;/dev/null
+DA=&quot;wsh(or_d(pk($PADRE/0/*),and_v(v:pk($ANA_PRIV/0/*),after($H))))&quot;
+cli -rpcwallet=herencia_ana importdescriptors &quot;[{\&quot;desc\&quot;:\&quot;$DA#$(cli getdescriptorinfo &quot;$DA&quot; | jq -r .checksum)\&quot;,\&quot;timestamp\&quot;:0}]&quot; &gt;/dev/null
+echo &quot;4) Ana ve su hucha: $(cli -rpcwallet=herencia_ana getbalances | jq .mine.trusted) BTC&quot;
+
+DEST=$(cli -rpcwallet=llave_ana getnewaddress)
+cli -rpcwallet=herencia_ana -named sendall recipients=&quot;[\&quot;$DEST\&quot;]&quot; fee_rate=5 locktime=$H add_to_wallet=false | jq -r .hex &gt; &quot;$DIR/tx.hex&quot;
+echo &quot;5) Bloque $(cli getblockcount): ¿la red acepta el cobro? $(cli testmempoolaccept &quot;[\&quot;$(cat &quot;$DIR/tx.hex&quot;)\&quot;]&quot; | jq -c &#x27;.[0] | {allowed, &quot;reject-reason&quot;}&#x27;)&quot;
+
+mina 20
+echo &quot;6) Bloque $(cli getblockcount): ¿y ahora? $(cli testmempoolaccept &quot;[\&quot;$(cat &quot;$DIR/tx.hex&quot;)\&quot;]&quot; | jq -c &#x27;.[0] | {allowed}&#x27;)&quot;
+cli sendrawtransaction &quot;$(cat &quot;$DIR/tx.hex&quot;)&quot; &gt;/dev/null
+mina 1
+echo &quot;7) Herencia cobrada. Saldo de Ana: $(cli -rpcwallet=llave_ana getbalances | jq .mine.trusted) BTC&quot;
+
+cli stop &gt;/dev/null
+echo &quot;Ensayo terminado. Para borrarlo: rm -rf \&quot;$DIR\&quot;&quot;
+</pre>
+  </div>
+
   <h3>Tu lista para montarlo</h3>
   <ul class="chk" id="chk">
     <li><label><input type="checkbox"><span>Cada hijo tiene <b>su propia hardware wallet</b> y su semilla en acero (los menores, guardada por su tutor)</span></label></li>
@@ -947,6 +1063,7 @@ footer .rules b{display:block;color:var(--btc);font-family:"Bebas Neue";font-siz
     <li><label><input type="checkbox"><span>He escrito la <b>carta</b>, sin ninguna semilla, con una persona de confianza que sabe del tema</span></label></li>
     <li><label><input type="checkbox"><span>Mi <b>testamento</b> menciona que existen, sin secretos, y lo he consultado con un notario o asesor</span></label></li>
     <li><label><input type="checkbox"><span>Tengo un recordatorio para <b>revisarlo cada año</b></span></label></li>
+    <li><label><input type="checkbox"><span>Si lo hago con <b>Bitcoin Core</b>: cada uno tiene su <b>xprv</b> en papel o acero (no hay 12/24 palabras) y he pasado el <b>ensayo en regtest</b></span></label></li>
   </ul>
   <p class="prog" id="chkProg"></p>
 
@@ -955,6 +1072,7 @@ footer .rules b{display:block;color:var(--btc);font-family:"Bebas Neue";font-siz
   <details class="lvl" style="--c:var(--red)"><summary><span class="t">¿Y si un hijo pierde su semilla antes de su fecha?</span></summary><div class="body"><p>Si el padre vive, se arregla: el hijo crea una llave nueva y el padre mueve el dinero a una hucha nueva. Si el padre ya no está, esa parte <b>se pierde</b>. Por eso cada hijo guarda su semilla en acero, y el plan se revisa cada año.</p></div></details>
   <details class="lvl" style="--c:var(--blue)"><summary><span class="t">¿Por fecha o por inactividad?</span></summary><div class="body"><p>Este vídeo usa un <b>bloqueo por fecha</b> (absoluto): cada hijo, su día. Otra opción es el <b>bloqueo por inactividad</b> (relativo), como el de Liana: los herederos solo pueden gastar si las monedas llevan, por ejemplo, un año sin moverse, y el dueño lo «renueva» moviéndolas de vez en cuando. Sirve para «si me pasa algo», no para «a los 18 años».</p></div></details>
   <details class="lvl" style="--c:var(--green)"><summary><span class="t">¿Qué es el número largo de la condición?</span></summary><div class="body"><p>Es la fecha en <b>segundos desde el 1 de enero de 1970</b> (tiempo Unix), que es como la entiende bitcoin. Por ejemplo, <code>1893456000</code> es el 1 de enero de 2030 a las 00:00 UTC. La red usa la mediana de los últimos bloques, así que puede liberarse con una o dos horas de retraso.</p></div></details>
+  <details class="lvl" style="--c:var(--purple,#a78bfa)"><summary><span class="t">¿Bitcoin Core por consola o cartera con hardware wallet?</span></summary><div class="body"><p>Es la misma hucha y la misma condición: cambia dónde viven las claves. Con <b>hardware wallet</b>, las claves nunca tocan el ordenador y la copia son 12 o 24 palabras. Con <b>Bitcoin Core</b> no dependes de ninguna aplicación, pero las claves están en el ordenador y la copia es un <code>xprv</code>. Si no te manejas con la consola, usa la cartera con hardware wallet; si eliges Bitcoin Core, ensaya antes con el script de regtest.</p></div></details>
   <details class="lvl" style="--c:var(--yellow)"><summary><span class="t">¿Y Hacienda?</span></summary><div class="body"><p>En España, lo heredado tributa por el <b>Impuesto de Sucesiones</b>, que cambia mucho según la comunidad autónoma; lo recibido en vida, por <b>Donaciones</b>. Los bitcoins se declaran en el inventario de la herencia como cualquier otro bien, sin poner ninguna semilla en ningún documento. Consulta tu caso con un notario o asesor.</p></div></details>
   <p class="big-quote reveal">Tu bitcoin, <span>a quien tú quieras, cuando tú quieras.</span></p>
 </div></section>
@@ -1037,7 +1155,7 @@ function render(){var now=addM(+slider.value),dy=death.value?new Date(Date.UTC(+
  else if(alive)m='El padre sigue vivo: puede mover cualquier hucha, también las ya desbloqueadas. Si un hijo mueve la suya ahora, fiscalmente puede ser una <b>donación</b>.';
  else if(lockedAfterDeath)m='El padre ha fallecido. Las huchas desbloqueadas ya pueden moverlas sus hijos; las demás <b>siguen a salvo</b> hasta su fecha. Nadie puede adelantarlas.';
  else m='Todas las huchas están desbloqueadas: cada hijo ha recibido su parte, en su fecha, sin intermediarios.';
- $('msg').innerHTML=m}
+ $('msg').innerHTML=m;window.bpsKids=kids;window.dispatchEvent(new Event('bps-kids'))}
 slider.addEventListener('input',render);death.addEventListener('change',render);
 var timer=null;$('play').onclick=function(){var b=this;if(timer){clearInterval(timer);timer=null;b.textContent='▶ Ver pasar los años';return}
  if(+slider.value>=MONTHS-1)slider.value=0;b.textContent='❚❚ Pausa';
@@ -1048,6 +1166,112 @@ var CK='bps-herencia-chk',st;try{st=JSON.parse(localStorage.getItem(CK))||[]}cat
 var boxes=[].slice.call(document.querySelectorAll('#chk input'));
 function prog(){var n=boxes.filter(function(b){return b.checked}).length;$('chkProg').textContent=n+' de '+boxes.length+' hechos'+(n===boxes.length?' · ¡plan completo! Revísalo cada año.':'')}
 boxes.forEach(function(b,i){b.checked=!!st[i];b.addEventListener('change',function(){st=boxes.map(function(x){return x.checked});try{localStorage.setItem(CK,JSON.stringify(st))}catch(e){}prog()})});prog()})();
+// herencia: generador de comandos bitcoin-cli
+(function(){var root=document.getElementById('cli');if(!root)return;
+var $=function(id){return document.getElementById(id)};
+var COLS=['#60a5fa','#a78bfa','#34d399','#fb923c','#22d3ee'];
+var EXK={Ana:'[3e7a1c55/84h/0h/0h]xpub6C4xH2…pV9Lw',Luis:'[9b20f4d1/84h/0h/0h]xpub6D9qWe…T7kxa',Marta:'[c61d08a7/84h/0h/0h]xpub6BvKcz…Qm3Fh'};
+var EXP='[7a3f9c21/84h/0h/0h]xpub6CUGRU…k8QmR';
+var SK='bps-herencia-cli',st;try{st=JSON.parse(localStorage.getItem(SK))||{}}catch(e){st={}}
+st.keys=st.keys||{};
+function save(){try{localStorage.setItem(SK,JSON.stringify(st))}catch(e){}}
+// checksum de descriptores (BIP380)
+function descsum(s){var INPUT='0123456789()[],\'/*abcdefgh@:$%{}IJKLMNOPQRSTUVWXYZ&+-.;<=>?!^_|~ijklmnopqrstuvwxyzABCDEFGH`#"\\ ',CH='qpzry9x8gf2tvdw0s3jn54khce6mua7l';
+ if(typeof BigInt==='undefined')return null;
+ var G=[BigInt('0xf5dee51989'),BigInt('0xa9fdca3312'),BigInt('0x1bab10e32d'),BigInt('0x3706b1677a'),BigInt('0x644d626ffd')],M=BigInt('0x7ffffffff'),B35=BigInt(35),B5=BigInt(5),B1=BigInt(1),B0=BigInt(0),B31=BigInt(31);
+ function pm(c,v){var c0=c>>B35;c=((c&M)<<B5)^BigInt(v);for(var i=0;i<5;i++)if(((c0>>BigInt(i))&B1)!==B0)c^=G[i];return c}
+ var c=B1,cls=0,cc=0;for(var i=0;i<s.length;i++){var p=INPUT.indexOf(s[i]);if(p<0)return null;c=pm(c,p&31);cls=cls*3+(p>>5);if(++cc===3){c=pm(c,cls);cls=0;cc=0}}
+ if(cc>0)c=pm(c,cls);for(i=0;i<8;i++)c=pm(c,0);c^=B1;var r='';for(var j=0;j<8;j++)r+=CH[Number((c>>(B5*BigInt(7-j)))&B31)];return r}
+var KRE=/^\[[0-9a-fA-F]{8}(\/[0-9]+[hH']?)*\][xt]pub[1-9A-HJ-NP-Za-km-z]{100,112}$/;
+function check(v){v=(v||'').trim();if(!v)return{t:'r',m:'Falta la clave pública'};if(/prv/i.test(v))return{t:'r',m:'⛔ ¡Esto es una clave PRIVADA! Bórrala: aquí solo van claves públicas (xpub).',priv:1};
+ if(v.indexOf('…')>=0)return{t:'',m:'Ejemplo abreviado: pega aquí la clave real (sin /0/*).'};if(!KRE.test(v))return{t:'r',m:'Formato no reconocido. Debe ser [huella/84h/0h/0h]xpub… (sin /0/*)'};return{t:'',m:'✓ Formato correcto',ok:1}}
+function ts(d){return Math.floor(Date.parse(d+'T00:00:00Z')/1000)}
+function fdate(d){return new Date(d+'T00:00:00Z').toLocaleDateString('es-ES',{day:'numeric',month:'long',year:'numeric',timeZone:'UTC'})}
+function slug(n,used){var v=String(n||'hijo').normalize('NFD').replace(/[\u0300-\u036f]/g,'').toUpperCase().replace(/[^A-Z0-9]+/g,'_').replace(/^_+|_+$/g,'')||'HIJO';if(/^[0-9]/.test(v))v='H_'+v;var b=v,i=2;while(used[v])v=b+'_'+(i++);used[v]=1;return v}
+function amt(b){return(+b||0).toFixed(8).replace(/0+$/,'').replace(/\.$/,'')}
+var tab='padre';
+var today=new Date().toISOString().slice(0,10);
+$('cliPadre').value=st.padre!=null?st.padre:EXP;$('cliDate').value=st.date||today;$('cliFee').value=st.fee||5;
+function kids(){var k=window.bpsKids||[];var used={};return k.map(function(x,i){var v=slug(x.n,used);return{n:x.n||'Hijo',b:x.b,d:x.d,v:v,w:v.toLowerCase(),i:i,key:st.keys[i]!=null?st.keys[i]:(EXK[x.n]||'')}})}
+function drawKids(){var K=kids(),h='';K.forEach(function(k){h+='<div><label for="cliK'+k.i+'" style="color:'+COLS[k.i]+'">Clave pública de '+String(k.n).replace(/[&<>"]/g,'')+'</label><input id="cliK'+k.i+'" data-k="'+k.i+'" spellcheck="false" autocomplete="off"><div class="hint" id="cliK'+k.i+'H"></div></div>'});
+ $('cliKids').innerHTML=h;K.forEach(function(k){$('cliK'+k.i).value=k.key});
+ var sel=$('cliKid'),cur=sel.value;sel.innerHTML=K.map(function(k){return '<option value="'+k.i+'">'+String(k.n).replace(/[&<>"]/g,'')+'</option>'}).join('');if(cur&&+cur<K.length)sel.value=cur}
+function out(lines){var pre=$('cliOut');pre.textContent='';lines.forEach(function(l,i){var m=l.match(/^(\s*#.*)$/),t=l.match(/^(.*?\S)(\s{2,}#.*)$/);
+ if(m){var sp=document.createElement('span');sp.className=/⚠/.test(l)?'w':'c';sp.textContent=l;pre.appendChild(sp)}
+ else if(t){pre.appendChild(document.createTextNode(t[1]));var s2=document.createElement('span');s2.className='c';s2.textContent=t[2];pre.appendChild(s2)}
+ else pre.appendChild(document.createTextNode(l));if(i<lines.length-1)pre.appendChild(document.createTextNode('\n'))})}
+function render(){var K=kids(),P=$('cliPadre').value.trim(),cp=check(P),fee=Math.max(1,parseInt($('cliFee').value,10)||5),cd=$('cliDate').value||today,cts=ts(cd)-86400;
+ $('cliPadre').classList.toggle('bad',cp.t==='r');$('cliPadreH').textContent=cp.m;$('cliPadreH').className='hint'+(cp.t==='r'?' r':'');
+ var allOk=cp.ok,anyPriv=cp.priv;
+ K.forEach(function(k){var c=check(k.key),el=$('cliK'+k.i);if(!el)return;el.classList.toggle('bad',c.t==='r');$('cliK'+k.i+'H').textContent=c.m;$('cliK'+k.i+'H').className='hint'+(c.t==='r'?' r':'');if(!c.ok)allOk=false;if(c.priv)anyPriv=1;k.pub=c.priv?'':k.key;k.ts=ts(k.d);k.desc='wsh(or_d(pk('+(cp.priv?'':P)+'/0/*),and_v(v:pk('+k.pub+'/0/*),after('+k.ts+'))))';k.cs=descsum(k.desc)});
+ if(cp.priv)P='';
+ // descriptores
+ var dh='';if(tab==='padre'){dh='<div class="descs">'+K.map(function(k){return '<div style="--c:'+COLS[k.i]+'"><b style="color:'+COLS[k.i]+'">hucha_'+k.w+'.txt · '+amt(k.b).replace('.',',')+' BTC desde el '+fdate(k.d)+'</b>'+k.desc.replace(/[&<>]/g,'')+(k.cs?'#'+k.cs:'')+'</div>'}).join('')+'</div>'+
+  (allOk?'<p class="small">Bitcoin Core debe darte <b>exactamente</b> estos descriptores (mismo checksum final). Si no coinciden, revisa las claves.</p>':'<p class="small">Con claves de ejemplo o incompletas, el checksum no sirve: pega las claves reales.</p>')}
+ $('cliDescs').innerHTML=dh;
+ $('cliWho').style.display=(tab==='hijo'||tab==='vigila'||tab==='cambio')?'flex':'none';
+ var L=[],k=K[+$('cliKid').value]||K[0];
+ if(anyPriv)L.push('# ⚠ Has pegado una clave PRIVADA. Bórrala de la casilla: aquí solo van claves públicas.','');
+ if(!allOk&&!anyPriv)L.push('# ⚠ Claves de ejemplo: sustitúyelas por las reales antes de usar estos comandos.','');
+ if(tab==='padre'){
+  L.push('# ── 0. Claves públicas: la tuya y la que te ha dado cada hijo ──','PADRE="'+P+'"');K.forEach(function(k){L.push(k.v+'="'+k.pub+'"')});
+  L.push('','# ── 1. Una hucha por hijo: o firma el padre, o firma el hijo desde su fecha ──');
+  K.forEach(function(k){L.push('D_'+k.v+'="wsh(or_d(pk($PADRE/0/*),and_v(v:pk($'+k.v+'/0/*),after('+k.ts+'))))"   # '+fdate(k.d))});
+  K.forEach(function(k){L.push('bitcoin-cli getdescriptorinfo "$D_'+k.v+'" | jq -r .descriptor > hucha_'+k.w+'.txt')});
+  L.push('cat hucha_*.txt   # compáralas con las de la web e imprime cada una × 2 (para el hijo y para la carta)');
+  L.push('','# ── 2. Tu cartera «herencia», con tu clave privada (para poder moverlas mientras vivas) ──');
+  L.push('read -rsp "Pega tu xprv…/84h/0h/0h (no se verá): " PADRE_PRIV; echo');
+  L.push('bitcoin-cli -named createwallet wallet_name=herencia blank=true');
+  L.push('importa() {','  CS=$(bitcoin-cli getdescriptorinfo "$1" | jq -r .checksum)','  bitcoin-cli -rpcwallet=herencia importdescriptors "[{\\"desc\\":\\"$1#$CS\\",\\"timestamp\\":\\"now\\"}]"','}');
+  K.forEach(function(k){L.push('importa "wsh(or_d(pk($PADRE_PRIV/0/*),and_v(v:pk($'+k.v+'/0/*),after('+k.ts+'))))"')});
+  L.push('unset PADRE_PRIV   # aviso normal: "Not all private keys provided" (las de tus hijos son suyas)');
+  L.push('','# ── 3. La primera dirección de cada hucha ──','dir() { bitcoin-cli deriveaddresses "$(cat "$1")" "[0,0]" | jq -r ".[0]"; }');
+  K.forEach(function(k){L.push('A_'+k.v+'=$(dir hucha_'+k.w+'.txt)')});
+  L.push('for A in '+K.map(function(k){return '$A_'+k.v}).join(' ')+'; do bitcoin-cli -rpcwallet=herencia getaddressinfo "$A" | jq .ismine; done   # → true');
+  L.push('','# ── 4. Un único pago a todas las huchas, desde tu cartera de siempre (aquí, «padre») ──');
+  L.push('bitcoin-cli -rpcwallet=padre -named send outputs="{'+K.map(function(k){return '\\"$A_'+k.v+'\\":'+amt(k.b)}).join(',')+'}" fee_rate='+fee);
+  L.push('','# ── 5. Comprueba (tras la confirmación) ──','bitcoin-cli -rpcwallet=herencia getbalances | jq .mine.trusted   # → '+amt(K.reduce(function(a,k){return a+(+k.b||0)},0)));
+  L.push('# Apunta en la carta la fecha de creación: '+fdate(cd)+' (timestamp '+cts+')');
+  $('cliNote').innerHTML='Cartera de origen: <code>padre</code> (cámbiala por la tuya). <code>read -s</code> evita que tu xprv quede en el historial de la consola.';
+ }else if(tab==='hijo'&&k){
+  L.push('# '+k.n+', en tu propio Bitcoin Core, a partir del '+fdate(k.d),'# Necesitas tu hucha_'+k.w+'.txt (copia del padre) y tu copia secreta (xprv)','');
+  L.push('PADRE="'+P+'"   # también aparece dentro de tu hucha_'+k.w+'.txt');
+  L.push('read -rsp "Pega tu xprv…/84h/0h/0h (no se verá): " MI_PRIV; echo');
+  L.push('bitcoin-cli -named createwallet wallet_name=herencia_'+k.w+' blank=true');
+  L.push('D="wsh(or_d(pk($PADRE/0/*),and_v(v:pk($MI_PRIV/0/*),after('+k.ts+'))))"');
+  L.push('CS=$(bitcoin-cli getdescriptorinfo "$D" | jq -r .checksum)');
+  L.push('bitcoin-cli -rpcwallet=herencia_'+k.w+' importdescriptors "[{\\"desc\\":\\"$D#$CS\\",\\"timestamp\\":'+cts+'}]"');
+  L.push('unset MI_PRIV D','bitcoin-cli -rpcwallet=herencia_'+k.w+' getbalances | jq .mine.trusted   # → '+amt(k.b),'');
+  L.push('# Prepara el cobro hacia una dirección tuya (aquí, de tu cartera «llave»)','DEST=$(bitcoin-cli -rpcwallet=llave getnewaddress)');
+  L.push('bitcoin-cli -rpcwallet=herencia_'+k.w+' -named sendall recipients="[\\"$DEST\\"]" fee_rate='+fee+' locktime='+k.ts+' add_to_wallet=false | jq -r .hex > tx.hex');
+  L.push('bitcoin-cli testmempoolaccept "[\\"$(cat tx.hex)\\"]"','#   "reject-reason": "non-final"  → aún no ha llegado la fecha','#   "allowed": true               → ya puedes transmitir:','bitcoin-cli sendrawtransaction "$(cat tx.hex)"');
+  $('cliNote').innerHTML='Sin <code>locktime='+k.ts+'</code> la firma queda incompleta (<code>"complete": false</code>). La red usa la mediana de los últimos 11 bloques, así que la hucha se libera con hasta ~2 horas de retraso sobre las 00:00 UTC. Si la comisión ha cambiado mucho, vuelve a generar <code>tx.hex</code>.';
+ }else if(tab==='vigila'&&k){
+  L.push('# '+k.n+': ver tu hucha desde hoy, sin poder gastarla (solo lectura)');
+  L.push('bitcoin-cli -named createwallet wallet_name=vigila_'+k.w+' disable_private_keys=true blank=true');
+  L.push('bitcoin-cli -rpcwallet=vigila_'+k.w+' importdescriptors "[{\\"desc\\":\\"$(cat hucha_'+k.w+'.txt)\\",\\"timestamp\\":'+cts+'}]"');
+  L.push('bitcoin-cli -rpcwallet=vigila_'+k.w+' getbalances | jq .mine.trusted   # → '+amt(k.b));
+  $('cliNote').innerHTML='El descriptor público deja ver el saldo y las direcciones, pero no gastar. Si prefieres que el hijo aún no lo sepa, dale su copia en un sobre cerrado.';
+ }else if(tab==='cambio'&&k){
+  L.push('# Padre: ver qué hay en cada hucha','bitcoin-cli -rpcwallet=herencia listunspent | jq -r \'.[] | "\\(.amount)  \\(.address)"\'','');
+  L.push('# Mover la hucha de '+k.n+' a una dirección nueva tuya (tu camino no espera a ninguna fecha)');
+  L.push('A_'+k.v+'=$(bitcoin-cli deriveaddresses "$(cat hucha_'+k.w+'.txt)" "[0,0]" | jq -r ".[0]")');
+  L.push('U=$(bitcoin-cli -rpcwallet=herencia listunspent | jq -c "[.[] | select(.address==\\"$A_'+k.v+'\\") | {txid,vout}]")');
+  L.push('NUEVA=$(bitcoin-cli -rpcwallet=padre getnewaddress)');
+  L.push('bitcoin-cli -rpcwallet=herencia -named sendall recipients="[\\"$NUEVA\\"]" inputs="$U" fee_rate='+fee);
+  L.push('','# ¿Retrasar la fecha o cambiar al heredero? Crea una hucha nueva (pestaña 1) y envía ahí.');
+  $('cliNote').innerHTML='Útil si un hijo pierde su copia, si cambias de idea o si quieres retrasar una fecha. Hazlo con tiempo: tras tu fallecimiento ya nadie podrá cambiar el plan.';
+ }else if(tab==='ensayo'){
+  L=$('cliReg').textContent.replace(/\n$/,'').split('\n');
+  $('cliNote').innerHTML='Script completo y autónomo: crea su propia red de pruebas en <code>~/ensayo-herencia</code>, usa una altura de bloque (<code>after(N)</code>) en vez de una fecha y comprueba todo el ciclo en segundos. <a href="scripts/ensayo-herencia-regtest.sh" download>Descargar ensayo-herencia-regtest.sh</a>';
+ }
+ out(L)}
+root.addEventListener('input',function(e){var t=e.target;if(t.id==='cliPadre')st.padre=t.value;else if(t.id==='cliDate')st.date=t.value;else if(t.id==='cliFee')st.fee=t.value;else if(t.dataset.k!=null)st.keys[t.dataset.k]=t.value;else if(t.id!=='cliKid')return;save();render()});
+$('cliKid').addEventListener('change',render);
+$('cliTabs').addEventListener('click',function(e){var b=e.target.closest('button');if(!b)return;tab=b.dataset.t;[].forEach.call(this.children,function(x){x.classList.toggle('on',x===b)});render()});
+root.addEventListener('click',function(e){var b=e.target.closest('.copy');if(!b)return;var t=$(b.dataset.copy).textContent;(navigator.clipboard?navigator.clipboard.writeText(t):Promise.reject()).then(function(){b.textContent='¡Copiado!';setTimeout(function(){b.textContent='Copiar'},1500)},function(){var r=document.createRange();r.selectNodeContents($(b.dataset.copy));var s=getSelection();s.removeAllRanges();s.addRange(r)})});
+window.addEventListener('bps-kids',function(){drawKids();render()});
+drawKids();render()})();
 // pause other videos
 document.querySelectorAll('video').forEach(function(v){v.addEventListener('play',function(){document.querySelectorAll('video').forEach(function(o){if(o!==v)o.pause()})})});
 </script>

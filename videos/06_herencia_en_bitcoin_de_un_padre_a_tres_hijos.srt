@@ -211,497 +211,837 @@ Lo que verás es una recreación genérica:
 los menús de tu cartera serán distintos, pero los pasos son los mismos.
 
 54
-00:02:36,858 --> 00:02:40,709
+00:02:36,858 --> 00:02:40,558
 Y papel, para imprimir los descriptores y escribir la carta.
 
 55
-00:02:40,709 --> 00:02:41,865
-Ya verás para qué.
+00:02:40,558 --> 00:02:45,615
+Al final del vídeo verás, además, cómo hacerlo todo directamente con Bitcoin Core,
 
 56
-00:02:43,283 --> 00:02:47,700
-Primero, cada hijo crea su propia semilla, en su propia hardware wallet,
+00:02:45,615 --> 00:02:46,355
+por consola.
 
 57
-00:02:47,700 --> 00:02:49,357
-como vimos en el vídeo uno.
+00:02:47,783 --> 00:02:52,200
+Primero, cada hijo crea su propia semilla, en su propia hardware wallet,
 
 58
-00:02:49,357 --> 00:02:50,952
-Tú nunca ves sus palabras.
+00:02:52,200 --> 00:02:53,857
+como vimos en el vídeo uno.
 
 59
-00:02:51,272 --> 00:02:55,062
-De su dispositivo, cada hijo te da solo su clave pública:
+00:02:53,857 --> 00:02:55,452
+Tú nunca ves sus palabras.
 
 60
-00:02:55,062 --> 00:02:58,720
-exportar, clave pública, y aparece un QR con su huella.
+00:02:55,772 --> 00:02:59,562
+De su dispositivo, cada hijo te da solo su clave pública:
 
 61
-00:02:58,720 --> 00:03:00,582
-Esto no permite gastar nada.
+00:02:59,562 --> 00:03:03,220
+exportar, clave pública, y aparece un QR con su huella.
 
 62
-00:03:00,902 --> 00:03:03,941
-En tu cartera de escritorio importas las tres claves públicas,
+00:03:03,220 --> 00:03:05,082
+Esto no permite gastar nada.
 
 63
-00:03:03,941 --> 00:03:06,589
-y compruebas cada huella con la que te dice cada hijo.
+00:03:05,402 --> 00:03:08,441
+En tu cartera de escritorio importas las tres claves públicas,
 
 64
-00:03:06,909 --> 00:03:08,130
-Marta tiene ocho años.
+00:03:08,441 --> 00:03:11,089
+y compruebas cada huella con la que te dice cada hijo.
 
 65
-00:03:08,130 --> 00:03:11,407
-Su hardware wallet y su semilla las crea con ella su madre,
+00:03:11,409 --> 00:03:12,630
+Marta tiene ocho años.
 
 66
-00:03:11,407 --> 00:03:15,350
-o la persona que será su tutora, y se guardan en un sobre sellado hasta
+00:03:12,630 --> 00:03:15,907
+Su hardware wallet y su semilla las crea con ella su madre,
 
 67
-00:03:15,350 --> 00:03:16,572
-que sea mayor de edad.
+00:03:15,907 --> 00:03:19,850
+o la persona que será su tutora, y se guardan en un sobre sellado hasta
 
 68
-00:03:17,983 --> 00:03:20,069
-Ahora creas la primera hucha.
+00:03:19,850 --> 00:03:21,072
+que sea mayor de edad.
 
 69
-00:03:20,069 --> 00:03:22,514
-Nueva cartera, le pones de nombre:
+00:03:22,483 --> 00:03:24,569
+Ahora creas la primera hucha.
 
 70
-00:03:22,514 --> 00:03:23,449
-hucha de Ana.
+00:03:24,569 --> 00:03:27,014
+Nueva cartera, le pones de nombre:
 
 71
-00:03:23,449 --> 00:03:24,671
-Y eliges el tipo:
+00:03:27,014 --> 00:03:27,949
+hucha de Ana.
 
 72
-00:03:24,671 --> 00:03:27,116
-miniscript, con bloqueo de tiempo.
+00:03:27,949 --> 00:03:29,171
+Y eliges el tipo:
 
 73
-00:03:27,436 --> 00:03:29,468
-Primer camino, el principal:
+00:03:29,171 --> 00:03:31,616
+miniscript, con bloqueo de tiempo.
 
 74
-00:03:29,468 --> 00:03:31,355
-tu llave, sin condiciones.
+00:03:31,936 --> 00:03:33,968
+Primer camino, el principal:
 
 75
-00:03:31,355 --> 00:03:33,024
-Puedes moverla siempre.
+00:03:33,968 --> 00:03:35,855
+tu llave, sin condiciones.
 
 76
-00:03:33,344 --> 00:03:35,297
-Segundo camino, el de herencia:
+00:03:35,855 --> 00:03:37,524
+Puedes moverla siempre.
 
 77
-00:03:35,297 --> 00:03:37,755
-la llave de Ana, a partir de una fecha.
+00:03:37,844 --> 00:03:39,797
+Segundo camino, el de herencia:
 
 78
-00:03:37,755 --> 00:03:40,401
-Eliges el uno de enero de dos mil treinta.
+00:03:39,797 --> 00:03:42,255
+la llave de Ana, a partir de una fecha.
 
 79
-00:03:40,721 --> 00:03:43,459
-La cartera te enseña la condición completa.
+00:03:42,255 --> 00:03:44,901
+Eliges el uno de enero de dos mil treinta.
 
 80
-00:03:43,459 --> 00:03:44,159
-Se lee así:
+00:03:45,221 --> 00:03:47,959
+La cartera te enseña la condición completa.
 
 81
-00:03:44,159 --> 00:03:47,407
-o firma el padre, o firma Ana después de esa fecha.
+00:03:47,959 --> 00:03:48,659
+Se lee así:
 
 82
-00:03:47,407 --> 00:03:52,118
-El número largo es la fecha escrita en segundos, como la entiende bitcoin.
+00:03:48,659 --> 00:03:51,907
+o firma el padre, o firma Ana después de esa fecha.
 
 83
-00:03:52,438 --> 00:03:56,695
-Repites lo mismo para Luis, con su llave y su fecha, y para Marta.
+00:03:51,907 --> 00:03:56,618
+El número largo es la fecha escrita en segundos, como la entiende bitcoin.
 
 84
-00:03:56,695 --> 00:03:59,403
-Al final tienes tres huchas, una por hijo.
+00:03:56,938 --> 00:04:01,195
+Repites lo mismo para Luis, con su llave y su fecha, y para Marta.
 
 85
-00:04:00,817 --> 00:04:02,596
-Cada hucha tiene su descriptor:
+00:04:01,195 --> 00:04:03,903
+Al final tienes tres huchas, una por hijo.
 
 86
-00:04:02,596 --> 00:04:04,778
-el mapa con las dos llaves y la fecha.
+00:04:05,317 --> 00:04:07,096
+Cada hucha tiene su descriptor:
 
 87
-00:04:04,778 --> 00:04:09,199
-Sin él, nadie podría encontrar ni gastar ese dinero, aunque tenga la semilla.
+00:04:07,096 --> 00:04:09,278
+el mapa con las dos llaves y la fecha.
 
 88
-00:04:09,519 --> 00:04:12,411
-Escaneas el descriptor con tu hardware wallet.
+00:04:09,278 --> 00:04:13,699
+Sin él, nadie podría encontrar ni gastar ese dinero, aunque tenga la semilla.
 
 89
-00:04:12,411 --> 00:04:14,297
-Te enseña las dos condiciones:
+00:04:14,019 --> 00:04:16,911
+Escaneas el descriptor con tu hardware wallet.
 
 90
-00:04:14,297 --> 00:04:15,806
-compruébalas, y aceptas.
+00:04:16,911 --> 00:04:18,797
+Te enseña las dos condiciones:
 
 91
-00:04:16,126 --> 00:04:19,378
-Después exportas cada descriptor en PDF y haces dos copias:
+00:04:18,797 --> 00:04:20,306
+compruébalas, y aceptas.
 
 92
-00:04:19,378 --> 00:04:22,354
-una para el hijo, y otra junto a tu carta de herencia.
+00:04:20,626 --> 00:04:23,878
+Después exportas cada descriptor en PDF y haces dos copias:
 
 93
-00:04:22,674 --> 00:04:25,886
-El descriptor no permite gastar, pero sí ver el saldo.
+00:04:23,878 --> 00:04:26,854
+una para el hijo, y otra junto a tu carta de herencia.
 
 94
-00:04:25,886 --> 00:04:29,099
-Así que el hijo sabrá cuánto le espera y desde cuándo.
+00:04:27,174 --> 00:04:30,386
+El descriptor no permite gastar, pero sí ver el saldo.
 
 95
-00:04:29,099 --> 00:04:33,383
-Si prefieres que no lo sepa aún, entrégale su copia en un sobre cerrado,
+00:04:30,386 --> 00:04:33,599
+Así que el hijo sabrá cuánto le espera y desde cuándo.
 
 96
-00:04:33,383 --> 00:04:34,811
-o déjala con el notario.
+00:04:33,599 --> 00:04:37,883
+Si prefieres que no lo sepa aún, entrégale su copia en un sobre cerrado,
 
 97
-00:04:36,217 --> 00:04:37,591
-Ahora llenas las huchas.
+00:04:37,883 --> 00:04:39,311
+o déjala con el notario.
 
 98
-00:04:37,591 --> 00:04:41,313
-En tu cartera principal preparas un único pago con tres destinos:
+00:04:40,717 --> 00:04:42,091
+Ahora llenas las huchas.
 
 99
-00:04:41,313 --> 00:04:43,546
-una dirección de recibir de cada hucha.
+00:04:42,091 --> 00:04:45,813
+En tu cartera principal preparas un único pago con tres destinos:
 
 100
-00:04:43,866 --> 00:04:47,009
-Medio bitcoin a la hucha de Ana, cero coma tres a la de Luis,
+00:04:45,813 --> 00:04:48,046
+una dirección de recibir de cada hucha.
 
 101
-00:04:47,009 --> 00:04:48,555
-y cero coma dos a la de Marta.
+00:04:48,366 --> 00:04:51,509
+Medio bitcoin a la hucha de Ana, cero coma tres a la de Luis,
 
 102
-00:04:48,875 --> 00:04:51,063
-Firmas en tu hardware wallet, como siempre:
+00:04:51,509 --> 00:04:53,055
+y cero coma dos a la de Marta.
 
 103
-00:04:51,063 --> 00:04:54,372
-revisa en su pantalla las tres direcciones y las tres cantidades.
+00:04:53,375 --> 00:04:55,563
+Firmas en tu hardware wallet, como siempre:
 
 104
-00:04:54,692 --> 00:04:58,611
-Transmites el pago, y en unos minutos cada hucha muestra su saldo.
+00:04:55,563 --> 00:04:58,872
+revisa en su pantalla las tres direcciones y las tres cantidades.
 
 105
-00:04:58,611 --> 00:05:01,937
-A partir de ahora, el tiempo corre a favor de tus hijos.
+00:04:59,192 --> 00:05:03,111
+Transmites el pago, y en unos minutos cada hucha muestra su saldo.
 
 106
-00:05:03,350 --> 00:05:05,278
-Veamos qué pasa con los años.
+00:05:03,111 --> 00:05:06,437
+A partir de ahora, el tiempo corre a favor de tus hijos.
 
 107
-00:05:05,278 --> 00:05:10,332
-Hoy, en dos mil veintiséis, las tres huchas están bloqueadas para los hijos.
+00:05:07,850 --> 00:05:09,778
+Veamos qué pasa con los años.
 
 108
-00:05:10,332 --> 00:05:12,260
-Solo el padre puede moverlas.
+00:05:09,778 --> 00:05:14,832
+Hoy, en dos mil veintiséis, las tres huchas están bloqueadas para los hijos.
 
 109
-00:05:12,580 --> 00:05:15,768
-Imagina que el padre fallece en dos mil veintiocho.
+00:05:14,832 --> 00:05:16,760
+Solo el padre puede moverlas.
 
 110
-00:05:15,768 --> 00:05:16,893
-No pasa nada malo:
+00:05:17,080 --> 00:05:20,268
+Imagina que el padre fallece en dos mil veintiocho.
 
 111
-00:05:16,893 --> 00:05:21,081
-nadie puede tocar el dinero antes de tiempo, ni siquiera los hijos.
+00:05:20,268 --> 00:05:21,393
+No pasa nada malo:
 
 112
-00:05:21,081 --> 00:05:22,831
-Las huchas siguen esperando.
+00:05:21,393 --> 00:05:25,581
+nadie puede tocar el dinero antes de tiempo, ni siquiera los hijos.
 
 113
-00:05:23,151 --> 00:05:25,522
-Llega el uno de enero de dos mil treinta.
+00:05:25,581 --> 00:05:27,331
+Las huchas siguen esperando.
 
 114
-00:05:25,522 --> 00:05:27,256
-La hucha de Ana se desbloquea:
+00:05:27,651 --> 00:05:30,022
+Llega el uno de enero de dos mil treinta.
 
 115
-00:05:27,256 --> 00:05:30,841
-con su llave y el descriptor, ya puede mover su medio bitcoin.
+00:05:30,022 --> 00:05:31,756
+La hucha de Ana se desbloquea:
 
 116
-00:05:31,161 --> 00:05:33,244
-En dos mil treinta y tres, la de Luis.
+00:05:31,756 --> 00:05:35,341
+con su llave y el descriptor, ya puede mover su medio bitcoin.
 
 117
-00:05:33,564 --> 00:05:37,831
-Y en dos mil treinta y seis, cuando Marta cumple dieciocho, la suya.
+00:05:35,661 --> 00:05:37,744
+En dos mil treinta y tres, la de Luis.
 
 118
-00:05:37,831 --> 00:05:41,658
-Cada uno, su cantidad y su fecha, tal y como quería su padre.
+00:05:38,064 --> 00:05:42,331
+Y en dos mil treinta y seis, cuando Marta cumple dieciocho, la suya.
 
 119
-00:05:41,978 --> 00:05:45,550
-Y si el padre sigue vivo cuando llega una fecha, no pierde nada:
+00:05:42,331 --> 00:05:46,158
+Cada uno, su cantidad y su fecha, tal y como quería su padre.
 
 120
-00:05:45,550 --> 00:05:47,280
-sigue pudiendo mover esa hucha.
+00:05:46,478 --> 00:05:50,050
+Y si el padre sigue vivo cuando llega una fecha, no pierde nada:
 
 121
-00:05:47,280 --> 00:05:50,851
-Si quiere retrasar la herencia, pasa el dinero a una hucha nueva
+00:05:50,050 --> 00:05:51,780
+sigue pudiendo mover esa hucha.
 
 122
-00:05:50,851 --> 00:05:52,190
-con una fecha posterior.
+00:05:51,780 --> 00:05:55,351
+Si quiere retrasar la herencia, pasa el dinero a una hucha nueva
 
 123
-00:05:53,617 --> 00:05:55,506
-Ahora, el punto de vista de Ana.
+00:05:55,351 --> 00:05:56,690
+con una fecha posterior.
 
 124
-00:05:55,506 --> 00:06:00,053
-En su cartera de escritorio, importa la hucha escaneando el QR del descriptor
+00:05:58,117 --> 00:06:00,006
+Ahora, el punto de vista de Ana.
 
 125
-00:06:00,053 --> 00:06:01,234
-que le dio su padre.
+00:06:00,006 --> 00:06:04,553
+En su cartera de escritorio, importa la hucha escaneando el QR del descriptor
 
 126
-00:06:01,554 --> 00:06:04,122
-La cartera le muestra su medio bitcoin, con un aviso:
+00:06:04,553 --> 00:06:05,734
+que le dio su padre.
 
 127
-00:06:04,122 --> 00:06:06,593
-bloqueado hasta el uno de enero de dos mil treinta.
+00:06:06,054 --> 00:06:08,622
+La cartera le muestra su medio bitcoin, con un aviso:
 
 128
-00:06:06,913 --> 00:06:09,882
-Si intenta enviarlo antes, la red lo rechaza:
+00:06:08,622 --> 00:06:11,093
+bloqueado hasta el uno de enero de dos mil treinta.
 
 129
-00:06:09,882 --> 00:06:12,257
-la transacción todavía no es válida.
+00:06:11,413 --> 00:06:14,382
+Si intenta enviarlo antes, la red lo rechaza:
 
 130
-00:06:12,257 --> 00:06:14,171
-Su dinero sigue ahí, intacto.
+00:06:14,382 --> 00:06:16,757
+la transacción todavía no es válida.
 
 131
-00:06:14,491 --> 00:06:16,976
-Llegada la fecha, el aviso desaparece.
+00:06:16,757 --> 00:06:18,671
+Su dinero sigue ahí, intacto.
 
 132
-00:06:16,976 --> 00:06:21,882
-Ana prepara un envío a una cartera nueva, solo suya, con su propia semilla.
+00:06:18,991 --> 00:06:21,476
+Llegada la fecha, el aviso desaparece.
 
 133
-00:06:22,202 --> 00:06:24,611
-Firma con su hardware wallet y transmite.
+00:06:21,476 --> 00:06:26,382
+Ana prepara un envío a una cartera nueva, solo suya, con su propia semilla.
 
 134
-00:06:24,611 --> 00:06:28,079
-Su herencia ya está en su poder, sin pedir permiso a nadie.
+00:06:26,702 --> 00:06:29,111
+Firma con su hardware wallet y transmite.
 
 135
-00:06:29,483 --> 00:06:30,721
-Y el último paso:
+00:06:29,111 --> 00:06:32,579
+Su herencia ya está en su poder, sin pedir permiso a nadie.
 
 136
-00:06:30,721 --> 00:06:31,376
-la carta.
+00:06:33,983 --> 00:06:35,221
+Y el último paso:
 
 137
-00:06:31,376 --> 00:06:34,580
-Escrita a mano, y sin ningún secreto dentro.
+00:06:35,221 --> 00:06:35,876
+la carta.
 
 138
-00:06:34,900 --> 00:06:37,916
-Explica qué hay, para quién, y desde cuándo.
+00:06:35,876 --> 00:06:39,080
+Escrita a mano, y sin ningún secreto dentro.
 
 139
-00:06:37,916 --> 00:06:39,905
-Y dónde está cada descriptor.
+00:06:39,400 --> 00:06:42,416
+Explica qué hay, para quién, y desde cuándo.
 
 140
-00:06:39,905 --> 00:06:40,385
-Fíjate:
+00:06:42,416 --> 00:06:44,405
+Y dónde está cada descriptor.
 
 141
-00:06:40,385 --> 00:06:43,539
-no aparece ninguna palabra de ninguna semilla.
+00:06:44,405 --> 00:06:44,885
+Fíjate:
 
 142
-00:06:43,859 --> 00:06:48,016
-Nombra a una persona de confianza que entienda el tema, y avisa de las estafas:
+00:06:44,885 --> 00:06:48,039
+no aparece ninguna palabra de ninguna semilla.
 
 143
-00:06:48,016 --> 00:06:50,332
-nadie legítimo os pedirá nunca las palabras.
+00:06:48,359 --> 00:06:52,516
+Nombra a una persona de confianza que entienda el tema, y avisa de las estafas:
 
 144
-00:06:50,652 --> 00:06:54,674
-Guárdala con tus documentos importantes, y menciona en tu testamento que existe,
+00:06:52,516 --> 00:06:54,832
+nadie legítimo os pedirá nunca las palabras.
 
 145
-00:06:54,674 --> 00:06:56,232
-sin poner ningún secreto en él.
+00:06:55,152 --> 00:06:59,174
+Guárdala con tus documentos importantes, y menciona en tu testamento que existe,
 
 146
-00:06:57,650 --> 00:07:00,230
-Atención a los errores que pueden arruinar todo esto.
+00:06:59,174 --> 00:07:00,732
+sin poner ningún secreto en él.
 
 147
-00:07:00,550 --> 00:07:01,293
-El primero:
+00:07:02,150 --> 00:07:06,657
+Y ahora, una variante para quien quiera hacerlo todo con Bitcoin Core, por consola,
 
 148
-00:07:01,293 --> 00:07:02,712
-perder el descriptor.
+00:07:06,657 --> 00:07:08,503
+sin ninguna aplicación intermedia.
 
 149
-00:07:02,712 --> 00:07:08,386
-Sin él, aunque el hijo tenga su semilla, encontrar y gastar la hucha es muy difícil.
+00:07:08,823 --> 00:07:11,856
+Necesitas Bitcoin Core versión veinticinco o superior,
 
 150
-00:07:08,386 --> 00:07:09,940
-Por eso hay dos copias.
+00:07:11,856 --> 00:07:15,562
+que ya sabe firmar condiciones miniscript, y tu nodo sincronizado.
 
 151
-00:07:10,260 --> 00:07:10,930
-El segundo:
+00:07:15,562 --> 00:07:19,493
+Mejor sin podar, para que pueda buscar las huchas en bloques antiguos.
 
 152
-00:07:10,930 --> 00:07:13,850
-que el hijo pierda su semilla antes de la fecha.
+00:07:19,813 --> 00:07:20,505
+Importante:
 
 153
-00:07:13,850 --> 00:07:15,554
-Si sigues vivo, lo arreglas:
+00:07:20,505 --> 00:07:23,648
+Bitcoin Core no usa doce ni veinticuatro palabras.
 
 154
-00:07:15,554 --> 00:07:19,448
-él crea una llave nueva y tú mueves el dinero a una hucha nueva.
+00:07:23,648 --> 00:07:28,867
+La copia de seguridad de cada llave es su descriptor privado, que empieza por xprv.
 
 155
-00:07:19,448 --> 00:07:21,639
-Por eso conviene revisarlo cada año.
+00:07:28,867 --> 00:07:30,879
+Se guarda igual que una semilla:
 
 156
-00:07:21,959 --> 00:07:22,713
-El tercero:
+00:07:30,879 --> 00:07:33,331
+en papel o en acero, nunca en internet.
 
 157
-00:07:22,713 --> 00:07:25,796
-fechas demasiado lejanas, o que nadie conoce.
+00:07:33,651 --> 00:07:37,412
+Aquí las claves están en el ordenador, no en una hardware wallet.
 
 158
-00:07:25,796 --> 00:07:27,371
-La carta lo deja claro.
+00:07:37,412 --> 00:07:42,447
+Usa un equipo dedicado, cifra las carteras, y mantenlo sin internet siempre que puedas.
 
 159
-00:07:27,691 --> 00:07:28,397
-Y el cuarto:
+00:07:42,767 --> 00:07:45,021
+Usaremos jq para leer las respuestas.
 
 160
-00:07:28,397 --> 00:07:29,044
-no ensayar.
+00:07:45,021 --> 00:07:50,262
+Todos los comandos están en la web, listos para copiar, y probados de principio a fin.
 
 161
-00:07:29,044 --> 00:07:33,453
-Antes de meter el dinero de verdad, haz una prueba con una cantidad pequeña
+00:07:51,683 --> 00:07:56,456
+Primero, cada persona, el padre y cada hijo, en su propio Bitcoin Core,
 
 162
-00:07:33,453 --> 00:07:37,922
-y una fecha cercana, de unos días, y comprueba que tu hijo sabe recuperarla.
+00:07:56,456 --> 00:07:58,608
+crea una cartera solo para esto.
 
 163
-00:07:39,350 --> 00:07:41,524
-Y la parte legal, que no se puede olvidar.
+00:07:58,608 --> 00:07:59,818
+La llamamos llave.
 
 164
-00:07:41,844 --> 00:07:43,728
-Lo que heredan tus hijos tributa.
+00:08:00,138 --> 00:08:02,422
+Con listdescriptors ve su descriptor.
 
 165
-00:07:43,728 --> 00:07:46,069
-En España, por el Impuesto de Sucesiones,
+00:08:02,422 --> 00:08:07,855
+Lo que hay entre los corchetes, más la xpub, es su clave pública, con su huella delante.
 
 166
-00:07:46,069 --> 00:07:48,924
-que cambia mucho de una comunidad autónoma a otra.
+00:08:07,855 --> 00:08:10,447
+Eso es lo que cada hijo le manda al padre.
 
 167
-00:07:49,244 --> 00:07:52,085
-Si un hijo mueve su hucha mientras el padre todavía vive,
+00:08:10,767 --> 00:08:15,982
+Con listdescriptors true aparece la versión privada, la que empieza por xprv.
 
 168
-00:07:52,085 --> 00:07:55,176
-Hacienda puede considerarlo una donación, que también tributa.
+00:08:15,982 --> 00:08:16,998
+Eso es secreto:
 
 169
-00:07:55,496 --> 00:07:59,883
-Los bitcoins se declaran en el inventario de la herencia, como cualquier otro bien.
+00:08:16,998 --> 00:08:19,030
+es su semilla en Bitcoin Core.
 
 170
-00:07:59,883 --> 00:08:03,794
-Pero ni el testamento ni el inventario necesitan contener ninguna semilla.
+00:08:19,030 --> 00:08:22,010
+Se copia a papel o acero, y no sale de casa.
 
 171
-00:08:04,114 --> 00:08:09,371
-Antes de montarlo, consulta tu caso con un notario o un asesor que entienda de bitcoin.
+00:08:22,330 --> 00:08:27,815
+Al padre, cada hijo le envía solo la parte pública, por QR, por USB o por mensaje.
 
 172
-00:08:09,371 --> 00:08:10,760
-La técnica la pones tú;
+00:08:27,815 --> 00:08:30,022
+Con ella no se puede gastar nada.
 
 173
-00:08:10,760 --> 00:08:12,694
-la parte legal, mejor con ayuda.
+00:08:31,450 --> 00:08:32,562
+Ahora, el padre.
 
 174
-00:08:14,117 --> 00:08:18,316
-Con bloqueos de tiempo, tu bitcoin llega a quien tú quieras, cuando tú quieras,
+00:08:32,562 --> 00:08:36,386
+Guarda en variables su clave pública y la de cada hijo.
 
 175
-00:08:18,316 --> 00:08:22,409
-sin bancos, sin intermediarios, y con el control en tus manos mientras vivas.
+00:08:36,386 --> 00:08:38,958
+Así los comandos se leen mucho mejor.
 
 176
-00:08:22,729 --> 00:08:27,595
-Revisa el plan cada año, ensaya siempre con poco dinero, y habla con tu familia.
+00:08:39,278 --> 00:08:41,322
+La fecha hay que pasarla a segundos.
 
 177
-00:08:27,595 --> 00:08:30,150
+00:08:41,322 --> 00:08:42,856
+El comando date lo calcula:
+
+178
+00:08:42,856 --> 00:08:46,831
+el uno de enero de dos mil treinta es ese número largo que ya conoces.
+
+179
+00:08:47,151 --> 00:08:49,574
+Y escribe el descriptor de la hucha de Ana:
+
+180
+00:08:49,574 --> 00:08:52,448
+o firma el padre, o firma Ana después de esa fecha.
+
+181
+00:08:52,448 --> 00:08:56,787
+Es la misma condición que viste antes, escrita como la entiende Bitcoin Core.
+
+182
+00:08:57,107 --> 00:09:00,103
+Con getdescriptorinfo comprueba que está bien escrito:
+
+183
+00:09:00,103 --> 00:09:04,099
+le devuelve el descriptor con su checksum al final, y issolvable a true.
+
+184
+00:09:04,099 --> 00:09:07,040
+Lo mismo con Luis y con Marta, cada uno con su fecha.
+
+185
+00:09:08,450 --> 00:09:11,983
+El padre crea una cartera vacía, que llamamos herencia.
+
+186
+00:09:11,983 --> 00:09:13,846
+Aquí vivirán las tres huchas.
+
+187
+00:09:14,166 --> 00:09:19,166
+Para poder moverlas mientras viva, las importa con su clave privada, el xprv,
+
+188
+00:09:19,166 --> 00:09:20,465
+en lugar de su xpub.
+
+189
+00:09:20,465 --> 00:09:24,426
+Bitcoin Core avisa de que no tiene todas las claves privadas.
+
+190
+00:09:24,426 --> 00:09:25,075
+Es normal:
+
+191
+00:09:25,075 --> 00:09:27,024
+las de los hijos son de ellos.
+
+192
+00:09:27,344 --> 00:09:30,324
+Con deriveaddresses saca la primera dirección de cada hucha,
+
+193
+00:09:30,324 --> 00:09:33,701
+y con getaddressinfo comprueba que su cartera la reconoce como suya.
+
+194
+00:09:34,021 --> 00:09:36,006
+Y con un único send reparte el dinero:
+
+195
+00:09:36,006 --> 00:09:39,139
+medio bitcoin a la hucha de Ana, cero coma tres a la de Luis
+
+196
+00:09:39,139 --> 00:09:40,706
+y cero coma dos a la de Marta.
+
+197
+00:09:41,026 --> 00:09:44,706
+Tras la confirmación, getbalances muestra el bitcoin repartido.
+
+198
+00:09:44,706 --> 00:09:49,321
+Por último, guarda cada descriptor público en un archivo, lo imprime dos veces,
+
+199
+00:09:49,321 --> 00:09:51,074
+y apunta la fecha de creación:
+
+200
+00:09:51,074 --> 00:09:52,534
+los hijos la necesitarán.
+
+201
+00:09:53,950 --> 00:09:56,159
+Ahora Ana, en su propio Bitcoin Core.
+
+202
+00:09:56,159 --> 00:09:58,667
+Crea una cartera vacía e importa su hucha:
+
+203
+00:09:58,667 --> 00:10:02,787
+con la clave pública del padre, que viene en su copia del descriptor,
+
+204
+00:10:02,787 --> 00:10:04,578
+y con su propia clave privada.
+
+205
+00:10:04,578 --> 00:10:09,415
+Como timestamp, la fecha de creación, para que Bitcoin Core busque desde ese día.
+
+206
+00:10:09,735 --> 00:10:10,733
+getbalances.
+
+207
+00:10:10,733 --> 00:10:12,896
+Ahí está su medio bitcoin.
+
+208
+00:10:13,216 --> 00:10:17,853
+Prepara el envío con sendall, que vacía la hucha hacia una dirección suya.
+
+209
+00:10:17,853 --> 00:10:19,169
+Atención al locktime:
+
+210
+00:10:19,169 --> 00:10:23,367
+tiene que llevar la fecha de su hucha, o la firma queda incompleta.
+
+211
+00:10:23,367 --> 00:10:25,999
+Y con add_to_wallet false solo la prepara:
+
+212
+00:10:25,999 --> 00:10:26,751
+no la envía.
+
+213
+00:10:27,071 --> 00:10:31,287
+Con testmempoolaccept le pregunta a su nodo si la red la aceptaría.
+
+214
+00:10:31,287 --> 00:10:35,126
+Si todavía es dos mil veintinueve, la respuesta es non-final:
+
+215
+00:10:35,126 --> 00:10:36,196
+aún no es válida.
+
+216
+00:10:36,196 --> 00:10:37,707
+Nadie puede adelantarla.
+
+217
+00:10:38,027 --> 00:10:42,715
+A partir del uno de enero de dos mil treinta, esa misma transacción ya se acepta.
+
+218
+00:10:42,715 --> 00:10:46,188
+sendrawtransaction, y la herencia de Ana está en su cartera.
+
+219
+00:10:47,617 --> 00:10:48,837
+Tres extras útiles.
+
+220
+00:10:48,837 --> 00:10:52,690
+Un hijo puede vigilar su hucha desde hoy sin poder gastarla:
+
+221
+00:10:52,690 --> 00:10:57,121
+crea una cartera sin claves privadas e importa el descriptor público.
+
+222
+00:10:57,121 --> 00:10:58,662
+Ve su saldo, y nada más.
+
+223
+00:10:58,982 --> 00:11:01,765
+El padre, mientras viva, puede cambiar el plan.
+
+224
+00:11:01,765 --> 00:11:06,205
+Con listunspent ve las monedas de cada hucha, y con sendall e inputs mueve,
+
+225
+00:11:06,205 --> 00:11:09,638
+por ejemplo, la de Marta a una hucha nueva con otra fecha.
+
+226
+00:11:09,638 --> 00:11:12,006
+Por su camino no hay que esperar a nada.
+
+227
+00:11:12,326 --> 00:11:14,887
+Y antes de meter dinero de verdad, ensaya.
+
+228
+00:11:14,887 --> 00:11:19,643
+Bitcoin Core tiene un modo de pruebas, regtest, donde tú fabricas los bloques.
+
+229
+00:11:19,643 --> 00:11:23,668
+Usa un bloqueo por altura de bloque, por ejemplo after doscientos,
+
+230
+00:11:23,668 --> 00:11:26,290
+y comprueba todo el ciclo en cinco minutos.
+
+231
+00:11:27,717 --> 00:11:30,297
+Atención a los errores que pueden arruinar todo esto.
+
+232
+00:11:30,617 --> 00:11:31,360
+El primero:
+
+233
+00:11:31,360 --> 00:11:32,779
+perder el descriptor.
+
+234
+00:11:32,779 --> 00:11:38,453
+Sin él, aunque el hijo tenga su semilla, encontrar y gastar la hucha es muy difícil.
+
+235
+00:11:38,453 --> 00:11:40,007
+Por eso hay dos copias.
+
+236
+00:11:40,327 --> 00:11:40,996
+El segundo:
+
+237
+00:11:40,996 --> 00:11:43,917
+que el hijo pierda su semilla antes de la fecha.
+
+238
+00:11:43,917 --> 00:11:45,621
+Si sigues vivo, lo arreglas:
+
+239
+00:11:45,621 --> 00:11:49,515
+él crea una llave nueva y tú mueves el dinero a una hucha nueva.
+
+240
+00:11:49,515 --> 00:11:51,706
+Por eso conviene revisarlo cada año.
+
+241
+00:11:52,026 --> 00:11:52,779
+El tercero:
+
+242
+00:11:52,779 --> 00:11:55,862
+fechas demasiado lejanas, o que nadie conoce.
+
+243
+00:11:55,862 --> 00:11:57,438
+La carta lo deja claro.
+
+244
+00:11:57,758 --> 00:11:58,464
+Y el cuarto:
+
+245
+00:11:58,464 --> 00:11:59,110
+no ensayar.
+
+246
+00:11:59,110 --> 00:12:03,520
+Antes de meter el dinero de verdad, haz una prueba con una cantidad pequeña
+
+247
+00:12:03,520 --> 00:12:07,988
+y una fecha cercana, de unos días, y comprueba que tu hijo sabe recuperarla.
+
+248
+00:12:09,417 --> 00:12:11,591
+Y la parte legal, que no se puede olvidar.
+
+249
+00:12:11,911 --> 00:12:13,795
+Lo que heredan tus hijos tributa.
+
+250
+00:12:13,795 --> 00:12:16,136
+En España, por el Impuesto de Sucesiones,
+
+251
+00:12:16,136 --> 00:12:18,991
+que cambia mucho de una comunidad autónoma a otra.
+
+252
+00:12:19,311 --> 00:12:22,152
+Si un hijo mueve su hucha mientras el padre todavía vive,
+
+253
+00:12:22,152 --> 00:12:25,242
+Hacienda puede considerarlo una donación, que también tributa.
+
+254
+00:12:25,562 --> 00:12:29,949
+Los bitcoins se declaran en el inventario de la herencia, como cualquier otro bien.
+
+255
+00:12:29,949 --> 00:12:33,860
+Pero ni el testamento ni el inventario necesitan contener ninguna semilla.
+
+256
+00:12:34,180 --> 00:12:39,437
+Antes de montarlo, consulta tu caso con un notario o un asesor que entienda de bitcoin.
+
+257
+00:12:39,437 --> 00:12:40,827
+La técnica la pones tú;
+
+258
+00:12:40,827 --> 00:12:42,761
+la parte legal, mejor con ayuda.
+
+259
+00:12:44,183 --> 00:12:48,382
+Con bloqueos de tiempo, tu bitcoin llega a quien tú quieras, cuando tú quieras,
+
+260
+00:12:48,382 --> 00:12:52,475
+sin bancos, sin intermediarios, y con el control en tus manos mientras vivas.
+
+261
+00:12:52,795 --> 00:12:57,662
+Revisa el plan cada año, ensaya siempre con poco dinero, y habla con tu familia.
+
+262
+00:12:57,662 --> 00:13:00,217
 Gracias por ver Bitcoin práctico y seguro.
